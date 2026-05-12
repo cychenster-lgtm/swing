@@ -7,21 +7,20 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:#1a1a2e;color:#e0e0e0;font-family:-apple-system,'맑은 고딕',sans-serif;padding:0}
-.top-fixed{position:sticky;top:0;z-index:10;background:#1a1a2e;padding:10px 10px 5px 10px}
-.hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:5px}
+.top-fixed{position:sticky;top:0;z-index:20;background:#1a1a2e;padding:8px 10px 4px 10px;border-bottom:1px solid #253050}
+.hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:4px}
 h1{font-size:1.1em;color:#e94560}
-.time{color:#666;font-size:0.8em;margin-bottom:5px}
-.btn{background:#111;color:#e0e0e0;border:none;padding:6px 14px;border-radius:4px;font-size:0.85em;cursor:pointer}
+.time{color:#666;font-size:0.75em}
+.btn{background:#111;color:#e0e0e0;border:none;padding:5px 12px;border-radius:4px;font-size:0.8em;cursor:pointer}
 .btn:active{background:#1a237e}
-.scroll-area{padding:0 10px 10px 10px}
-table{width:100%;border-collapse:collapse;font-size:0.85em}
-th{background:#0f3460;padding:8px 6px;text-align:center;position:sticky;top:60px;z-index:5;font-size:0.8em}
-.row-main td{padding:7px 6px;text-align:center}
-.row-main td:first-child{text-align:left;font-weight:bold}
-.row-timing td{padding:2px 6px 8px 6px;border-bottom:1px solid #253050;font-size:0.82em}
-tr:hover td{background:#16213e}
 .legend{font-size:0.7em;color:#666;margin-top:2px}
-.legend span{margin-right:10px}
+.legend span{margin-right:8px}
+table{width:100%;border-collapse:collapse;font-size:0.85em;margin:0}
+th{background:#0f3460;padding:7px 6px;text-align:center;position:sticky;z-index:10;font-size:0.8em;top:70px}
+.row-main td{padding:6px;text-align:center}
+.row-main td:first-child{text-align:left;font-weight:bold}
+.row-timing td{padding:2px 6px 7px 6px;border-bottom:1px solid #253050;font-size:0.82em}
+tr:hover td{background:#16213e}
 @media (min-width:900px) {
   .row-timing {display:none}
   .pc-timing {display:table-cell !important}
@@ -31,6 +30,12 @@ tr:hover td{background:#16213e}
 @media (max-width:899px) {
   .pc-timing {display:none !important}
   .pc-signal {display:none !important}
+  th{top:72px}
+}
+@media (max-width:400px) {
+  th{top:72px;font-size:0.7em;padding:5px 3px}
+  .row-main td{font-size:0.8em;padding:5px 3px}
+  .top-fixed{padding:6px 8px 3px 8px}
 }
 </style>
 </head><body>
@@ -39,7 +44,7 @@ tr:hover td{background:#16213e}
 <h1>📊 장투 매매타점</h1>
 <button class="btn" onclick="location.reload()">🔄 새로고침</button>
 </div>
-<div class="time">갱신: 2026-05-12 15:13:36 (60초 자동)</div>
+<div class="time">갱신: 2026-05-12 15:14:07 (60초 자동)</div>
 <div class="legend">
 <span style="color:#00e676">🟢반등확인</span>
 <span style="color:#00e5ff">🔵반등초기</span>
@@ -48,8 +53,7 @@ tr:hover td{background:#16213e}
 <span style="color:#ff1744">🔴위험</span>
 </div>
 </div>
-<div class="scroll-area">
-<table>
+<table style="padding:0 10px">
 <tr><th>종목</th><th>현재가</th><th>목표가</th><th>등락</th><th>거리</th><th>RSI</th><th class="pc-timing" style="display:none">⏰타이밍</th><th class="pc-signal" style="display:none">신호</th></tr>
 <tr class="row-main">
 <td>삼성전자</td>
@@ -170,9 +174,9 @@ tr:hover td{background:#16213e}
 <td colspan="2" style="text-align:right;font-size:0.8em;color:#888">추세중</td>
 </tr><tr class="row-main">
 <td>한화에어로스페이스</td>
-<td>1,281,000</td>
-<td>1,421,400</td>
-<td style="color:#ff1744">-2.6%</td>
+<td>1,282,000</td>
+<td>1,421,450</td>
+<td style="color:#ff1744">-2.5%</td>
 <td>✅구간안</td>
 <td>34</td>
 <td class="pc-timing" style="display:none;color:#00e5ff;text-align:left;font-size:0.85em">🔵 목표가 도달 (반등 대기)</td>
@@ -274,9 +278,9 @@ tr:hover td{background:#16213e}
 <td colspan="2" style="text-align:right;font-size:0.8em;color:#888">눌림구간</td>
 </tr><tr class="row-main">
 <td>카카오</td>
-<td>43,500</td>
-<td>47,692</td>
-<td style="color:#ff1744">-2.7%</td>
+<td>43,450</td>
+<td>47,690</td>
+<td style="color:#ff1744">-2.8%</td>
 <td>✅구간안</td>
 <td>19</td>
 <td class="pc-timing" style="display:none;color:#00e5ff;text-align:left;font-size:0.85em">🔵 목표가 도달 (반등 대기)</td>
@@ -287,10 +291,10 @@ tr:hover td{background:#16213e}
 <td colspan="2" style="text-align:right;font-size:0.8em;color:#888">눌림구간</td>
 </tr><tr class="row-main">
 <td>현대차</td>
-<td>645,000</td>
-<td>547,000</td>
-<td style="color:#ff1744">-0.1%</td>
-<td>-15.2%</td>
+<td>646,000</td>
+<td>547,050</td>
+<td style="color:#aaa">+0.0%</td>
+<td>-15.3%</td>
 <td>75</td>
 <td class="pc-timing" style="display:none;color:#aaa;text-align:left;font-size:0.85em">⏳ 목표까지 약5일 (일변동3.0%)</td>
 <td class="pc-signal" style="display:none;text-align:left;font-size:0.8em;color:#888">과열</td>
@@ -300,11 +304,11 @@ tr:hover td{background:#16213e}
 <td colspan="2" style="text-align:right;font-size:0.8em;color:#888">과열</td>
 </tr><tr class="row-main">
 <td>신한지주</td>
-<td>96,400</td>
-<td>98,975</td>
-<td style="color:#ff1744">-0.8%</td>
+<td>96,500</td>
+<td>98,980</td>
+<td style="color:#ff1744">-0.7%</td>
 <td>✅구간안</td>
-<td>32</td>
+<td>33</td>
 <td class="pc-timing" style="display:none;color:#00e5ff;text-align:left;font-size:0.85em">🔵 목표가 도달 (반등 대기)</td>
 <td class="pc-signal" style="display:none;text-align:left;font-size:0.8em;color:#888">눌림구간</td>
 </tr>
@@ -326,6 +330,5 @@ tr:hover td{background:#16213e}
 <td colspan="2" style="text-align:right;font-size:0.8em;color:#888">과열</td>
 </tr>
 </table>
-<div style="font-size:0.7em;color:#444;margin-top:10px;text-align:center">※ 참고용이며 투자 판단은 본인 책임입니다.</div>
-</div>
+<div style="font-size:0.7em;color:#444;margin:10px;text-align:center">※ 참고용이며 투자 판단은 본인 책임입니다.</div>
 </body></html>
