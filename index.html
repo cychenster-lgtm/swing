@@ -6,38 +6,49 @@
 <title>장투 매매타점</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{background:#1a1a2e;color:#e0e0e0;font-family:-apple-system,'맑은 고딕',sans-serif;padding:10px}
-.hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+body{background:#1a1a2e;color:#e0e0e0;font-family:-apple-system,'맑은 고딕',sans-serif;padding:0}
+.top-fixed{position:sticky;top:0;z-index:10;background:#1a1a2e;padding:10px 10px 5px 10px}
+.hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:5px}
 h1{font-size:1.1em;color:#e94560}
-.time{color:#666;font-size:0.8em;margin-bottom:10px}
+.time{color:#666;font-size:0.8em;margin-bottom:5px}
 .btn{background:#111;color:#e0e0e0;border:none;padding:6px 14px;border-radius:4px;font-size:0.85em;cursor:pointer}
 .btn:active{background:#1a237e}
+.scroll-area{padding:0 10px 10px 10px}
 table{width:100%;border-collapse:collapse;font-size:0.85em}
-th{background:#0f3460;padding:8px 6px;text-align:center;position:sticky;top:0;font-size:0.8em}
+th{background:#0f3460;padding:8px 6px;text-align:center;position:sticky;top:60px;z-index:5;font-size:0.8em}
 .row-main td{padding:7px 6px;text-align:center}
 .row-main td:first-child{text-align:left;font-weight:bold}
 .row-timing td{padding:2px 6px 8px 6px;border-bottom:1px solid #253050;font-size:0.82em}
 tr:hover td{background:#16213e}
-.legend{margin-top:10px;font-size:0.75em;color:#666}
-.legend span{margin-right:12px}
-/* PC: 타이밍 줄 숨기고 메인행에 표시 */
+.legend{font-size:0.7em;color:#666;margin-top:2px}
+.legend span{margin-right:10px}
 @media (min-width:900px) {
   .row-timing {display:none}
   .pc-timing {display:table-cell !important}
   .pc-signal {display:table-cell !important}
+  th{top:65px}
 }
-/* 폰: 타이밍 줄 표시, 메인행 타이밍/신호 숨김 */
 @media (max-width:899px) {
   .pc-timing {display:none !important}
   .pc-signal {display:none !important}
 }
 </style>
 </head><body>
+<div class="top-fixed">
 <div class="hdr">
 <h1>📊 장투 매매타점</h1>
 <button class="btn" onclick="location.reload()">🔄 새로고침</button>
 </div>
-<div class="time">갱신: 2026-05-12 15:10:22 (60초 자동)</div>
+<div class="time">갱신: 2026-05-12 15:11:14 (60초 자동)</div>
+<div class="legend">
+<span style="color:#00e676">🟢반등확인</span>
+<span style="color:#00e5ff">🔵반등초기</span>
+<span style="color:#ffd600">🟡눌림중</span>
+<span style="color:#ff9100">🟠과열/하락</span>
+<span style="color:#ff1744">🔴위험</span>
+</div>
+</div>
+<div class="scroll-area">
 <table>
 <tr><th>종목</th><th>현재가</th><th>목표가</th><th>등락</th><th>거리</th><th>RSI</th><th class="pc-timing" style="display:none">⏰타이밍</th><th class="pc-signal" style="display:none">신호</th></tr>
 <tr class="row-main">
@@ -94,9 +105,9 @@ tr:hover td{background:#16213e}
 <td colspan="2" style="text-align:right;font-size:0.8em;color:#888">추세중</td>
 </tr><tr class="row-main">
 <td>리노공업</td>
-<td>108,000</td>
-<td>115,555</td>
-<td style="color:#ff1744">-6.7%</td>
+<td>108,300</td>
+<td>115,570</td>
+<td style="color:#ff1744">-6.5%</td>
 <td>✅구간안</td>
 <td>42</td>
 <td class="pc-timing" style="display:none;color:#00e5ff;text-align:left;font-size:0.85em">🔵 목표가 도달 (반등 대기)</td>
@@ -120,11 +131,11 @@ tr:hover td{background:#16213e}
 <td colspan="2" style="text-align:right;font-size:0.8em;color:#888">과열</td>
 </tr><tr class="row-main">
 <td>KODEX 코스닥150</td>
-<td>19,480</td>
-<td>19,840</td>
-<td style="color:#ff1744">-2.9%</td>
+<td>19,520</td>
+<td>19,842</td>
+<td style="color:#ff1744">-2.7%</td>
 <td>✅구간안</td>
-<td>47</td>
+<td>48</td>
 <td class="pc-timing" style="display:none;color:#00e5ff;text-align:left;font-size:0.85em">🔵 목표가 도달 (반등 대기)</td>
 <td class="pc-signal" style="display:none;text-align:left;font-size:0.8em;color:#888">눌림구간</td>
 </tr>
@@ -133,11 +144,11 @@ tr:hover td{background:#16213e}
 <td colspan="2" style="text-align:right;font-size:0.8em;color:#888">눌림구간</td>
 </tr><tr class="row-main">
 <td>KODEX 반도체</td>
-<td>147,170</td>
-<td>123,830</td>
-<td style="color:#ff1744">-3.9%</td>
-<td>-15.9%</td>
-<td>85</td>
+<td>147,630</td>
+<td>123,853</td>
+<td style="color:#ff1744">-3.6%</td>
+<td>-16.1%</td>
+<td>86</td>
 <td class="pc-timing" style="display:none;color:#aaa;text-align:left;font-size:0.85em">⏳ 목표까지 약6일 (일변동2.5%)</td>
 <td class="pc-signal" style="display:none;text-align:left;font-size:0.8em;color:#888">과열</td>
 </tr>
@@ -159,9 +170,9 @@ tr:hover td{background:#16213e}
 <td colspan="2" style="text-align:right;font-size:0.8em;color:#888">추세중</td>
 </tr><tr class="row-main">
 <td>한화에어로스페이스</td>
-<td>1,284,000</td>
-<td>1,421,550</td>
-<td style="color:#ff1744">-2.4%</td>
+<td>1,282,000</td>
+<td>1,421,450</td>
+<td style="color:#ff1744">-2.5%</td>
 <td>✅구간안</td>
 <td>34</td>
 <td class="pc-timing" style="display:none;color:#00e5ff;text-align:left;font-size:0.85em">🔵 목표가 도달 (반등 대기)</td>
@@ -185,9 +196,9 @@ tr:hover td{background:#16213e}
 <td colspan="2" style="text-align:right;font-size:0.8em;color:#888">눌림구간</td>
 </tr><tr class="row-main">
 <td>한화오션</td>
-<td>121,600</td>
-<td>129,945</td>
-<td style="color:#ff1744">-6.8%</td>
+<td>121,800</td>
+<td>129,955</td>
+<td style="color:#ff1744">-6.7%</td>
 <td>✅구간안</td>
 <td>39</td>
 <td class="pc-timing" style="display:none;color:#00e5ff;text-align:left;font-size:0.85em">🔵 목표가 도달 (반등 대기)</td>
@@ -198,9 +209,9 @@ tr:hover td{background:#16213e}
 <td colspan="2" style="text-align:right;font-size:0.8em;color:#888">눌림구간</td>
 </tr><tr class="row-main">
 <td>포스코인터내셔널</td>
-<td>73,600</td>
-<td>79,020</td>
-<td style="color:#ff1744">-2.3%</td>
+<td>73,700</td>
+<td>79,025</td>
+<td style="color:#ff1744">-2.1%</td>
 <td>✅구간안</td>
 <td>44</td>
 <td class="pc-timing" style="display:none;color:#00e5ff;text-align:left;font-size:0.85em">🔵 목표가 도달 (반등 대기)</td>
@@ -237,9 +248,9 @@ tr:hover td{background:#16213e}
 <td colspan="2" style="text-align:right;font-size:0.8em;color:#888">눌림구간</td>
 </tr><tr class="row-main">
 <td>알테오젠</td>
-<td>342,000</td>
-<td>362,300</td>
-<td style="color:#00e676">+5.2%</td>
+<td>343,000</td>
+<td>362,350</td>
+<td style="color:#00e676">+5.5%</td>
 <td>✅구간안</td>
 <td>38</td>
 <td class="pc-timing" style="display:none;color:#00e676;text-align:left;font-size:0.85em">🟢 목표가 도달 + 반등 신호</td>
@@ -289,9 +300,9 @@ tr:hover td{background:#16213e}
 <td colspan="2" style="text-align:right;font-size:0.8em;color:#888">과열</td>
 </tr><tr class="row-main">
 <td>신한지주</td>
-<td>96,500</td>
-<td>98,980</td>
-<td style="color:#ff1744">-0.7%</td>
+<td>96,600</td>
+<td>98,985</td>
+<td style="color:#ff1744">-0.6%</td>
 <td>✅구간안</td>
 <td>33</td>
 <td class="pc-timing" style="display:none;color:#00e5ff;text-align:left;font-size:0.85em">🔵 목표가 도달 (반등 대기)</td>
@@ -302,10 +313,10 @@ tr:hover td{background:#16213e}
 <td colspan="2" style="text-align:right;font-size:0.8em;color:#888">눌림구간</td>
 </tr><tr class="row-main">
 <td>LG전자</td>
-<td>183,200</td>
-<td>136,825</td>
-<td style="color:#00e676">+16.9%</td>
-<td>-25.3%</td>
+<td>184,000</td>
+<td>136,865</td>
+<td style="color:#00e676">+17.4%</td>
+<td>-25.6%</td>
 <td>83</td>
 <td class="pc-timing" style="display:none;color:#aaa;text-align:left;font-size:0.85em">⏳ 목표까지 약7일 (일변동3.9%)</td>
 <td class="pc-signal" style="display:none;text-align:left;font-size:0.8em;color:#888">과열</td>
@@ -315,12 +326,6 @@ tr:hover td{background:#16213e}
 <td colspan="2" style="text-align:right;font-size:0.8em;color:#888">과열</td>
 </tr>
 </table>
-<div class="legend">
-<span style="color:#00e676">🟢반등확인</span>
-<span style="color:#00e5ff">🔵반등초기</span>
-<span style="color:#ffd600">🟡눌림중</span>
-<span style="color:#ff9100">🟠과열/하락</span>
-<span style="color:#ff1744">🔴위험</span>
-<br>※ 참고용이며 투자 판단은 본인 책임입니다.
+<div style="font-size:0.7em;color:#444;margin-top:10px;text-align:center">※ 참고용이며 투자 판단은 본인 책임입니다.</div>
 </div>
 </body></html>
