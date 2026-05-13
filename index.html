@@ -16,9 +16,9 @@ h1{font-size:1.1em;color:#e94560}
 .legend{font-size:0.7em;color:#666;margin-top:2px}
 .legend span{margin-right:8px}
 table{width:100%;border-collapse:collapse;font-size:0.85em;margin:0}
-th{background:#0f3460;padding:7px 6px;text-align:center;position:sticky;z-index:10;font-size:0.8em;top:55px}
-.row-main td{padding:6px;text-align:center}
-.row-main td:first-child{text-align:left;font-weight:bold}
+th{background:#0f3460;padding:7px 6px;text-align:center;position:sticky;z-index:10;font-size:0.85em;top:55px}
+.row-main td{padding:6px;text-align:center;font-size:0.85em}
+.row-main td:first-child{text-align:left}
 .row-timing td{padding:2px 6px 7px 6px;border-bottom:1px solid #253050;font-size:0.82em}
 tr:hover td{background:#16213e}
 @media (min-width:900px) {
@@ -30,11 +30,12 @@ tr:hover td{background:#16213e}
 @media (max-width:899px) {
   .pc-timing {display:none !important}
   .pc-signal {display:none !important}
+  .hide-m {display:none !important}
   th{top:58px}
 }
 @media (max-width:400px) {
-  th{top:58px;font-size:0.7em;padding:5px 3px}
-  .row-main td{font-size:0.8em;padding:5px 3px}
+  th{top:58px;font-size:0.75em;padding:5px 3px}
+  .row-main td{font-size:0.78em;padding:5px 3px}
   .top-fixed{padding:6px 8px 3px 8px}
 }
 </style>
@@ -50,326 +51,326 @@ tr:hover td{background:#16213e}
 <span style="color:#ffd600">🟡눌림중</span>
 <span style="color:#ff9100">🟠과열/하락</span>
 <span style="color:#ff1744">🔴위험</span>
-<span class="time" style="float:right">갱신: 2026-05-13 09:18:09</span>
+<span class="time" style="float:right">갱신: 2026-05-13 09:22:02</span>
 </div>
 </div>
 <table style="padding:0 10px">
-<tr><th>종목</th><th>매매판단</th><th>현재가</th><th>목표가</th><th>등락</th><th>거리</th><th>RSI</th><th>최적RSI</th><th class="pc-timing" style="display:none">⏰타이밍</th><th class="pc-signal" style="display:none">신호</th></tr>
-<tr class="row-main">
-<td>삼성전자</td>
+<tr><th>종목</th><th>매매판단</th><th>현재가</th><th class="hide-m">목표가</th><th>등락</th><th class="hide-m">거리</th><th>RSI</th><th class="hide-m">최적RSI</th><th class="pc-timing" style="display:none">⏰타이밍</th><th class="pc-signal" style="display:none">신호</th></tr>
+<tr class="row-main" style="color:#aaa">
+<td style="font-weight:bold">삼성전자</td>
 <td style="font-weight:bold;color:#888;text-align:center">관망</td>
-<td>262,000</td>
-<td>235,200</td>
-<td style="color:#4d9de0">-6.1%</td>
-<td>-10.2%</td>
-<td>67</td>
-<td style="color:#00e676;font-size:0.85em">60~64 근접</td>
-<td class="pc-timing" style="display:none;color:#aaa;text-align:left;font-size:0.85em">⏳ 과거22회 평균14일 (최소1/최대27)</td>
-<td class="pc-signal" style="display:none;text-align:left;font-size:0.85em;color:#888">추세중</td>
+<td>265,000</td>
+<td class="hide-m">235,350</td>
+<td style="color:#4d9de0">-5.0%</td>
+<td class="hide-m">-11.2%</td>
+<td>69</td>
+<td class="hide-m">60~64 근접</td>
+<td class="pc-timing" style="display:none;text-align:left">⏳ 과거22회 평균15일 (최소1/최대28)</td>
+<td class="pc-signal" style="display:none;text-align:left">추세중</td>
 </tr>
-<tr class="row-timing">
-<td colspan="4" style="text-align:left"><span style="color:#aaa;font-weight:bold">⏰ ⏳ 과거22회 평균14일 (최소1/최대27)</span></td>
-<td colspan="4" style="text-align:right;font-size:0.78em;color:#888">최적RSI:<span style="color:#00e676">60~64 근접</span> 추세중</td>
-</tr><tr class="row-main">
-<td>SK하이닉스</td>
+<tr class="row-timing" style="color:#aaa">
+<td colspan="5" style="text-align:left;font-weight:bold">⏰ ⏳ 과거22회 평균15일 (최소1/최대28)</td>
+<td colspan="5" style="text-align:right;font-size:0.82em">최적RSI:60~64 근접 추세중</td>
+</tr><tr class="row-main" style="color:#aaa">
+<td style="font-weight:bold">SK하이닉스</td>
 <td style="font-weight:bold;color:#ff9100;text-align:center">매도고려</td>
-<td>1,789,000</td>
-<td>1,382,250</td>
-<td style="color:#4d9de0">-2.5%</td>
-<td>-22.7%</td>
-<td>86</td>
-<td style="color:#ff9100;font-size:0.85em">40~44 과열</td>
-<td class="pc-timing" style="display:none;color:#aaa;text-align:left;font-size:0.85em">⏳ 약6일 추정 (일변동3.6%)</td>
-<td class="pc-signal" style="display:none;text-align:left;font-size:0.85em;color:#888">과열</td>
+<td>1,818,000</td>
+<td class="hide-m">1,383,700</td>
+<td style="color:#4d9de0">-0.9%</td>
+<td class="hide-m">-23.9%</td>
+<td>89</td>
+<td class="hide-m">40~44 과열</td>
+<td class="pc-timing" style="display:none;text-align:left">⏳ 약7일 추정 (일변동3.5%)</td>
+<td class="pc-signal" style="display:none;text-align:left">과열</td>
 </tr>
-<tr class="row-timing">
-<td colspan="4" style="text-align:left"><span style="color:#aaa;font-weight:bold">⏰ ⏳ 약6일 추정 (일변동3.6%)</span></td>
-<td colspan="4" style="text-align:right;font-size:0.78em;color:#888">최적RSI:<span style="color:#ff9100">40~44 과열</span> 과열</td>
-</tr><tr class="row-main">
-<td>한미반도체</td>
+<tr class="row-timing" style="color:#aaa">
+<td colspan="5" style="text-align:left;font-weight:bold">⏰ ⏳ 약7일 추정 (일변동3.5%)</td>
+<td colspan="5" style="text-align:right;font-size:0.82em">최적RSI:40~44 과열 과열</td>
+</tr><tr class="row-main" style="color:#aaa">
+<td style="font-weight:bold">한미반도체</td>
 <td style="font-weight:bold;color:#888;text-align:center">관망</td>
-<td>370,500</td>
-<td>339,575</td>
-<td style="color:#4d9de0">-1.9%</td>
-<td>-8.3%</td>
-<td>71</td>
-<td style="color:#ff9100;font-size:0.85em">55~59 과열</td>
-<td class="pc-timing" style="display:none;color:#aaa;text-align:left;font-size:0.85em">⏳ 과거13회 평균19일 (최소3/최대29)</td>
-<td class="pc-signal" style="display:none;text-align:left;font-size:0.85em;color:#888">과열</td>
+<td>372,500</td>
+<td class="hide-m">339,675</td>
+<td style="color:#4d9de0">-1.3%</td>
+<td class="hide-m">-8.8%</td>
+<td>72</td>
+<td class="hide-m">55~59 과열</td>
+<td class="pc-timing" style="display:none;text-align:left">⏳ 과거13회 평균19일 (최소3/최대29)</td>
+<td class="pc-signal" style="display:none;text-align:left">과열</td>
 </tr>
-<tr class="row-timing">
-<td colspan="4" style="text-align:left"><span style="color:#aaa;font-weight:bold">⏰ ⏳ 과거13회 평균19일 (최소3/최대29)</span></td>
-<td colspan="4" style="text-align:right;font-size:0.78em;color:#888">최적RSI:<span style="color:#ff9100">55~59 과열</span> 과열</td>
-</tr><tr class="row-main">
-<td>리노공업</td>
-<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
-<td>107,600</td>
-<td>115,285</td>
-<td style="color:#4d9de0">-0.7%</td>
-<td>✅구간안</td>
-<td>39</td>
-<td style="color:#888;font-size:0.85em">40~44 </td>
-<td class="pc-timing" style="display:none;color:#00e5ff;text-align:left;font-size:0.85em">🔵 목표가 도달 (반등 대기)</td>
-<td class="pc-signal" style="display:none;text-align:left;font-size:0.85em;color:#888">눌림구간</td>
-</tr>
-<tr class="row-timing">
-<td colspan="4" style="text-align:left"><span style="color:#00e5ff;font-weight:bold">⏰ 🔵 목표가 도달 (반등 대기)</span></td>
-<td colspan="4" style="text-align:right;font-size:0.78em;color:#888">최적RSI:<span style="color:#888">40~44 </span> 눌림구간</td>
-</tr><tr class="row-main">
-<td>KODEX 200</td>
-<td style="font-weight:bold;color:#ff9100;text-align:center">매도고려</td>
-<td>115,050</td>
-<td>103,238</td>
-<td style="color:#4d9de0">-3.4%</td>
-<td>-10.3%</td>
-<td>76</td>
-<td style="color:#ff9100;font-size:0.85em">55~59 과열</td>
-<td class="pc-timing" style="display:none;color:#aaa;text-align:left;font-size:0.85em">⏳ 과거23회 평균16일 (최소2/최대29)</td>
-<td class="pc-signal" style="display:none;text-align:left;font-size:0.85em;color:#888">과열</td>
-</tr>
-<tr class="row-timing">
-<td colspan="4" style="text-align:left"><span style="color:#aaa;font-weight:bold">⏰ ⏳ 과거23회 평균16일 (최소2/최대29)</span></td>
-<td colspan="4" style="text-align:right;font-size:0.78em;color:#888">최적RSI:<span style="color:#ff9100">55~59 과열</span> 과열</td>
-</tr><tr class="row-main">
-<td>KODEX 코스닥150</td>
-<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
-<td>19,145</td>
-<td>19,873</td>
-<td style="color:#4d9de0">-2.0%</td>
-<td>✅구간안</td>
+<tr class="row-timing" style="color:#aaa">
+<td colspan="5" style="text-align:left;font-weight:bold">⏰ ⏳ 과거13회 평균19일 (최소3/최대29)</td>
+<td colspan="5" style="text-align:right;font-size:0.82em">최적RSI:55~59 과열 과열</td>
+</tr><tr class="row-main" style="color:#00e676">
+<td style="font-weight:bold">리노공업</td>
+<td style="font-weight:bold;color:#e53935;text-align:center">매수</td>
+<td>108,500</td>
+<td class="hide-m">115,330</td>
+<td style="color:#e53935">+0.1%</td>
+<td class="hide-m">✅구간안</td>
 <td>40</td>
-<td style="color:#00e676;font-size:0.85em">35~39 근접</td>
-<td class="pc-timing" style="display:none;color:#00e5ff;text-align:left;font-size:0.85em">🔵 목표가 도달 (반등 대기)</td>
-<td class="pc-signal" style="display:none;text-align:left;font-size:0.85em;color:#888">눌림구간</td>
+<td class="hide-m">40~44 ✅</td>
+<td class="pc-timing" style="display:none;text-align:left">🟢 목표가 도달 + 반등 신호</td>
+<td class="pc-signal" style="display:none;text-align:left">⭐음봉후양봉</td>
 </tr>
-<tr class="row-timing">
-<td colspan="4" style="text-align:left"><span style="color:#00e5ff;font-weight:bold">⏰ 🔵 목표가 도달 (반등 대기)</span></td>
-<td colspan="4" style="text-align:right;font-size:0.78em;color:#888">최적RSI:<span style="color:#00e676">35~39 근접</span> 눌림구간</td>
-</tr><tr class="row-main">
-<td>KODEX 반도체</td>
+<tr class="row-timing" style="color:#00e676">
+<td colspan="5" style="text-align:left;font-weight:bold">⏰ 🟢 목표가 도달 + 반등 신호</td>
+<td colspan="5" style="text-align:right;font-size:0.82em">최적RSI:40~44 ✅ ⭐음봉후양봉</td>
+</tr><tr class="row-main" style="color:#aaa">
+<td style="font-weight:bold">KODEX 200</td>
 <td style="font-weight:bold;color:#ff9100;text-align:center">매도고려</td>
-<td>142,895</td>
-<td>125,863</td>
-<td style="color:#4d9de0">-3.5%</td>
-<td>-11.9%</td>
-<td>77</td>
-<td style="color:#ff9100;font-size:0.85em">30~34 과열</td>
-<td class="pc-timing" style="display:none;color:#aaa;text-align:left;font-size:0.85em">⏳ 과거19회 평균11일 (최소1/최대29)</td>
-<td class="pc-signal" style="display:none;text-align:left;font-size:0.85em;color:#888">과열</td>
+<td>115,945</td>
+<td class="hide-m">103,283</td>
+<td style="color:#4d9de0">-2.6%</td>
+<td class="hide-m">-10.9%</td>
+<td>78</td>
+<td class="hide-m">55~59 과열</td>
+<td class="pc-timing" style="display:none;text-align:left">⏳ 과거21회 평균17일 (최소2/최대29)</td>
+<td class="pc-signal" style="display:none;text-align:left">과열</td>
 </tr>
-<tr class="row-timing">
-<td colspan="4" style="text-align:left"><span style="color:#aaa;font-weight:bold">⏰ ⏳ 과거19회 평균11일 (최소1/최대29)</span></td>
-<td colspan="4" style="text-align:right;font-size:0.78em;color:#888">최적RSI:<span style="color:#ff9100">30~34 과열</span> 과열</td>
-</tr><tr class="row-main">
-<td>KODEX 2차전지산업</td>
+<tr class="row-timing" style="color:#aaa">
+<td colspan="5" style="text-align:left;font-weight:bold">⏰ ⏳ 과거21회 평균17일 (최소2/최대29)</td>
+<td colspan="5" style="text-align:right;font-size:0.82em">최적RSI:55~59 과열 과열</td>
+</tr><tr class="row-main" style="color:#00e5ff">
+<td style="font-weight:bold">KODEX 코스닥150</td>
 <td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
-<td>19,785</td>
-<td>20,714</td>
-<td style="color:#4d9de0">-3.6%</td>
-<td>✅구간안</td>
-<td>41</td>
-<td style="color:#888;font-size:0.85em">25~29 </td>
-<td class="pc-timing" style="display:none;color:#00e5ff;text-align:left;font-size:0.85em">🔵 목표가 도달 (반등 대기)</td>
-<td class="pc-signal" style="display:none;text-align:left;font-size:0.85em;color:#888">눌림구간</td>
-</tr>
-<tr class="row-timing">
-<td colspan="4" style="text-align:left"><span style="color:#00e5ff;font-weight:bold">⏰ 🔵 목표가 도달 (반등 대기)</span></td>
-<td colspan="4" style="text-align:right;font-size:0.78em;color:#888">최적RSI:<span style="color:#888">25~29 </span> 눌림구간</td>
-</tr><tr class="row-main">
-<td>한화에어로스페이스</td>
-<td style="font-weight:bold;color:#e53935;text-align:center">매수</td>
-<td>1,263,000</td>
-<td>1,408,200</td>
-<td style="color:#4d9de0">-1.6%</td>
-<td>✅구간안</td>
-<td>35</td>
-<td style="color:#00e676;font-size:0.85em">30~34 근접</td>
-<td class="pc-timing" style="display:none;color:#00e676;text-align:left;font-size:0.85em">🟢 목표가 도달 + 반등 신호</td>
-<td class="pc-signal" style="display:none;text-align:left;font-size:0.85em;color:#888">⭐RSI반등(37→34→35)</td>
-</tr>
-<tr class="row-timing">
-<td colspan="4" style="text-align:left"><span style="color:#00e676;font-weight:bold">⏰ 🟢 목표가 도달 + 반등 신호</span></td>
-<td colspan="4" style="text-align:right;font-size:0.78em;color:#888">최적RSI:<span style="color:#00e676">30~34 근접</span> ⭐RSI반등(37→34→35)</td>
-</tr><tr class="row-main">
-<td>한화시스템</td>
-<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
-<td>111,400</td>
-<td>123,875</td>
-<td style="color:#4d9de0">-0.3%</td>
-<td>✅구간안</td>
-<td>22</td>
-<td style="color:#888;font-size:0.85em">60~64 </td>
-<td class="pc-timing" style="display:none;color:#00e5ff;text-align:left;font-size:0.85em">🔵 목표가 도달 (반등 대기)</td>
-<td class="pc-signal" style="display:none;text-align:left;font-size:0.85em;color:#888">눌림구간</td>
-</tr>
-<tr class="row-timing">
-<td colspan="4" style="text-align:left"><span style="color:#00e5ff;font-weight:bold">⏰ 🔵 목표가 도달 (반등 대기)</span></td>
-<td colspan="4" style="text-align:right;font-size:0.78em;color:#888">최적RSI:<span style="color:#888">60~64 </span> 눌림구간</td>
-</tr><tr class="row-main">
-<td>한화오션</td>
-<td style="font-weight:bold;color:#e53935;text-align:center">매수</td>
-<td>122,100</td>
-<td>130,065</td>
-<td style="color:#e53935">+0.1%</td>
-<td>✅구간안</td>
-<td>35</td>
-<td style="color:#888;font-size:0.85em">20~24 </td>
-<td class="pc-timing" style="display:none;color:#00e676;text-align:left;font-size:0.85em">🟢 목표가 도달 + 반등 신호</td>
-<td class="pc-signal" style="display:none;text-align:left;font-size:0.85em;color:#888">⭐음봉후양봉</td>
-</tr>
-<tr class="row-timing">
-<td colspan="4" style="text-align:left"><span style="color:#00e676;font-weight:bold">⏰ 🟢 목표가 도달 + 반등 신호</span></td>
-<td colspan="4" style="text-align:right;font-size:0.78em;color:#888">최적RSI:<span style="color:#888">20~24 </span> ⭐음봉후양봉</td>
-</tr><tr class="row-main">
-<td>포스코인터내셔널</td>
-<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
-<td>74,000</td>
-<td>79,000</td>
-<td style="color:#aaa">+0.0%</td>
-<td>✅구간안</td>
-<td>43</td>
-<td style="color:#888;font-size:0.85em">20~24 </td>
-<td class="pc-timing" style="display:none;color:#00e5ff;text-align:left;font-size:0.85em">🔵 목표가 도달 (반등 대기)</td>
-<td class="pc-signal" style="display:none;text-align:left;font-size:0.85em;color:#888">눌림구간</td>
-</tr>
-<tr class="row-timing">
-<td colspan="4" style="text-align:left"><span style="color:#00e5ff;font-weight:bold">⏰ 🔵 목표가 도달 (반등 대기)</span></td>
-<td colspan="4" style="text-align:right;font-size:0.78em;color:#888">최적RSI:<span style="color:#888">20~24 </span> 눌림구간</td>
-</tr><tr class="row-main">
-<td>셀트리온</td>
-<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
-<td>191,200</td>
-<td>201,490</td>
-<td style="color:#4d9de0">-1.1%</td>
-<td>✅구간안</td>
-<td>38</td>
-<td style="color:#00e676;font-size:0.85em">30~34 근접</td>
-<td class="pc-timing" style="display:none;color:#00e5ff;text-align:left;font-size:0.85em">🔵 목표가 도달 (반등 대기)</td>
-<td class="pc-signal" style="display:none;text-align:left;font-size:0.85em;color:#888">눌림구간</td>
-</tr>
-<tr class="row-timing">
-<td colspan="4" style="text-align:left"><span style="color:#00e5ff;font-weight:bold">⏰ 🔵 목표가 도달 (반등 대기)</span></td>
-<td colspan="4" style="text-align:right;font-size:0.78em;color:#888">최적RSI:<span style="color:#00e676">30~34 근접</span> 눌림구간</td>
-</tr><tr class="row-main">
-<td>삼성바이오로직스</td>
-<td style="font-weight:bold;color:#e53935;text-align:center">매수</td>
-<td>1,433,000</td>
-<td>1,517,300</td>
-<td style="color:#4d9de0">-0.7%</td>
-<td>✅구간안</td>
-<td>15</td>
-<td style="color:#888;font-size:0.85em">55~59 </td>
-<td class="pc-timing" style="display:none;color:#00e676;text-align:left;font-size:0.85em">🟢 목표가 도달 + 반등 신호</td>
-<td class="pc-signal" style="display:none;text-align:left;font-size:0.85em;color:#888">⭐RSI반등(17→14→15)</td>
-</tr>
-<tr class="row-timing">
-<td colspan="4" style="text-align:left"><span style="color:#00e676;font-weight:bold">⏰ 🟢 목표가 도달 + 반등 신호</span></td>
-<td colspan="4" style="text-align:right;font-size:0.78em;color:#888">최적RSI:<span style="color:#888">55~59 </span> ⭐RSI반등(17→14→15)</td>
-</tr><tr class="row-main">
-<td>알테오젠</td>
-<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
-<td>334,500</td>
-<td>361,350</td>
-<td style="color:#4d9de0">-2.2%</td>
-<td>✅구간안</td>
-<td>36</td>
-<td style="color:#00e676;font-size:0.85em">35~39 ✅</td>
-<td class="pc-timing" style="display:none;color:#00e5ff;text-align:left;font-size:0.85em">🔵 목표가 도달 (반등 대기)</td>
-<td class="pc-signal" style="display:none;text-align:left;font-size:0.85em;color:#888">눌림구간</td>
-</tr>
-<tr class="row-timing">
-<td colspan="4" style="text-align:left"><span style="color:#00e5ff;font-weight:bold">⏰ 🔵 목표가 도달 (반등 대기)</span></td>
-<td colspan="4" style="text-align:right;font-size:0.78em;color:#888">최적RSI:<span style="color:#00e676">35~39 ✅</span> 눌림구간</td>
-</tr><tr class="row-main">
-<td>NAVER</td>
-<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
-<td>201,000</td>
-<td>212,100</td>
+<td>19,245</td>
+<td class="hide-m">19,878</td>
 <td style="color:#4d9de0">-1.5%</td>
-<td>✅구간안</td>
-<td>36</td>
-<td style="color:#888;font-size:0.85em">45~49 </td>
-<td class="pc-timing" style="display:none;color:#00e5ff;text-align:left;font-size:0.85em">🔵 목표가 도달 (반등 대기)</td>
-<td class="pc-signal" style="display:none;text-align:left;font-size:0.85em;color:#888">눌림구간</td>
+<td class="hide-m">✅구간안</td>
+<td>41</td>
+<td class="hide-m">35~39 근접</td>
+<td class="pc-timing" style="display:none;text-align:left">🔵 목표가 도달 (반등 대기)</td>
+<td class="pc-signal" style="display:none;text-align:left">눌림구간</td>
 </tr>
-<tr class="row-timing">
-<td colspan="4" style="text-align:left"><span style="color:#00e5ff;font-weight:bold">⏰ 🔵 목표가 도달 (반등 대기)</span></td>
-<td colspan="4" style="text-align:right;font-size:0.78em;color:#888">최적RSI:<span style="color:#888">45~49 </span> 눌림구간</td>
-</tr><tr class="row-main">
-<td>카카오</td>
-<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
-<td>42,800</td>
-<td>47,485</td>
-<td style="color:#4d9de0">-1.7%</td>
-<td>✅구간안</td>
-<td>17</td>
-<td style="color:#888;font-size:0.85em">35~39 </td>
-<td class="pc-timing" style="display:none;color:#00e5ff;text-align:left;font-size:0.85em">🔵 목표가 도달 (반등 대기)</td>
-<td class="pc-signal" style="display:none;text-align:left;font-size:0.85em;color:#888">눌림구간</td>
-</tr>
-<tr class="row-timing">
-<td colspan="4" style="text-align:left"><span style="color:#00e5ff;font-weight:bold">⏰ 🔵 목표가 도달 (반등 대기)</span></td>
-<td colspan="4" style="text-align:right;font-size:0.78em;color:#888">최적RSI:<span style="color:#888">35~39 </span> 눌림구간</td>
-</tr><tr class="row-main">
-<td>현대차</td>
-<td style="font-weight:bold;color:#888;text-align:center">관망</td>
-<td>647,000</td>
-<td>555,475</td>
-<td style="color:#e53935">+0.1%</td>
-<td>-14.1%</td>
-<td>73</td>
-<td style="color:#ff9100;font-size:0.85em">30~34 과열</td>
-<td class="pc-timing" style="display:none;color:#aaa;text-align:left;font-size:0.85em">⏳ 과거10회 평균10일 (최소1/최대22)</td>
-<td class="pc-signal" style="display:none;text-align:left;font-size:0.85em;color:#888">과열</td>
-</tr>
-<tr class="row-timing">
-<td colspan="4" style="text-align:left"><span style="color:#aaa;font-weight:bold">⏰ ⏳ 과거10회 평균10일 (최소1/최대22)</span></td>
-<td colspan="4" style="text-align:right;font-size:0.78em;color:#888">최적RSI:<span style="color:#ff9100">30~34 과열</span> 과열</td>
-</tr><tr class="row-main">
-<td>신한지주</td>
-<td style="font-weight:bold;color:#e53935;text-align:center">매수</td>
-<td>97,500</td>
-<td>98,950</td>
-<td style="color:#e53935">+0.8%</td>
-<td>✅구간안</td>
-<td>39</td>
-<td style="color:#888;font-size:0.85em">65~69 </td>
-<td class="pc-timing" style="display:none;color:#00e676;text-align:left;font-size:0.85em">🟢 목표가 도달 + 반등 신호</td>
-<td class="pc-signal" style="display:none;text-align:left;font-size:0.85em;color:#888">⭐RSI반등(38→33→39), ⭐음봉후양봉</td>
-</tr>
-<tr class="row-timing">
-<td colspan="4" style="text-align:left"><span style="color:#00e676;font-weight:bold">⏰ 🟢 목표가 도달 + 반등 신호</span></td>
-<td colspan="4" style="text-align:right;font-size:0.78em;color:#888">최적RSI:<span style="color:#888">65~69 </span> ⭐RSI반등(38→33→39), ⭐음봉후양봉</td>
-</tr><tr class="row-main">
-<td>LG전자</td>
+<tr class="row-timing" style="color:#00e5ff">
+<td colspan="5" style="text-align:left;font-weight:bold">⏰ 🔵 목표가 도달 (반등 대기)</td>
+<td colspan="5" style="text-align:right;font-size:0.82em">최적RSI:35~39 근접 눌림구간</td>
+</tr><tr class="row-main" style="color:#aaa">
+<td style="font-weight:bold">KODEX 반도체</td>
 <td style="font-weight:bold;color:#ff9100;text-align:center">매도고려</td>
-<td>185,200</td>
-<td>140,405</td>
-<td style="color:#e53935">+0.2%</td>
-<td>-24.2%</td>
-<td>83</td>
-<td style="color:#ff9100;font-size:0.85em">30~34 과열</td>
-<td class="pc-timing" style="display:none;color:#aaa;text-align:left;font-size:0.85em">⏳ 과거2회 평균2일 (최소2/최대3)</td>
-<td class="pc-signal" style="display:none;text-align:left;font-size:0.85em;color:#888">과열</td>
+<td>144,390</td>
+<td class="hide-m">125,938</td>
+<td style="color:#4d9de0">-2.4%</td>
+<td class="hide-m">-12.8%</td>
+<td>79</td>
+<td class="hide-m">30~34 과열</td>
+<td class="pc-timing" style="display:none;text-align:left">⏳ 과거21회 평균12일 (최소1/최대29)</td>
+<td class="pc-signal" style="display:none;text-align:left">과열</td>
 </tr>
-<tr class="row-timing">
-<td colspan="4" style="text-align:left"><span style="color:#aaa;font-weight:bold">⏰ ⏳ 과거2회 평균2일 (최소2/최대3)</span></td>
-<td colspan="4" style="text-align:right;font-size:0.78em;color:#888">최적RSI:<span style="color:#ff9100">30~34 과열</span> 과열</td>
-</tr><tr class="row-main">
-<td>HPSP</td>
+<tr class="row-timing" style="color:#aaa">
+<td colspan="5" style="text-align:left;font-weight:bold">⏰ ⏳ 과거21회 평균12일 (최소1/최대29)</td>
+<td colspan="5" style="text-align:right;font-size:0.82em">최적RSI:30~34 과열 과열</td>
+</tr><tr class="row-main" style="color:#00e5ff">
+<td style="font-weight:bold">KODEX 2차전지산업</td>
+<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
+<td>19,800</td>
+<td class="hide-m">20,715</td>
+<td style="color:#4d9de0">-3.5%</td>
+<td class="hide-m">✅구간안</td>
+<td>41</td>
+<td class="hide-m">25~29 </td>
+<td class="pc-timing" style="display:none;text-align:left">🔵 목표가 도달 (반등 대기)</td>
+<td class="pc-signal" style="display:none;text-align:left">눌림구간</td>
+</tr>
+<tr class="row-timing" style="color:#00e5ff">
+<td colspan="5" style="text-align:left;font-weight:bold">⏰ 🔵 목표가 도달 (반등 대기)</td>
+<td colspan="5" style="text-align:right;font-size:0.82em">최적RSI:25~29  눌림구간</td>
+</tr><tr class="row-main" style="color:#00e676">
+<td style="font-weight:bold">한화에어로스페이스</td>
+<td style="font-weight:bold;color:#e53935;text-align:center">매수</td>
+<td>1,259,000</td>
+<td class="hide-m">1,408,000</td>
+<td style="color:#4d9de0">-1.9%</td>
+<td class="hide-m">✅구간안</td>
+<td>35</td>
+<td class="hide-m">30~34 근접</td>
+<td class="pc-timing" style="display:none;text-align:left">🟢 목표가 도달 + 반등 신호</td>
+<td class="pc-signal" style="display:none;text-align:left">⭐RSI반등(37→34→35)</td>
+</tr>
+<tr class="row-timing" style="color:#00e676">
+<td colspan="5" style="text-align:left;font-weight:bold">⏰ 🟢 목표가 도달 + 반등 신호</td>
+<td colspan="5" style="text-align:right;font-size:0.82em">최적RSI:30~34 근접 ⭐RSI반등(37→34→35)</td>
+</tr><tr class="row-main" style="color:#00e5ff">
+<td style="font-weight:bold">한화시스템</td>
+<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
+<td>110,500</td>
+<td class="hide-m">123,830</td>
+<td style="color:#4d9de0">-1.1%</td>
+<td class="hide-m">✅구간안</td>
+<td>22</td>
+<td class="hide-m">60~64 </td>
+<td class="pc-timing" style="display:none;text-align:left">🔵 목표가 도달 (반등 대기)</td>
+<td class="pc-signal" style="display:none;text-align:left">눌림구간</td>
+</tr>
+<tr class="row-timing" style="color:#00e5ff">
+<td colspan="5" style="text-align:left;font-weight:bold">⏰ 🔵 목표가 도달 (반등 대기)</td>
+<td colspan="5" style="text-align:right;font-size:0.82em">최적RSI:60~64  눌림구간</td>
+</tr><tr class="row-main" style="color:#00e5ff">
+<td style="font-weight:bold">한화오션</td>
+<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
+<td>121,200</td>
+<td class="hide-m">130,020</td>
+<td style="color:#4d9de0">-0.7%</td>
+<td class="hide-m">✅구간안</td>
+<td>34</td>
+<td class="hide-m">20~24 </td>
+<td class="pc-timing" style="display:none;text-align:left">🔵 목표가 도달 (반등 대기)</td>
+<td class="pc-signal" style="display:none;text-align:left">눌림구간</td>
+</tr>
+<tr class="row-timing" style="color:#00e5ff">
+<td colspan="5" style="text-align:left;font-weight:bold">⏰ 🔵 목표가 도달 (반등 대기)</td>
+<td colspan="5" style="text-align:right;font-size:0.82em">최적RSI:20~24  눌림구간</td>
+</tr><tr class="row-main" style="color:#00e5ff">
+<td style="font-weight:bold">포스코인터내셔널</td>
+<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
+<td>73,700</td>
+<td class="hide-m">78,985</td>
+<td style="color:#4d9de0">-0.4%</td>
+<td class="hide-m">✅구간안</td>
+<td>43</td>
+<td class="hide-m">20~24 </td>
+<td class="pc-timing" style="display:none;text-align:left">🔵 목표가 도달 (반등 대기)</td>
+<td class="pc-signal" style="display:none;text-align:left">눌림구간</td>
+</tr>
+<tr class="row-timing" style="color:#00e5ff">
+<td colspan="5" style="text-align:left;font-weight:bold">⏰ 🔵 목표가 도달 (반등 대기)</td>
+<td colspan="5" style="text-align:right;font-size:0.82em">최적RSI:20~24  눌림구간</td>
+</tr><tr class="row-main" style="color:#00e5ff">
+<td style="font-weight:bold">셀트리온</td>
+<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
+<td>190,400</td>
+<td class="hide-m">201,450</td>
+<td style="color:#4d9de0">-1.5%</td>
+<td class="hide-m">✅구간안</td>
+<td>37</td>
+<td class="hide-m">30~34 근접</td>
+<td class="pc-timing" style="display:none;text-align:left">🔵 목표가 도달 (반등 대기)</td>
+<td class="pc-signal" style="display:none;text-align:left">눌림구간</td>
+</tr>
+<tr class="row-timing" style="color:#00e5ff">
+<td colspan="5" style="text-align:left;font-weight:bold">⏰ 🔵 목표가 도달 (반등 대기)</td>
+<td colspan="5" style="text-align:right;font-size:0.82em">최적RSI:30~34 근접 눌림구간</td>
+</tr><tr class="row-main" style="color:#00e5ff">
+<td style="font-weight:bold">삼성바이오로직스</td>
+<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
+<td>1,426,000</td>
+<td class="hide-m">1,516,950</td>
+<td style="color:#4d9de0">-1.2%</td>
+<td class="hide-m">✅구간안</td>
+<td>14</td>
+<td class="hide-m">55~59 </td>
+<td class="pc-timing" style="display:none;text-align:left">🔵 목표가 도달 (반등 대기)</td>
+<td class="pc-signal" style="display:none;text-align:left">눌림구간</td>
+</tr>
+<tr class="row-timing" style="color:#00e5ff">
+<td colspan="5" style="text-align:left;font-weight:bold">⏰ 🔵 목표가 도달 (반등 대기)</td>
+<td colspan="5" style="text-align:right;font-size:0.82em">최적RSI:55~59  눌림구간</td>
+</tr><tr class="row-main" style="color:#00e5ff">
+<td style="font-weight:bold">알테오젠</td>
+<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
+<td>335,500</td>
+<td class="hide-m">361,400</td>
+<td style="color:#4d9de0">-1.9%</td>
+<td class="hide-m">✅구간안</td>
+<td>37</td>
+<td class="hide-m">35~39 ✅</td>
+<td class="pc-timing" style="display:none;text-align:left">🔵 목표가 도달 (반등 대기)</td>
+<td class="pc-signal" style="display:none;text-align:left">눌림구간</td>
+</tr>
+<tr class="row-timing" style="color:#00e5ff">
+<td colspan="5" style="text-align:left;font-weight:bold">⏰ 🔵 목표가 도달 (반등 대기)</td>
+<td colspan="5" style="text-align:right;font-size:0.82em">최적RSI:35~39 ✅ 눌림구간</td>
+</tr><tr class="row-main" style="color:#00e5ff">
+<td style="font-weight:bold">NAVER</td>
+<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
+<td>200,500</td>
+<td class="hide-m">212,075</td>
+<td style="color:#4d9de0">-1.7%</td>
+<td class="hide-m">✅구간안</td>
+<td>36</td>
+<td class="hide-m">45~49 </td>
+<td class="pc-timing" style="display:none;text-align:left">🔵 목표가 도달 (반등 대기)</td>
+<td class="pc-signal" style="display:none;text-align:left">눌림구간</td>
+</tr>
+<tr class="row-timing" style="color:#00e5ff">
+<td colspan="5" style="text-align:left;font-weight:bold">⏰ 🔵 목표가 도달 (반등 대기)</td>
+<td colspan="5" style="text-align:right;font-size:0.82em">최적RSI:45~49  눌림구간</td>
+</tr><tr class="row-main" style="color:#00e5ff">
+<td style="font-weight:bold">카카오</td>
+<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
+<td>42,850</td>
+<td class="hide-m">47,487</td>
+<td style="color:#4d9de0">-1.6%</td>
+<td class="hide-m">✅구간안</td>
+<td>17</td>
+<td class="hide-m">35~39 </td>
+<td class="pc-timing" style="display:none;text-align:left">🔵 목표가 도달 (반등 대기)</td>
+<td class="pc-signal" style="display:none;text-align:left">눌림구간</td>
+</tr>
+<tr class="row-timing" style="color:#00e5ff">
+<td colspan="5" style="text-align:left;font-weight:bold">⏰ 🔵 목표가 도달 (반등 대기)</td>
+<td colspan="5" style="text-align:right;font-size:0.82em">최적RSI:35~39  눌림구간</td>
+</tr><tr class="row-main" style="color:#aaa">
+<td style="font-weight:bold">현대차</td>
 <td style="font-weight:bold;color:#888;text-align:center">관망</td>
-<td>51,500</td>
-<td>50,542</td>
-<td style="color:#e53935">+0.4%</td>
-<td>-1.9%</td>
-<td>61</td>
-<td style="color:#888;font-size:0.85em">45~49 </td>
-<td class="pc-timing" style="display:none;color:#ffd600;text-align:left;font-size:0.85em">🟡 목표 근접 약7일 (-1.9%)</td>
-<td class="pc-signal" style="display:none;text-align:left;font-size:0.85em;color:#888">⭐음봉후양봉</td>
+<td>656,000</td>
+<td class="hide-m">555,925</td>
+<td style="color:#e53935">+1.6%</td>
+<td class="hide-m">-15.3%</td>
+<td>74</td>
+<td class="hide-m">30~34 과열</td>
+<td class="pc-timing" style="display:none;text-align:left">⏳ 과거12회 평균10일 (최소1/최대22)</td>
+<td class="pc-signal" style="display:none;text-align:left">과열</td>
 </tr>
-<tr class="row-timing">
-<td colspan="4" style="text-align:left"><span style="color:#ffd600;font-weight:bold">⏰ 🟡 목표 근접 약7일 (-1.9%)</span></td>
-<td colspan="4" style="text-align:right;font-size:0.78em;color:#888">최적RSI:<span style="color:#888">45~49 </span> ⭐음봉후양봉</td>
+<tr class="row-timing" style="color:#aaa">
+<td colspan="5" style="text-align:left;font-weight:bold">⏰ ⏳ 과거12회 평균10일 (최소1/최대22)</td>
+<td colspan="5" style="text-align:right;font-size:0.82em">최적RSI:30~34 과열 과열</td>
+</tr><tr class="row-main" style="color:#00e676">
+<td style="font-weight:bold">신한지주</td>
+<td style="font-weight:bold;color:#e53935;text-align:center">매수</td>
+<td>97,200</td>
+<td class="hide-m">98,935</td>
+<td style="color:#e53935">+0.5%</td>
+<td class="hide-m">✅구간안</td>
+<td>37</td>
+<td class="hide-m">65~69 </td>
+<td class="pc-timing" style="display:none;text-align:left">🟢 목표가 도달 + 반등 신호</td>
+<td class="pc-signal" style="display:none;text-align:left">⭐RSI반등(38→33→37), ⭐음봉후양봉</td>
+</tr>
+<tr class="row-timing" style="color:#00e676">
+<td colspan="5" style="text-align:left;font-weight:bold">⏰ 🟢 목표가 도달 + 반등 신호</td>
+<td colspan="5" style="text-align:right;font-size:0.82em">최적RSI:65~69  ⭐RSI반등(38→33→37), ⭐음봉후양봉</td>
+</tr><tr class="row-main" style="color:#aaa">
+<td style="font-weight:bold">LG전자</td>
+<td style="font-weight:bold;color:#ff9100;text-align:center">매도고려</td>
+<td>188,600</td>
+<td class="hide-m">140,575</td>
+<td style="color:#e53935">+2.0%</td>
+<td class="hide-m">-25.5%</td>
+<td>83</td>
+<td class="hide-m">30~34 과열</td>
+<td class="pc-timing" style="display:none;text-align:left">⏳ 약3일 추정 (일변동3.8%)</td>
+<td class="pc-signal" style="display:none;text-align:left">과열</td>
+</tr>
+<tr class="row-timing" style="color:#aaa">
+<td colspan="5" style="text-align:left;font-weight:bold">⏰ ⏳ 약3일 추정 (일변동3.8%)</td>
+<td colspan="5" style="text-align:right;font-size:0.82em">최적RSI:30~34 과열 과열</td>
+</tr><tr class="row-main" style="color:#ffd600">
+<td style="font-weight:bold">HPSP</td>
+<td style="font-weight:bold;color:#888;text-align:center">관망</td>
+<td>52,100</td>
+<td class="hide-m">50,572</td>
+<td style="color:#e53935">+1.6%</td>
+<td class="hide-m">-2.9%</td>
+<td>62</td>
+<td class="hide-m">45~49 </td>
+<td class="pc-timing" style="display:none;text-align:left">🟡 목표 근접 약7일 (-2.9%)</td>
+<td class="pc-signal" style="display:none;text-align:left">⭐음봉후양봉</td>
+</tr>
+<tr class="row-timing" style="color:#ffd600">
+<td colspan="5" style="text-align:left;font-weight:bold">⏰ 🟡 목표 근접 약7일 (-2.9%)</td>
+<td colspan="5" style="text-align:right;font-size:0.82em">최적RSI:45~49  ⭐음봉후양봉</td>
 </tr>
 </table>
 <div style="font-size:0.7em;color:#444;margin:10px;text-align:center">※ 참고용이며 투자 판단은 본인 책임입니다.</div>
