@@ -48,7 +48,7 @@ tr:hover td{background:#16213e}
 <div class="hdr">
 <h1>📊 장투 매매타점</h1>
 <div style="display:flex;align-items:center;gap:6px">
-<span id="idx" style="font-size:0.75em;color:#888"><span style='color:#e53935'>KOSPI 7,911 +0.85%</span>  <span style='color:#4d9de0'>KOSDAQ 1,169 -0.67%</span></span>
+<span id="idx" style="font-size:0.75em;color:#888"><span style='color:#e53935'>KOSPI 7,915 +0.90%</span>  <span style='color:#4d9de0'>KOSDAQ 1,170 -0.62%</span></span>
 <span style="font-size:1.1em">🔍</span>
 <input id="q" type="text" placeholder="종목 검색" oninput="doSearch()" style="background:#111;color:#e0e0e0;border:1px solid #253050;border-radius:4px;padding:4px 8px;font-size:0.8em;width:110px">
 <button class="btn" onclick="location.reload()">🔄</button>
@@ -60,16 +60,19 @@ tr:hover td{background:#16213e}
 <span style="color:#ffd600">🟡눌림중</span>
 <span style="color:#ff9100">🟠과열/하락</span>
 <span style="color:#ff1744">🔴위험</span>
-<span class="time" style="float:right">갱신: 2026-05-14 11:31:24</span>
+<span class="time" style="float:right">갱신: 2026-05-14 11:32:41</span>
 </div>
 </div>
-<div style='background:#0a1628;padding:6px 10px;font-size:0.78em;border-bottom:1px solid #253050;overflow-x:auto;white-space:nowrap'>📊 섹터: <span style='margin:0 8px;color:#aaa'>반도체 -0.4%  (2↑5↓)</span><span style='margin:0 8px;color:#aaa'>방산 -0.1%  (1↑2↓)</span><span style='margin:0 8px;color:#e53935'>바이오 +2.8% ▲▲ (2↑1↓)</span><span style='margin:0 8px;color:#4d9de0'>자동차 -1.1% ▼ (0↑2↓)</span><span style='margin:0 8px;color:#aaa'>2차전지 -0.1%  (1↑3↓)</span><span style='margin:0 8px;color:#ff9100'>금융 +0.2%  (1↑1↓)</span><span style='margin:0 8px;color:#e53935'>AI/IT +5.0% ▲▲▲ (2↑0↓)</span></div>
+<div style='background:#0a1628;padding:6px 10px;font-size:0.78em;border-bottom:1px solid #253050;overflow-x:auto;white-space:nowrap'>📊 섹터: <span style='margin:0 8px;color:#aaa'>반도체 -0.3%  (2↑5↓)</span><span style='margin:0 8px;color:#ff9100'>방산 +0.1%  (1↑2↓)</span><span style='margin:0 8px;color:#e53935'>바이오 +2.8% ▲▲ (2↑1↓)</span><span style='margin:0 8px;color:#aaa'>자동차 -0.9%  (0↑2↓)</span><span style='margin:0 8px;color:#aaa'>2차전지 -0.1%  (1↑3↓)</span><span style='margin:0 8px;color:#ff9100'>금융 +0.3%  (1↑1↓)</span><span style='margin:0 8px;color:#e53935'>AI/IT +5.2% ▲▲▲ (2↑0↓)</span></div>
 <table id="tbl" style="padding:0 10px">
 <thead>
 <tr><th onclick="doSort(0)" style="cursor:pointer">종목▼</th><th onclick="doSort(1)" style="cursor:pointer">매매판단</th><th onclick="doSort(2)" style="cursor:pointer">현재가</th><th class="hide-m" onclick="doSort(3)" style="cursor:pointer">목표가</th><th onclick="doSort(4)" style="cursor:pointer">등락</th><th class="hide-m" onclick="doSort(5)" style="cursor:pointer">거리</th><th onclick="doSort(6)" style="cursor:pointer">RSI</th><th onclick="doSort(7)" style="cursor:pointer">최적RSI</th><th class="pc-timing" style="display:none;cursor:pointer" onclick="doSort(8)">⏰타이밍</th><th class="pc-signal" style="display:none;cursor:pointer" onclick="doSort(9)">신호</th></tr>
 </thead>
 <tbody id="tbody">
-<tr class="row-main" style="color:#aaa;cursor:pointer" onclick="var d=document.getElementById('d_005930');d.style.display=d.style.display==='none'?'':'none'">
+<tr style="background:#0a1628">
+<td colspan="10" style="padding:6px 10px;font-size:0.8em;font-weight:bold;color:#aaa;border-top:1px solid #253050;border-bottom:1px solid #1a2a4a">
+▣ 반도체 <span style="font-weight:normal;font-size:0.9em">(-0.3%)</span>
+</td></tr><tr class="row-main" style="color:#aaa;cursor:pointer" onclick="var d=document.getElementById('d_005930');d.style.display=d.style.display==='none'?'':'none'">
 <td style="font-weight:bold">삼성전자</td>
 <td style="font-weight:bold;color:#e53935;text-align:center">추세매수</td>
 <td>294,000</td>
@@ -96,18 +99,18 @@ tr:hover td{background:#16213e}
 <div>⏳ 타이밍: <span style='color:#00e5ff'>과거8회 평균11일 (최소2/최대29)</span> / <span style='color:#00e5ff'>RSI반등 패턴 약3일 (N=17)</span> / 지지선 220,500</div>
 <div>🔬 <span style='color:#ff9100'>최적RSI 60~64 (5일후 +10.9% 승률87% N=15)</span></div>
 <div style="color:#e53935">🚀 추세매수: 정배열 / 양봉 / MA20↑ / MA60위</div>
-<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=1.17 (보통)</span> / <span style='color:#aaa'>거래대금 0.8x (보통)</span></div>
+<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=1.17 (보통)</span> / <span style='color:#aaa'>거래대금 0.9x (보통)</span></div>
 </div>
 </td>
 </tr><tr class="row-main" style="color:#00e5ff;cursor:pointer" onclick="var d=document.getElementById('d_058470');d.style.display=d.style.display==='none'?'':'none'">
 <td style="font-weight:bold">리노공업</td>
 <td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
-<td>108,200</td>
-<td class="hide-m">115,350</td>
-<td style="color:#4d9de0">-3.6%</td>
+<td>108,400</td>
+<td class="hide-m">115,360</td>
+<td style="color:#4d9de0">-3.5%</td>
 <td class="hide-m">✅구간안</td>
-<td>39</td>
-<td>40~44 </td>
+<td>40</td>
+<td>40~44 ✅</td>
 <td class="pc-timing" style="display:none;text-align:left">🔵 목표가 도달 (반등 대기)</td>
 <td class="pc-signal" style="display:none;text-align:left">눌림구간</td>
 </tr>
@@ -118,55 +121,58 @@ tr:hover td{background:#16213e}
 <td colspan="10" style="text-align:left;padding:0;border-bottom:2px solid #253050">
 <div style="margin:4px 8px 8px 8px;padding:10px 14px;border:1px solid #253050;border-left:3px solid #00e5ff;border-radius:4px;background:#0d1b2a;line-height:1.7;font-size:0.85em;color:#999">
 <div style="color:#00e5ff;font-weight:bold;margin-bottom:4px">📊 리노공업 (058470) — 점수 4점 / ⚪ 방향 불명확</div>
-<div>📌 판단근거: <span style='color:#ff1744'>MA20이탈</span> / <span style='color:#ff1744'>MA60아래</span> / <span style='color:#00e676'>MA120위</span> / <span style='color:#00e676'>RSI눌림39</span> / <span style='color:#00e676'>볼밴하단11%</span> / <span style='color:#ff1744'>양봉후음봉</span></div>
-<div>📈 이동평균: MA5 <span style='color:#ff1744'>111,460▼</span> / MA20 <span style='color:#ff1744'>115,350▼</span> / MA60 <span style='color:#ff1744'>110,518▼</span> / MA120 <span style='color:#00e676'>90,026▲</span></div>
-<div>📊 볼린저: 하단106,286 / 중간115,350 / 상단124,414 (<span style='color:#00e676'>11%</span>)</div>
-<div>📉 MACD: <span style='color:#ff1744'>MACD 128</span> / 시그널 1367 / <span style='color:#aaa'>유지</span></div>
-<div>🎯 매수가이드: <span style='color:#00e676'>매수권 106,286~115,350</span> / 매도권 124,414+ / <span style='color:#ff1744'>손절선 MA20-3% 111,890</span></div>
-<div>⏳ 타이밍: <span style='color:#00e5ff'>RSI반등 패턴 약3일 (N=13)</span> / 지지선 111,600</div>
-<div>🔬 <span style='color:#aaa'>최적RSI 40~44 (5일후 +8.4% 승률100% N=4)</span></div>
+<div>📌 판단근거: <span style='color:#ff1744'>MA20이탈</span> / <span style='color:#ff1744'>MA60아래</span> / <span style='color:#00e676'>MA120위</span> / <span style='color:#00e676'>RSI눌림40</span> / <span style='color:#00e676'>볼밴하단11%</span> / <span style='color:#ff1744'>양봉후음봉</span></div>
+<div>📈 이동평균: MA5 <span style='color:#ff1744'>111,500▼</span> / MA20 <span style='color:#ff1744'>115,360▼</span> / MA60 <span style='color:#ff1744'>110,522▼</span> / MA120 <span style='color:#00e676'>90,028▲</span></div>
+<div>📊 볼린저: 하단106,328 / 중간115,360 / 상단124,392 (<span style='color:#00e676'>11%</span>)</div>
+<div>📉 MACD: <span style='color:#ff1744'>MACD 144</span> / 시그널 1370 / <span style='color:#aaa'>유지</span></div>
+<div>🎯 매수가이드: <span style='color:#00e676'>매수권 106,328~115,360</span> / 매도권 124,392+ / <span style='color:#ff1744'>손절선 MA20-3% 111,899</span></div>
+<div>⏳ 타이밍: <span style='color:#00e5ff'>RSI반등 패턴 약3일 (N=15)</span> / 지지선 111,600</div>
+<div>🔬 <span style='color:#00e676'>최적RSI 40~44 (5일후 +8.4% 승률100% N=4)</span></div>
 <div style="color:#555"></div>
-<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=1.2 (보통)</span> / <span style='color:#aaa'>거래대금 0.2x (보통)</span></div>
+<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=1.19 (보통)</span> / <span style='color:#aaa'>거래대금 0.2x (보통)</span></div>
 </div>
 </td>
-</tr><tr class="row-main" style="color:#aaa;cursor:pointer" onclick="var d=document.getElementById('d_069500');d.style.display=d.style.display==='none'?'':'none'">
+</tr><tr style="background:#0a1628">
+<td colspan="10" style="padding:6px 10px;font-size:0.8em;font-weight:bold;color:#ff9100;border-top:1px solid #253050;border-bottom:1px solid #1a2a4a">
+▣ 시장ETF <span style="font-weight:normal;font-size:0.9em">(+0.2%)</span>
+</td></tr><tr class="row-main" style="color:#aaa;cursor:pointer" onclick="var d=document.getElementById('d_069500');d.style.display=d.style.display==='none'?'':'none'">
 <td style="font-weight:bold">KODEX 200</td>
 <td style="font-weight:bold;color:#ff9100;text-align:center">매도고려</td>
-<td>124,110</td>
-<td class="hide-m">105,302</td>
+<td>124,170</td>
+<td class="hide-m">105,305</td>
 <td style="color:#e53935">+1.2%</td>
 <td class="hide-m">-15.2%</td>
 <td>88</td>
 <td>55~59 과열</td>
-<td class="pc-timing" style="display:none;text-align:left">⏳ 과거6회 평균12일 (최소2/최대29)</td>
+<td class="pc-timing" style="display:none;text-align:left">⏳ 과거5회 평균8일 (최소2/최대28)</td>
 <td class="pc-signal" style="display:none;text-align:left">과열</td>
 </tr>
 <tr class="row-timing" style="color:#aaa;cursor:pointer" onclick="var d=document.getElementById('d_069500');d.style.display=d.style.display==='none'?'':'none'">
-<td colspan="10" style="text-align:left;font-weight:bold">⏰ ⏳ 과거6회 평균12일 (최소2/최대29) / 과열</td>
+<td colspan="10" style="text-align:left;font-weight:bold">⏰ ⏳ 과거5회 평균8일 (최소2/최대28) / 과열</td>
 </tr>
 <tr id="d_069500" class="row-detail" style="display:none">
 <td colspan="10" style="text-align:left;padding:0;border-bottom:2px solid #253050">
 <div style="margin:4px 8px 8px 8px;padding:10px 14px;border:1px solid #253050;border-left:3px solid #aaa;border-radius:4px;background:#0d1b2a;line-height:1.7;font-size:0.85em;color:#999">
 <div style="color:#aaa;font-weight:bold;margin-bottom:4px">📊 KODEX 200 (069500) — 점수 15점 / 🟡 눌림 진행중</div>
-<div>📌 판단근거: <span style='color:#00e676'>정배열(가>5>20)</span> / <span style='color:#00e676'>MA60위</span> / <span style='color:#00e676'>MA120위</span> / <span style='color:#ff1744'>RSI과열88</span> / <span style='color:#ff1744'>볼밴상단94%</span> / <span style='color:#aaa'>MACD양호</span></div>
-<div>📈 이동평균: MA5 <span style='color:#00e676'>120,696▲</span> / MA20 <span style='color:#00e676'>105,303▲</span> / MA60 <span style='color:#00e676'>91,352▲</span> / MA120 <span style='color:#00e676'>77,920▲</span></div>
-<div>📊 볼린저: 하단84,122 / 중간105,303 / 상단126,483 (<span style='color:#ff1744'>94%</span>)</div>
-<div>📉 MACD: <span style='color:#00e676'>MACD 9037</span> / 시그널 7198 / <span style='color:#aaa'>유지</span></div>
-<div>🎯 매수가이드: <span style='color:#aaa'>매수권 84,122~105,303</span> / 매도권 126,483+ / <span style='color:#ff1744'>손절선 MA20-3% 102,144</span></div>
-<div>⏳ 타이밍: <span style='color:#00e5ff'>과거6회 평균12일 (최소2/최대29)</span> / <span style='color:#00e5ff'>RSI반등 패턴 약2일 (N=19)</span> / 지지선 99,905</div>
+<div>📌 판단근거: <span style='color:#00e676'>정배열(가>5>20)</span> / <span style='color:#00e676'>MA60위</span> / <span style='color:#00e676'>MA120위</span> / <span style='color:#ff1744'>RSI과열88</span> / <span style='color:#ff1744'>볼밴상단95%</span> / <span style='color:#aaa'>MACD양호</span></div>
+<div>📈 이동평균: MA5 <span style='color:#00e676'>120,708▲</span> / MA20 <span style='color:#00e676'>105,306▲</span> / MA60 <span style='color:#00e676'>91,353▲</span> / MA120 <span style='color:#00e676'>77,921▲</span></div>
+<div>📊 볼린저: 하단84,115 / 중간105,306 / 상단126,497 (<span style='color:#ff1744'>95%</span>)</div>
+<div>📉 MACD: <span style='color:#00e676'>MACD 9042</span> / 시그널 7199 / <span style='color:#aaa'>유지</span></div>
+<div>🎯 매수가이드: <span style='color:#aaa'>매수권 84,115~105,306</span> / 매도권 126,497+ / <span style='color:#ff1744'>손절선 MA20-3% 102,147</span></div>
+<div>⏳ 타이밍: <span style='color:#00e5ff'>과거5회 평균8일 (최소2/최대28)</span> / <span style='color:#00e5ff'>RSI반등 패턴 약2일 (N=19)</span> / 지지선 99,905</div>
 <div>🔬 <span style='color:#ff9100'>최적RSI 55~59 (5일후 +4.4% 승률75% N=16)</span></div>
 <div style="color:#555">🚀 추세매수: 정배열 / 양봉 / MA20↑ / MA60위</div>
-<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=1.28 (보통)</span> / <span style='color:#aaa'>거래대금 0.5x (보통)</span></div>
+<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=1.28 (보통)</span> / <span style='color:#aaa'>거래대금 0.6x (보통)</span></div>
 </div>
 </td>
 </tr><tr class="row-main" style="color:#00e5ff;cursor:pointer" onclick="var d=document.getElementById('d_229200');d.style.display=d.style.display==='none'?'':'none'">
 <td style="font-weight:bold">KODEX 코스닥150</td>
 <td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
-<td>19,420</td>
-<td class="hide-m">19,928</td>
-<td style="color:#4d9de0">-0.6%</td>
+<td>19,460</td>
+<td class="hide-m">19,930</td>
+<td style="color:#4d9de0">-0.4%</td>
 <td class="hide-m">✅구간안</td>
-<td>43</td>
+<td>44</td>
 <td>35~39 근접</td>
 <td class="pc-timing" style="display:none;text-align:left">🔵 목표가 도달 (반등 대기)</td>
 <td class="pc-signal" style="display:none;text-align:left">눌림구간</td>
@@ -178,22 +184,25 @@ tr:hover td{background:#16213e}
 <td colspan="10" style="text-align:left;padding:0;border-bottom:2px solid #253050">
 <div style="margin:4px 8px 8px 8px;padding:10px 14px;border:1px solid #253050;border-left:3px solid #00e5ff;border-radius:4px;background:#0d1b2a;line-height:1.7;font-size:0.85em;color:#999">
 <div style="color:#00e5ff;font-weight:bold;margin-bottom:4px">📊 KODEX 코스닥150 (229200) — 점수 9점 / 🟡 눌림 진행중</div>
-<div>📌 판단근거: <span style='color:#ff1744'>MA20이탈</span> / <span style='color:#ff1744'>MA60아래</span> / <span style='color:#00e676'>MA120위</span> / <span style='color:#00e676'>RSI눌림43</span> / <span style='color:#00e676'>볼밴하단15%</span> / <span style='color:#ff1744'>양봉후음봉</span></div>
-<div>📈 이동평균: MA5 <span style='color:#ff1744'>19,736▼</span> / MA20 <span style='color:#ff1744'>19,928▼</span> / MA60 <span style='color:#ff1744'>19,583▼</span> / MA120 <span style='color:#00e676'>18,052▲</span></div>
-<div>📊 볼린저: 하단19,196 / 중간19,928 / 상단20,661 (<span style='color:#00e676'>15%</span>)</div>
-<div>📉 MACD: <span style='color:#ff1744'>MACD 114</span> / 시그널 211 / <span style='color:#aaa'>유지</span></div>
-<div>🎯 매수가이드: <span style='color:#00e676'>매수권 19,196~19,928</span> / 매도권 20,661+ / <span style='color:#ff1744'>손절선 MA20-3% 19,330</span></div>
+<div>📌 판단근거: <span style='color:#ff1744'>MA20이탈</span> / <span style='color:#ff1744'>MA60아래</span> / <span style='color:#00e676'>MA120위</span> / <span style='color:#00e676'>RSI눌림44</span> / <span style='color:#00e676'>볼밴하단18%</span> / <span style='color:#ff1744'>양봉후음봉</span></div>
+<div>📈 이동평균: MA5 <span style='color:#ff1744'>19,744▼</span> / MA20 <span style='color:#ff1744'>19,930▼</span> / MA60 <span style='color:#ff1744'>19,584▼</span> / MA120 <span style='color:#00e676'>18,053▲</span></div>
+<div>📊 볼린저: 하단19,203 / 중간19,930 / 상단20,657 (<span style='color:#00e676'>18%</span>)</div>
+<div>📉 MACD: <span style='color:#ff1744'>MACD 117</span> / 시그널 212 / <span style='color:#aaa'>유지</span></div>
+<div>🎯 매수가이드: <span style='color:#00e676'>매수권 19,203~19,930</span> / 매도권 20,657+ / <span style='color:#ff1744'>손절선 MA20-3% 19,332</span></div>
 <div>⏳ 타이밍: <span style='color:#00e5ff'>RSI반등 패턴 약4일 (N=25)</span> / 지지선 20,050</div>
 <div>🔬 <span style='color:#ffd600'>최적RSI 35~39 (5일후 +4.4% 승률86% N=7)</span></div>
 <div style="color:#555">🚀 추세매수: MA5터치 / MA20↑</div>
-<div>⚡ <span style='color:#00e676'>변동성 ATR5/20=0.68 (🔥압축!)</span> / <span style='color:#aaa'>거래대금 0.5x (보통)</span></div>
+<div>⚡ <span style='color:#00e676'>변동성 ATR5/20=0.65 (🔥압축!)</span> / <span style='color:#aaa'>거래대금 0.5x (보통)</span></div>
 </div>
 </td>
-</tr><tr class="row-main" style="color:#aaa;cursor:pointer" onclick="var d=document.getElementById('d_091160');d.style.display=d.style.display==='none'?'':'none'">
+</tr><tr style="background:#0a1628">
+<td colspan="10" style="padding:6px 10px;font-size:0.8em;font-weight:bold;color:#aaa;border-top:1px solid #253050;border-bottom:1px solid #1a2a4a">
+▣ 반도체ETF <span style="font-weight:normal;font-size:0.9em">(-0.3%)</span>
+</td></tr><tr class="row-main" style="color:#aaa;cursor:pointer" onclick="var d=document.getElementById('d_091160');d.style.display=d.style.display==='none'?'':'none'">
 <td style="font-weight:bold">KODEX 반도체</td>
 <td style="font-weight:bold;color:#ff9100;text-align:center">매도고려</td>
-<td>155,350</td>
-<td class="hide-m">128,999</td>
+<td>155,455</td>
+<td class="hide-m">129,004</td>
 <td style="color:#4d9de0">-0.3%</td>
 <td class="hide-m">-17.0%</td>
 <td>86</td>
@@ -209,22 +218,25 @@ tr:hover td{background:#16213e}
 <div style="margin:4px 8px 8px 8px;padding:10px 14px;border:1px solid #253050;border-left:3px solid #aaa;border-radius:4px;background:#0d1b2a;line-height:1.7;font-size:0.85em;color:#999">
 <div style="color:#aaa;font-weight:bold;margin-bottom:4px">📊 KODEX 반도체 (091160) — 점수 12점 / 🟡 눌림 진행중</div>
 <div>📌 판단근거: <span style='color:#00e676'>정배열(가>5>20)</span> / <span style='color:#00e676'>MA60위</span> / <span style='color:#00e676'>MA120위</span> / <span style='color:#ff1744'>RSI과열86</span> / <span style='color:#ff1744'>볼밴상단92%</span> / <span style='color:#ff1744'>양봉후음봉</span></div>
-<div>📈 이동평균: MA5 <span style='color:#00e676'>151,200▲</span> / MA20 <span style='color:#00e676'>128,999▲</span> / MA60 <span style='color:#00e676'>107,910▲</span> / MA120 <span style='color:#00e676'>87,102▲</span></div>
-<div>📊 볼린저: 하단97,844 / 중간128,999 / 상단160,154 (<span style='color:#ff1744'>92%</span>)</div>
-<div>📉 MACD: <span style='color:#00e676'>MACD 13195</span> / 시그널 10661 / <span style='color:#aaa'>유지</span></div>
-<div>🎯 매수가이드: <span style='color:#aaa'>매수권 97,844~128,999</span> / 매도권 160,154+ / <span style='color:#ff1744'>손절선 MA20-3% 125,129</span></div>
+<div>📈 이동평균: MA5 <span style='color:#00e676'>151,221▲</span> / MA20 <span style='color:#00e676'>129,004▲</span> / MA60 <span style='color:#00e676'>107,912▲</span> / MA120 <span style='color:#00e676'>87,103▲</span></div>
+<div>📊 볼린저: 하단97,831 / 중간129,004 / 상단160,178 (<span style='color:#ff1744'>92%</span>)</div>
+<div>📉 MACD: <span style='color:#00e676'>MACD 13203</span> / 시그널 10663 / <span style='color:#aaa'>유지</span></div>
+<div>🎯 매수가이드: <span style='color:#aaa'>매수권 97,831~129,004</span> / 매도권 160,178+ / <span style='color:#ff1744'>손절선 MA20-3% 125,134</span></div>
 <div>⏳ 타이밍: <span style='color:#00e5ff'>과거7회 평균14일 (최소2/최대21)</span> / <span style='color:#00e5ff'>RSI반등 패턴 약4일 (N=15)</span> / 지지선 123,850</div>
 <div>🔬 <span style='color:#ff9100'>최적RSI 30~34 (5일후 +7.2% 승률100% N=3)</span></div>
 <div style="color:#555">🚀 추세매수: 정배열 / MA20↑ / MA60위</div>
-<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=1.51 (보통)</span> / <span style='color:#aaa'>거래대금 0.7x (보통)</span></div>
+<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=1.5 (보통)</span> / <span style='color:#aaa'>거래대금 0.8x (보통)</span></div>
 </div>
 </td>
-</tr><tr class="row-main" style="color:#00e5ff;cursor:pointer" onclick="var d=document.getElementById('d_305720');d.style.display=d.style.display==='none'?'':'none'">
+</tr><tr style="background:#0a1628">
+<td colspan="10" style="padding:6px 10px;font-size:0.8em;font-weight:bold;color:#ff9100;border-top:1px solid #253050;border-bottom:1px solid #1a2a4a">
+▣ 시장ETF <span style="font-weight:normal;font-size:0.9em">(+0.2%)</span>
+</td></tr><tr class="row-main" style="color:#00e5ff;cursor:pointer" onclick="var d=document.getElementById('d_305720');d.style.display=d.style.display==='none'?'':'none'">
 <td style="font-weight:bold">KODEX 2차전지산업</td>
 <td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
-<td>20,140</td>
-<td class="hide-m">20,857</td>
-<td style="color:#4d9de0">-0.3%</td>
+<td>20,160</td>
+<td class="hide-m">20,858</td>
+<td style="color:#4d9de0">-0.2%</td>
 <td class="hide-m">✅구간안</td>
 <td>41</td>
 <td>25~29 </td>
@@ -239,44 +251,47 @@ tr:hover td{background:#16213e}
 <div style="margin:4px 8px 8px 8px;padding:10px 14px;border:1px solid #253050;border-left:3px solid #00e5ff;border-radius:4px;background:#0d1b2a;line-height:1.7;font-size:0.85em;color:#999">
 <div style="color:#00e5ff;font-weight:bold;margin-bottom:4px">📊 KODEX 2차전지산업 (305720) — 점수 20점 / 🔵 반등 초기 (관찰)</div>
 <div>📌 판단근거: <span style='color:#ff1744'>MA20이탈</span> / <span style='color:#00e676'>MA60위</span> / <span style='color:#00e676'>MA120위</span> / <span style='color:#00e676'>RSI눌림41</span> / <span style='color:#00e676'>볼밴중하37%</span> / <span style='color:#ff1744'>MACD약세</span></div>
-<div>📈 이동평균: MA5 <span style='color:#ff1744'>21,045▼</span> / MA20 <span style='color:#ff1744'>20,857▼</span> / MA60 <span style='color:#00e676'>18,390▲</span> / MA120 <span style='color:#00e676'>16,924▲</span></div>
-<div>📊 볼린저: 하단18,069 / 중간20,857 / 상단23,646 (<span style='color:#aaa'>37%</span>)</div>
-<div>📉 MACD: <span style='color:#ff1744'>MACD 770</span> / 시그널 1054 / <span style='color:#aaa'>유지</span></div>
-<div>🎯 매수가이드: <span style='color:#00e676'>매수권 18,069~20,857</span> / 매도권 23,646+ / <span style='color:#ff1744'>손절선 MA20-3% 20,232</span></div>
+<div>📈 이동평균: MA5 <span style='color:#ff1744'>21,049▼</span> / MA20 <span style='color:#ff1744'>20,858▼</span> / MA60 <span style='color:#00e676'>18,390▲</span> / MA120 <span style='color:#00e676'>16,924▲</span></div>
+<div>📊 볼린저: 하단18,071 / 중간20,858 / 상단23,646 (<span style='color:#aaa'>37%</span>)</div>
+<div>📉 MACD: <span style='color:#ff1744'>MACD 771</span> / 시그널 1054 / <span style='color:#aaa'>유지</span></div>
+<div>🎯 매수가이드: <span style='color:#00e676'>매수권 18,071~20,858</span> / 매도권 23,646+ / <span style='color:#ff1744'>손절선 MA20-3% 20,233</span></div>
 <div>⏳ 타이밍: <span style='color:#00e5ff'>RSI반등 패턴 약6일 (N=23)</span> / 지지선 21,450</div>
 <div>🔬 <span style='color:#aaa'>최적RSI 25~29 (5일후 +6.8% 승률100% N=3)</span></div>
 <div style="color:#555">🚀 추세매수: MA20↑ / MA60위</div>
-<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=0.95 (보통)</span> / <span style='color:#aaa'>거래대금 0.6x (보통)</span></div>
+<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=0.94 (보통)</span> / <span style='color:#aaa'>거래대금 0.6x (보통)</span></div>
 </div>
 </td>
-</tr><tr class="row-main" style="color:#00e676;cursor:pointer" onclick="var d=document.getElementById('d_272210');d.style.display=d.style.display==='none'?'':'none'">
+</tr><tr style="background:#0a1628">
+<td colspan="10" style="padding:6px 10px;font-size:0.8em;font-weight:bold;color:#ff9100;border-top:1px solid #253050;border-bottom:1px solid #1a2a4a">
+▣ 방산 <span style="font-weight:normal;font-size:0.9em">(+0.1%)</span>
+</td></tr><tr class="row-main" style="color:#00e676;cursor:pointer" onclick="var d=document.getElementById('d_272210');d.style.display=d.style.display==='none'?'':'none'">
 <td style="font-weight:bold">한화시스템</td>
 <td style="font-weight:bold;color:#e53935;text-align:center">매수</td>
-<td>111,700</td>
-<td class="hide-m">122,715</td>
-<td style="color:#e53935">+1.9%</td>
+<td>112,100</td>
+<td class="hide-m">122,735</td>
+<td style="color:#e53935">+2.3%</td>
 <td class="hide-m">✅구간안</td>
-<td>20</td>
+<td>21</td>
 <td>60~64 </td>
 <td class="pc-timing" style="display:none;text-align:left">🟢 목표가 도달 + 반등 신호</td>
-<td class="pc-signal" style="display:none;text-align:left">⭐음봉후양봉</td>
+<td class="pc-signal" style="display:none;text-align:left">⭐음봉후양봉, ⭐5일선터치+반등</td>
 </tr>
 <tr class="row-timing" style="color:#00e676;cursor:pointer" onclick="var d=document.getElementById('d_272210');d.style.display=d.style.display==='none'?'':'none'">
-<td colspan="10" style="text-align:left;font-weight:bold">⏰ 🟢 목표가 도달 + 반등 신호 / ⭐음봉후양봉</td>
+<td colspan="10" style="text-align:left;font-weight:bold">⏰ 🟢 목표가 도달 + 반등 신호 / ⭐음봉후양봉, ⭐5일선터치+반등</td>
 </tr>
 <tr id="d_272210" class="row-detail" style="display:none">
 <td colspan="10" style="text-align:left;padding:0;border-bottom:2px solid #253050">
 <div style="margin:4px 8px 8px 8px;padding:10px 14px;border:1px solid #253050;border-left:3px solid #00e676;border-radius:4px;background:#0d1b2a;line-height:1.7;font-size:0.85em;color:#999">
-<div style="color:#00e676;font-weight:bold;margin-bottom:4px">📊 한화시스템 (272210) — 점수 5점 / ⚪ 방향 불명확</div>
-<div>📌 판단근거: <span style='color:#ff1744'>MA20이탈</span> / <span style='color:#ff1744'>MA60아래</span> / <span style='color:#00e676'>MA120위</span> / <span style='color:#00e676'>RSI과매도20</span> / <span style='color:#00e676'>볼밴하단15%</span> / <span style='color:#00e676'>⭐음봉후양봉</span></div>
-<div>📈 이동평균: MA5 <span style='color:#ff1744'>113,000▼</span> / MA20 <span style='color:#ff1744'>122,715▼</span> / MA60 <span style='color:#ff1744'>127,845▼</span> / MA120 <span style='color:#00e676'>98,289▲</span></div>
-<div>📊 볼린저: 하단107,188 / 중간122,715 / 상단138,242 (<span style='color:#00e676'>15%</span>)</div>
-<div>📉 MACD: <span style='color:#ff1744'>MACD -4654</span> / 시그널 -3225 / <span style='color:#aaa'>유지</span></div>
-<div>🎯 매수가이드: <span style='color:#00e676'>매수권 107,188~122,715</span> / 매도권 138,242+ / <span style='color:#ff1744'>손절선 MA20-3% 119,034</span></div>
+<div style="color:#00e676;font-weight:bold;margin-bottom:4px">📊 한화시스템 (272210) — 점수 15점 / 🔵 반등 초기 (관찰)</div>
+<div>📌 판단근거: <span style='color:#ff1744'>MA20이탈</span> / <span style='color:#ff1744'>MA60아래</span> / <span style='color:#00e676'>MA120위</span> / <span style='color:#00e676'>RSI과매도21</span> / <span style='color:#00e676'>볼밴하단16%</span> / <span style='color:#00e676'>⭐음봉후양봉</span></div>
+<div>📈 이동평균: MA5 <span style='color:#ff1744'>113,080▼</span> / MA20 <span style='color:#ff1744'>122,735▼</span> / MA60 <span style='color:#ff1744'>127,852▼</span> / MA120 <span style='color:#00e676'>98,292▲</span></div>
+<div>📊 볼린저: 하단107,264 / 중간122,735 / 상단138,206 (<span style='color:#00e676'>16%</span>)</div>
+<div>📉 MACD: <span style='color:#ff1744'>MACD -4623</span> / 시그널 -3218 / <span style='color:#aaa'>유지</span></div>
+<div>🎯 매수가이드: <span style='color:#00e676'>매수권 107,264~122,735</span> / 매도권 138,206+ / <span style='color:#ff1744'>손절선 MA20-3% 119,053</span></div>
 <div>⏳ 타이밍: <span style='color:#00e5ff'>RSI반등 패턴 약4일 (N=12)</span> / 지지선 138,900</div>
 <div>🔬 <span style='color:#aaa'>최적RSI 60~64 (5일후 +11.8% 승률78% N=18)</span></div>
 <div style="color:#555">🚀 추세매수: MA5터치 / 양봉 / 음→양전환</div>
-<div>⚡ <span style='color:#ffd600'>변동성 ATR5/20=0.83 (에너지응축)</span> / <span style='color:#aaa'>거래대금 0.6x (보통)</span></div>
+<div>⚡ <span style='color:#ffd600'>변동성 ATR5/20=0.86 (에너지응축)</span> / <span style='color:#aaa'>거래대금 0.6x (보통)</span></div>
 </div>
 </td>
 </tr><tr class="row-main" style="color:#00e5ff;cursor:pointer" onclick="var d=document.getElementById('d_042660');d.style.display=d.style.display==='none'?'':'none'">
@@ -306,17 +321,20 @@ tr:hover td{background:#16213e}
 <div>⏳ 타이밍: <span style='color:#00e5ff'>RSI반등 패턴 약3일 (N=6)</span> / 지지선 131,900</div>
 <div>🔬 <span style='color:#00e676'>최적RSI 20~24 (5일후 +5.5% 승률100% N=6)</span></div>
 <div style="color:#555">🚀 추세매수: MA20↑</div>
-<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=1.67 (보통)</span> / <span style='color:#aaa'>거래대금 0.3x (보통)</span></div>
+<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=1.67 (보통)</span> / <span style='color:#aaa'>거래대금 0.4x (보통)</span></div>
 </div>
 </td>
-</tr><tr class="row-main" style="color:#00e676;cursor:pointer" onclick="var d=document.getElementById('d_047050');d.style.display=d.style.display==='none'?'':'none'">
+</tr><tr style="background:#0a1628">
+<td colspan="10" style="padding:6px 10px;font-size:0.8em;font-weight:bold;color:#ff9100;border-top:1px solid #253050;border-bottom:1px solid #1a2a4a">
+▣ 소재/화학 <span style="font-weight:normal;font-size:0.9em">(+0.9%)</span>
+</td></tr><tr class="row-main" style="color:#00e676;cursor:pointer" onclick="var d=document.getElementById('d_047050');d.style.display=d.style.display==='none'?'':'none'">
 <td style="font-weight:bold">포스코인터내셔널</td>
 <td style="font-weight:bold;color:#e53935;text-align:center">매수</td>
-<td>74,700</td>
-<td class="hide-m">79,040</td>
-<td style="color:#e53935">+3.0%</td>
+<td>74,600</td>
+<td class="hide-m">79,035</td>
+<td style="color:#e53935">+2.9%</td>
 <td class="hide-m">✅구간안</td>
-<td>39</td>
+<td>38</td>
 <td>20~24 </td>
 <td class="pc-timing" style="display:none;text-align:left">🟢 목표가 도달 + 반등 신호</td>
 <td class="pc-signal" style="display:none;text-align:left">⭐음봉후양봉, ⭐5일선터치+반등</td>
@@ -328,18 +346,21 @@ tr:hover td{background:#16213e}
 <td colspan="10" style="text-align:left;padding:0;border-bottom:2px solid #253050">
 <div style="margin:4px 8px 8px 8px;padding:10px 14px;border:1px solid #253050;border-left:3px solid #00e676;border-radius:4px;background:#0d1b2a;line-height:1.7;font-size:0.85em;color:#999">
 <div style="color:#00e676;font-weight:bold;margin-bottom:4px">📊 포스코인터내셔널 (047050) — 점수 20점 / 🔵 반등 초기 (관찰)</div>
-<div>📌 판단근거: <span style='color:#ff1744'>MA20이탈</span> / <span style='color:#ff1744'>MA60아래</span> / <span style='color:#00e676'>MA120위</span> / <span style='color:#00e676'>RSI눌림39</span> / <span style='color:#00e676'>볼밴중하27%</span> / <span style='color:#00e676'>⭐음봉후양봉</span></div>
-<div>📈 이동평균: MA5 <span style='color:#ff1744'>74,900▼</span> / MA20 <span style='color:#ff1744'>79,040▼</span> / MA60 <span style='color:#ff1744'>75,707▼</span> / MA120 <span style='color:#00e676'>65,770▲</span></div>
-<div>📊 볼린저: 하단69,558 / 중간79,040 / 상단88,522 (<span style='color:#00e676'>27%</span>)</div>
-<div>📉 MACD: <span style='color:#ff1744'>MACD -90</span> / 시그널 1210 / <span style='color:#aaa'>유지</span></div>
-<div>🎯 매수가이드: <span style='color:#00e676'>매수권 69,558~79,040</span> / 매도권 88,522+ / <span style='color:#ff1744'>손절선 MA20-3% 76,669</span></div>
-<div>⏳ 타이밍: <span style='color:#00e5ff'>RSI반등 패턴 약6일 (N=12)</span> / 지지선 73,400</div>
+<div>📌 판단근거: <span style='color:#ff1744'>MA20이탈</span> / <span style='color:#ff1744'>MA60아래</span> / <span style='color:#00e676'>MA120위</span> / <span style='color:#00e676'>RSI눌림38</span> / <span style='color:#00e676'>볼밴중하27%</span> / <span style='color:#00e676'>⭐음봉후양봉</span></div>
+<div>📈 이동평균: MA5 <span style='color:#ff1744'>74,880▼</span> / MA20 <span style='color:#ff1744'>79,035▼</span> / MA60 <span style='color:#ff1744'>75,705▼</span> / MA120 <span style='color:#00e676'>65,770▲</span></div>
+<div>📊 볼린저: 하단69,544 / 중간79,035 / 상단88,526 (<span style='color:#00e676'>27%</span>)</div>
+<div>📉 MACD: <span style='color:#ff1744'>MACD -98</span> / 시그널 1209 / <span style='color:#aaa'>유지</span></div>
+<div>🎯 매수가이드: <span style='color:#00e676'>매수권 69,544~79,035</span> / 매도권 88,526+ / <span style='color:#ff1744'>손절선 MA20-3% 76,664</span></div>
+<div>⏳ 타이밍: <span style='color:#00e5ff'>RSI반등 패턴 약7일 (N=10)</span> / 지지선 73,400</div>
 <div>🔬 <span style='color:#aaa'>최적RSI 20~24 (5일후 +7.0% 승률80% N=5)</span></div>
 <div style="color:#555">🚀 추세매수: MA5터치 / 양봉 / 음→양전환 / MA20↑</div>
-<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=1.23 (보통)</span> / <span style='color:#aaa'>거래대금 0.5x (보통)</span></div>
+<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=1.22 (보통)</span> / <span style='color:#aaa'>거래대금 0.6x (보통)</span></div>
 </div>
 </td>
-</tr><tr class="row-main" style="color:#00e676;cursor:pointer" onclick="var d=document.getElementById('d_055550');d.style.display=d.style.display==='none'?'':'none'">
+</tr><tr style="background:#0a1628">
+<td colspan="10" style="padding:6px 10px;font-size:0.8em;font-weight:bold;color:#ff9100;border-top:1px solid #253050;border-bottom:1px solid #1a2a4a">
+▣ 금융 <span style="font-weight:normal;font-size:0.9em">(+0.3%)</span>
+</td></tr><tr class="row-main" style="color:#00e676;cursor:pointer" onclick="var d=document.getElementById('d_055550');d.style.display=d.style.display==='none'?'':'none'">
 <td style="font-weight:bold">신한지주</td>
 <td style="font-weight:bold;color:#e53935;text-align:center">매수</td>
 <td>94,900</td>
@@ -366,16 +387,19 @@ tr:hover td{background:#16213e}
 <div>⏳ 타이밍: <span style='color:#00e5ff'>RSI반등 패턴 약3일 (N=6)</span> / 지지선 100,300</div>
 <div>🔬 <span style='color:#aaa'>최적RSI 65~69 (5일후 +3.4% 승률78% N=9)</span></div>
 <div style="color:#555">🚀 추세매수: MA5터치</div>
-<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=1.14 (보통)</span> / <span style='color:#aaa'>거래대금 0.4x (보통)</span></div>
+<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=1.14 (보통)</span> / <span style='color:#aaa'>거래대금 0.5x (보통)</span></div>
 </div>
 </td>
-</tr><tr class="row-main" style="color:#aaa;cursor:pointer" onclick="var d=document.getElementById('d_066570');d.style.display=d.style.display==='none'?'':'none'">
+</tr><tr style="background:#0a1628">
+<td colspan="10" style="padding:6px 10px;font-size:0.8em;font-weight:bold;color:#e53935;border-top:1px solid #253050;border-bottom:1px solid #1a2a4a">
+▣ 대형주 <span style="font-weight:normal;font-size:0.9em">(+4.3%)</span>
+</td></tr><tr class="row-main" style="color:#aaa;cursor:pointer" onclick="var d=document.getElementById('d_066570');d.style.display=d.style.display==='none'?'':'none'">
 <td style="font-weight:bold">LG전자</td>
 <td style="font-weight:bold;color:#ff9100;text-align:center">매도고려</td>
-<td>213,500</td>
-<td class="hide-m">145,390</td>
-<td style="color:#e53935">+11.6%</td>
-<td class="hide-m">-31.9%</td>
+<td>213,000</td>
+<td class="hide-m">145,365</td>
+<td style="color:#e53935">+11.3%</td>
+<td class="hide-m">-31.8%</td>
 <td>86</td>
 <td>30~34 과열</td>
 <td class="pc-timing" style="display:none;text-align:left">⏳ 약7일 추정 (일변동4.4%)</td>
@@ -389,23 +413,26 @@ tr:hover td{background:#16213e}
 <div style="margin:4px 8px 8px 8px;padding:10px 14px;border:1px solid #253050;border-left:3px solid #aaa;border-radius:4px;background:#0d1b2a;line-height:1.7;font-size:0.85em;color:#999">
 <div style="color:#aaa;font-weight:bold;margin-bottom:4px">📊 LG전자 (066570) — 점수 9점 / 🟡 눌림 진행중</div>
 <div>📌 판단근거: <span style='color:#00e676'>정배열(가>5>20)</span> / <span style='color:#00e676'>MA60위</span> / <span style='color:#00e676'>MA120위</span> / <span style='color:#ff1744'>RSI과열86</span> / <span style='color:#ff1744'>볼밴돌파120%</span> / <span style='color:#aaa'>MACD양호</span></div>
-<div>📈 이동평균: MA5 <span style='color:#00e676'>180,120▲</span> / MA20 <span style='color:#00e676'>145,390▲</span> / MA60 <span style='color:#00e676'>127,035▲</span> / MA120 <span style='color:#00e676'>111,136▲</span></div>
-<div>📊 볼린저: 하단96,655 / 중간145,390 / 상단194,125 (<span style='color:#ff1744'>120%</span>)</div>
-<div>📉 MACD: <span style='color:#00e676'>MACD 18197</span> / 시그널 11202 / <span style='color:#aaa'>유지</span></div>
-<div>🎯 매수가이드: <span style='color:#aaa'>매수권 96,655~145,390</span> / 매도권 194,125+ / <span style='color:#ff1744'>손절선 MA20-3% 141,028</span></div>
+<div>📈 이동평균: MA5 <span style='color:#00e676'>180,020▲</span> / MA20 <span style='color:#00e676'>145,365▲</span> / MA60 <span style='color:#00e676'>127,027▲</span> / MA120 <span style='color:#00e676'>111,132▲</span></div>
+<div>📊 볼린저: 하단96,769 / 중간145,365 / 상단193,961 (<span style='color:#ff1744'>120%</span>)</div>
+<div>📉 MACD: <span style='color:#00e676'>MACD 18158</span> / 시그널 11194 / <span style='color:#aaa'>유지</span></div>
+<div>🎯 매수가이드: <span style='color:#aaa'>매수권 96,769~145,365</span> / 매도권 193,961+ / <span style='color:#ff1744'>손절선 MA20-3% 141,004</span></div>
 <div>⏳ 타이밍: 지지선 127,500</div>
 <div>🔬 <span style='color:#ff9100'>최적RSI 30~34 (5일후 +7.2% 승률75% N=4)</span></div>
 <div style="color:#555">🚀 추세매수: 정배열 / 양봉 / MA20↑ / MA60위</div>
-<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=2.02 (보통)</span> / <span style='color:#00e676'>거래대금 1.7x (활발)</span></div>
+<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=2.01 (보통)</span> / <span style='color:#00e676'>거래대금 1.8x (활발)</span></div>
 </div>
 </td>
-</tr><tr class="row-main" style="color:#aaa;cursor:pointer" onclick="var d=document.getElementById('d_403870');d.style.display=d.style.display==='none'?'':'none'">
+</tr><tr style="background:#0a1628">
+<td colspan="10" style="padding:6px 10px;font-size:0.8em;font-weight:bold;color:#aaa;border-top:1px solid #253050;border-bottom:1px solid #1a2a4a">
+▣ 반도체 <span style="font-weight:normal;font-size:0.9em">(-0.3%)</span>
+</td></tr><tr class="row-main" style="color:#aaa;cursor:pointer" onclick="var d=document.getElementById('d_403870');d.style.display=d.style.display==='none'?'':'none'">
 <td style="font-weight:bold">HPSP</td>
 <td style="font-weight:bold;color:#888;text-align:center">관망</td>
-<td>53,400</td>
-<td class="hide-m">51,270</td>
-<td style="color:#4d9de0">-3.4%</td>
-<td class="hide-m">-4.0%</td>
+<td>53,500</td>
+<td class="hide-m">51,275</td>
+<td style="color:#4d9de0">-3.2%</td>
+<td class="hide-m">-4.2%</td>
 <td>60</td>
 <td>45~49 </td>
 <td class="pc-timing" style="display:none;text-align:left">⏳ 과거16회 평균6일 (최소1/최대18)</td>
@@ -419,53 +446,56 @@ tr:hover td{background:#16213e}
 <div style="margin:4px 8px 8px 8px;padding:10px 14px;border:1px solid #253050;border-left:3px solid #aaa;border-radius:4px;background:#0d1b2a;line-height:1.7;font-size:0.85em;color:#999">
 <div style="color:#aaa;font-weight:bold;margin-bottom:4px">📊 HPSP (403870) — 점수 11점 / 🟡 눌림 진행중</div>
 <div>📌 판단근거: <span style='color:#00e676'>MA20위+MA5눌림</span> / <span style='color:#00e676'>MA60위</span> / <span style='color:#00e676'>MA120위</span> / <span style='color:#ff1744'>양봉후음봉</span> / <span style='color:#ff1744'>MACD데드!</span> / <span style='color:#00e676'>MA20상승5.0%</span></div>
-<div>📈 이동평균: MA5 <span style='color:#ff1744'>53,860▼</span> / MA20 <span style='color:#00e676'>51,270▲</span> / MA60 <span style='color:#00e676'>46,738▲</span> / MA120 <span style='color:#00e676'>40,425▲</span></div>
-<div>📊 볼린저: 하단42,784 / 중간51,270 / 상단59,756 (<span style='color:#ffd600'>63%</span>)</div>
-<div>📉 MACD: <span style='color:#ff1744'>MACD 2368</span> / 시그널 2420 / <span style='color:#ff1744'>데드</span></div>
-<div>🎯 매수가이드: <span style='color:#aaa'>매수권 42,784~51,270</span> / 매도권 59,756+ / <span style='color:#ff1744'>손절선 MA20-3% 49,732</span></div>
+<div>📈 이동평균: MA5 <span style='color:#ff1744'>53,880▼</span> / MA20 <span style='color:#00e676'>51,275▲</span> / MA60 <span style='color:#00e676'>46,740▲</span> / MA120 <span style='color:#00e676'>40,425▲</span></div>
+<div>📊 볼린저: 하단42,783 / 중간51,275 / 상단59,767 (<span style='color:#ffd600'>63%</span>)</div>
+<div>📉 MACD: <span style='color:#ff1744'>MACD 2376</span> / 시그널 2421 / <span style='color:#ff1744'>데드</span></div>
+<div>🎯 매수가이드: <span style='color:#aaa'>매수권 42,783~51,275</span> / 매도권 59,767+ / <span style='color:#ff1744'>손절선 MA20-3% 49,737</span></div>
 <div>⏳ 타이밍: <span style='color:#00e5ff'>과거16회 평균6일 (최소1/최대18)</span> / <span style='color:#00e5ff'>RSI반등 패턴 약4일 (N=21)</span> / 지지선 52,600</div>
 <div>🔬 <span style='color:#aaa'>최적RSI 45~49 (5일후 +9.6% 승률62% N=21)</span></div>
 <div style="color:#555">🚀 추세매수: MA5터치 / MA20↑ / MA60위</div>
-<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=1.5 (보통)</span> / <span style='color:#aaa'>거래대금 0.2x (보통)</span></div>
+<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=1.49 (보통)</span> / <span style='color:#aaa'>거래대금 0.2x (보통)</span></div>
 </div>
 </td>
-</tr><tr class="row-main" style="color:#aaa;cursor:pointer" onclick="var d=document.getElementById('d_010170');d.style.display=d.style.display==='none'?'':'none'">
+</tr><tr style="background:#0a1628">
+<td colspan="10" style="padding:6px 10px;font-size:0.8em;font-weight:bold;color:#ff9100;border-top:1px solid #253050;border-bottom:1px solid #1a2a4a">
+▣ 기타 <span style="font-weight:normal;font-size:0.9em">(+0.0%)</span>
+</td></tr><tr class="row-main" style="color:#aaa;cursor:pointer" onclick="var d=document.getElementById('d_010170');d.style.display=d.style.display==='none'?'':'none'">
 <td style="font-weight:bold">대한광통신</td>
 <td style="font-weight:bold;color:#888;text-align:center">관망</td>
-<td>23,200</td>
-<td class="hide-m">18,532</td>
-<td style="color:#4d9de0">-6.3%</td>
-<td class="hide-m">-20.1%</td>
-<td>66</td>
+<td>23,050</td>
+<td class="hide-m">18,524</td>
+<td style="color:#4d9de0">-6.9%</td>
+<td class="hide-m">-19.6%</td>
+<td>65</td>
 <td>40~44 </td>
-<td class="pc-timing" style="display:none;text-align:left">⏳ 과거12회 평균14일 (최소4/최대24)</td>
+<td class="pc-timing" style="display:none;text-align:left">⏳ 과거13회 평균14일 (최소3/최대24)</td>
 <td class="pc-signal" style="display:none;text-align:left">추세중</td>
 </tr>
 <tr class="row-timing" style="color:#aaa;cursor:pointer" onclick="var d=document.getElementById('d_010170');d.style.display=d.style.display==='none'?'':'none'">
-<td colspan="10" style="text-align:left;font-weight:bold">⏰ ⏳ 과거12회 평균14일 (최소4/최대24) / 추세중</td>
+<td colspan="10" style="text-align:left;font-weight:bold">⏰ ⏳ 과거13회 평균14일 (최소3/최대24) / 추세중</td>
 </tr>
 <tr id="d_010170" class="row-detail" style="display:none">
 <td colspan="10" style="text-align:left;padding:0;border-bottom:2px solid #253050">
 <div style="margin:4px 8px 8px 8px;padding:10px 14px;border:1px solid #253050;border-left:3px solid #aaa;border-radius:4px;background:#0d1b2a;line-height:1.7;font-size:0.85em;color:#999">
 <div style="color:#aaa;font-weight:bold;margin-bottom:4px">📊 대한광통신 (010170) — 점수 21점 / 🔵 반등 초기 (관찰)</div>
 <div>📌 판단근거: <span style='color:#00e676'>MA20위+MA5눌림</span> / <span style='color:#00e676'>MA60위</span> / <span style='color:#00e676'>MA120위</span> / <span style='color:#ff1744'>RSI하락전환</span> / <span style='color:#aaa'>MACD양호</span> / <span style='color:#00e676'>MA20상승12.3%</span></div>
-<div>📈 이동평균: MA5 <span style='color:#ff1744'>25,470▼</span> / MA20 <span style='color:#00e676'>18,532▲</span> / MA60 <span style='color:#00e676'>11,620▲</span> / MA120 <span style='color:#00e676'>7,117▲</span></div>
-<div>📊 볼린저: 하단9,304 / 중간18,532 / 상단27,760 (<span style='color:#ffd600'>75%</span>)</div>
-<div>📉 MACD: <span style='color:#00e676'>MACD 3412</span> / 시그널 2758 / <span style='color:#aaa'>유지</span></div>
-<div>🎯 매수가이드: <span style='color:#aaa'>매수권 9,304~18,532</span> / 매도권 27,760+ / <span style='color:#ff1744'>손절선 MA20-3% 17,976</span></div>
-<div>⏳ 타이밍: <span style='color:#00e5ff'>과거12회 평균14일 (최소4/최대24)</span> / <span style='color:#00e5ff'>RSI반등 패턴 약4일 (N=40)</span> / 지지선 15,070</div>
+<div>📈 이동평균: MA5 <span style='color:#ff1744'>25,440▼</span> / MA20 <span style='color:#00e676'>18,524▲</span> / MA60 <span style='color:#00e676'>11,617▲</span> / MA120 <span style='color:#00e676'>7,116▲</span></div>
+<div>📊 볼린저: 하단9,312 / 중간18,524 / 상단27,737 (<span style='color:#ffd600'>75%</span>)</div>
+<div>📉 MACD: <span style='color:#00e676'>MACD 3400</span> / 시그널 2755 / <span style='color:#aaa'>유지</span></div>
+<div>🎯 매수가이드: <span style='color:#aaa'>매수권 9,312~18,524</span> / 매도권 27,737+ / <span style='color:#ff1744'>손절선 MA20-3% 17,969</span></div>
+<div>⏳ 타이밍: <span style='color:#00e5ff'>과거13회 평균14일 (최소3/최대24)</span> / <span style='color:#00e5ff'>RSI반등 패턴 약3일 (N=40)</span> / 지지선 15,070</div>
 <div>🔬 <span style='color:#aaa'>최적RSI 40~44 (5일후 +41.8% 승률80% N=5)</span></div>
 <div style="color:#555">🚀 추세매수: MA20↑ / MA60위</div>
-<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=1.63 (보통)</span> / <span style='color:#aaa'>거래대금 0.4x (보통)</span></div>
+<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=1.64 (보통)</span> / <span style='color:#aaa'>거래대금 0.5x (보통)</span></div>
 </div>
 </td>
 </tr><tr class="row-main" style="color:#aaa;cursor:pointer" onclick="var d=document.getElementById('d_009155');d.style.display=d.style.display==='none'?'':'none'">
 <td style="font-weight:bold">삼성전기우</td>
 <td style="font-weight:bold;color:#ff9100;text-align:center">매도고려</td>
-<td>394,000</td>
-<td class="hide-m">336,275</td>
-<td style="color:#4d9de0">-0.8%</td>
-<td class="hide-m">-14.7%</td>
+<td>393,500</td>
+<td class="hide-m">336,250</td>
+<td style="color:#4d9de0">-0.9%</td>
+<td class="hide-m">-14.5%</td>
 <td>77</td>
 <td>40~44 과열</td>
 <td class="pc-timing" style="display:none;text-align:left">⏳ 과거14회 평균8일 (최소1/최대17)</td>
@@ -479,17 +509,20 @@ tr:hover td{background:#16213e}
 <div style="margin:4px 8px 8px 8px;padding:10px 14px;border:1px solid #253050;border-left:3px solid #aaa;border-radius:4px;background:#0d1b2a;line-height:1.7;font-size:0.85em;color:#999">
 <div style="color:#aaa;font-weight:bold;margin-bottom:4px">📊 삼성전기우 (009155) — 점수 17점 / 🟡 눌림 진행중</div>
 <div>📌 판단근거: <span style='color:#00e676'>정배열(가>5>20)</span> / <span style='color:#00e676'>MA60위</span> / <span style='color:#00e676'>MA120위</span> / <span style='color:#ff1744'>RSI고온77</span> / <span style='color:#ff1744'>RSI하락전환</span> / <span style='color:#ff1744'>양봉후음봉</span></div>
-<div>📈 이동평균: MA5 <span style='color:#00e676'>386,300▲</span> / MA20 <span style='color:#00e676'>336,275▲</span> / MA60 <span style='color:#00e676'>227,298▲</span> / MA120 <span style='color:#00e676'>173,406▲</span></div>
-<div>📊 볼린저: 하단241,570 / 중간336,275 / 상단430,980 (<span style='color:#ff1744'>80%</span>)</div>
-<div>📉 MACD: <span style='color:#00e676'>MACD 47009</span> / 시그널 45852 / <span style='color:#aaa'>유지</span></div>
-<div>🎯 매수가이드: <span style='color:#aaa'>매수권 241,570~336,275</span> / 매도권 430,980+ / <span style='color:#ff1744'>손절선 MA20-3% 326,187</span></div>
+<div>📈 이동평균: MA5 <span style='color:#00e676'>386,200▲</span> / MA20 <span style='color:#00e676'>336,250▲</span> / MA60 <span style='color:#00e676'>227,290▲</span> / MA120 <span style='color:#00e676'>173,402▲</span></div>
+<div>📊 볼린저: 하단241,606 / 중간336,250 / 상단430,894 (<span style='color:#ff1744'>80%</span>)</div>
+<div>📉 MACD: <span style='color:#00e676'>MACD 46969</span> / 시그널 45844 / <span style='color:#aaa'>유지</span></div>
+<div>🎯 매수가이드: <span style='color:#aaa'>매수권 241,606~336,250</span> / 매도권 430,894+ / <span style='color:#ff1744'>손절선 MA20-3% 326,162</span></div>
 <div>⏳ 타이밍: <span style='color:#00e5ff'>과거14회 평균8일 (최소1/최대17)</span> / <span style='color:#00e5ff'>RSI반등 패턴 약4일 (N=12)</span> / 지지선 376,500</div>
 <div>🔬 <span style='color:#ff9100'>최적RSI 40~44 (5일후 +15.8% 승률100% N=3)</span></div>
 <div style="color:#555">🚀 추세매수: 정배열 / MA5터치 / MA20↑ / MA60위</div>
-<div>⚡ <span style='color:#00e676'>변동성 ATR5/20=0.49 (🔥압축!)</span> / <span style='color:#aaa'>거래대금 0.4x (보통)</span></div>
+<div>⚡ <span style='color:#00e676'>변동성 ATR5/20=0.5 (🔥압축!)</span> / <span style='color:#aaa'>거래대금 0.5x (보통)</span></div>
 </div>
 </td>
-</tr><tr class="row-main" style="color:#aaa;cursor:pointer" onclick="var d=document.getElementById('d_005935');d.style.display=d.style.display==='none'?'':'none'">
+</tr><tr style="background:#0a1628">
+<td colspan="10" style="padding:6px 10px;font-size:0.8em;font-weight:bold;color:#aaa;border-top:1px solid #253050;border-bottom:1px solid #1a2a4a">
+▣ 반도체 <span style="font-weight:normal;font-size:0.9em">(-0.3%)</span>
+</td></tr><tr class="row-main" style="color:#aaa;cursor:pointer" onclick="var d=document.getElementById('d_005935');d.style.display=d.style.display==='none'?'':'none'">
 <td style="font-weight:bold">삼성전자우</td>
 <td style="font-weight:bold;color:#e53935;text-align:center">추세매수</td>
 <td>196,900</td>
@@ -516,15 +549,18 @@ tr:hover td{background:#16213e}
 <div>⏳ 타이밍: <span style='color:#00e5ff'>과거19회 평균12일 (최소2/최대21)</span> / <span style='color:#00e5ff'>RSI반등 패턴 약2일 (N=28)</span> / 지지선 182,700</div>
 <div>🔬 <span style='color:#ff9100'>최적RSI 55~59 (5일후 +7.5% 승률100% N=12)</span></div>
 <div style="color:#e53935">🚀 추세매수: 정배열 / 양봉 / MA20↑ / MA60위</div>
-<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=1.24 (보통)</span> / <span style='color:#aaa'>거래대금 0.6x (보통)</span></div>
+<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=1.24 (보통)</span> / <span style='color:#aaa'>거래대금 0.7x (보통)</span></div>
 </div>
 </td>
-</tr><tr class="row-main" style="color:#00e5ff;cursor:pointer" onclick="var d=document.getElementById('d_034020');d.style.display=d.style.display==='none'?'':'none'">
+</tr><tr style="background:#0a1628">
+<td colspan="10" style="padding:6px 10px;font-size:0.8em;font-weight:bold;color:#ff9100;border-top:1px solid #253050;border-bottom:1px solid #1a2a4a">
+▣ 기타 <span style="font-weight:normal;font-size:0.9em">(+0.0%)</span>
+</td></tr><tr class="row-main" style="color:#00e5ff;cursor:pointer" onclick="var d=document.getElementById('d_034020');d.style.display=d.style.display==='none'?'':'none'">
 <td style="font-weight:bold">두산에너빌리티</td>
 <td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
-<td>116,700</td>
-<td class="hide-m">121,965</td>
-<td style="color:#4d9de0">-2.8%</td>
+<td>116,800</td>
+<td class="hide-m">121,970</td>
+<td style="color:#4d9de0">-2.7%</td>
 <td class="hide-m">✅구간안</td>
 <td>51</td>
 <td>40~44 </td>
@@ -538,24 +574,27 @@ tr:hover td{background:#16213e}
 <td colspan="10" style="text-align:left;padding:0;border-bottom:2px solid #253050">
 <div style="margin:4px 8px 8px 8px;padding:10px 14px;border:1px solid #253050;border-left:3px solid #00e5ff;border-radius:4px;background:#0d1b2a;line-height:1.7;font-size:0.85em;color:#999">
 <div style="color:#00e5ff;font-weight:bold;margin-bottom:4px">📊 두산에너빌리티 (034020) — 점수 15점 / 🟡 눌림 진행중</div>
-<div>📌 판단근거: <span style='color:#ff1744'>MA20이탈</span> / <span style='color:#00e676'>MA60위</span> / <span style='color:#00e676'>MA120위</span> / <span style='color:#00e676'>RSI적정51</span> / <span style='color:#00e676'>볼밴중하34%</span> / <span style='color:#ff1744'>MACD약세</span></div>
-<div>📈 이동평균: MA5 <span style='color:#ff1744'>123,980▼</span> / MA20 <span style='color:#ff1744'>121,965▼</span> / MA60 <span style='color:#00e676'>107,137▲</span> / MA120 <span style='color:#00e676'>95,089▲</span></div>
-<div>📊 볼린저: 하단105,195 / 중간121,965 / 상단138,735 (<span style='color:#aaa'>34%</span>)</div>
-<div>📉 MACD: <span style='color:#ff1744'>MACD 5046</span> / 시그널 6543 / <span style='color:#aaa'>유지</span></div>
-<div>🎯 매수가이드: <span style='color:#00e676'>매수권 105,195~121,965</span> / 매도권 138,735+ / <span style='color:#ff1744'>손절선 MA20-3% 118,306</span></div>
+<div>📌 판단근거: <span style='color:#ff1744'>MA20이탈</span> / <span style='color:#00e676'>MA60위</span> / <span style='color:#00e676'>MA120위</span> / <span style='color:#00e676'>RSI적정51</span> / <span style='color:#00e676'>볼밴중하35%</span> / <span style='color:#ff1744'>MACD약세</span></div>
+<div>📈 이동평균: MA5 <span style='color:#ff1744'>124,000▼</span> / MA20 <span style='color:#ff1744'>121,970▼</span> / MA60 <span style='color:#00e676'>107,138▲</span> / MA120 <span style='color:#00e676'>95,090▲</span></div>
+<div>📊 볼린저: 하단105,207 / 중간121,970 / 상단138,733 (<span style='color:#aaa'>35%</span>)</div>
+<div>📉 MACD: <span style='color:#ff1744'>MACD 5054</span> / 시그널 6545 / <span style='color:#aaa'>유지</span></div>
+<div>🎯 매수가이드: <span style='color:#00e676'>매수권 105,207~121,970</span> / 매도권 138,733+ / <span style='color:#ff1744'>손절선 MA20-3% 118,311</span></div>
 <div>⏳ 타이밍: <span style='color:#00e5ff'>RSI반등 패턴 약3일 (N=41)</span> / 지지선 127,000</div>
 <div>🔬 <span style='color:#aaa'>최적RSI 40~44 (5일후 +6.0% 승률80% N=10)</span></div>
 <div style="color:#555">🚀 추세매수: MA20↑ / MA60위</div>
-<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=1.16 (보통)</span> / <span style='color:#aaa'>거래대금 0.4x (보통)</span></div>
+<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=1.16 (보통)</span> / <span style='color:#aaa'>거래대금 0.5x (보통)</span></div>
 </div>
 </td>
-</tr><tr class="row-main" style="color:#aaa;cursor:pointer" onclick="var d=document.getElementById('d_000660');d.style.display=d.style.display==='none'?'':'none'">
+</tr><tr style="background:#0a1628">
+<td colspan="10" style="padding:6px 10px;font-size:0.8em;font-weight:bold;color:#aaa;border-top:1px solid #253050;border-bottom:1px solid #1a2a4a">
+▣ 반도체 <span style="font-weight:normal;font-size:0.9em">(-0.3%)</span>
+</td></tr><tr class="row-main" style="color:#aaa;cursor:pointer" onclick="var d=document.getElementById('d_000660');d.style.display=d.style.display==='none'?'':'none'">
 <td style="font-weight:bold">SK하이닉스</td>
 <td style="font-weight:bold;color:#ff9100;text-align:center">매도고려</td>
-<td>1,970,000</td>
-<td class="hide-m">1,434,950</td>
-<td style="color:#4d9de0">-0.3%</td>
-<td class="hide-m">-27.2%</td>
+<td>1,968,000</td>
+<td class="hide-m">1,434,850</td>
+<td style="color:#4d9de0">-0.4%</td>
+<td class="hide-m">-27.1%</td>
 <td>92</td>
 <td>40~44 과열</td>
 <td class="pc-timing" style="display:none;text-align:left">⏳ 약7일 추정 (일변동3.7%)</td>
@@ -569,14 +608,14 @@ tr:hover td{background:#16213e}
 <div style="margin:4px 8px 8px 8px;padding:10px 14px;border:1px solid #253050;border-left:3px solid #aaa;border-radius:4px;background:#0d1b2a;line-height:1.7;font-size:0.85em;color:#999">
 <div style="color:#aaa;font-weight:bold;margin-bottom:4px">📊 SK하이닉스 (000660) — 점수 12점 / 🟡 눌림 진행중</div>
 <div>📌 판단근거: <span style='color:#00e676'>정배열(가>5>20)</span> / <span style='color:#00e676'>MA60위</span> / <span style='color:#00e676'>MA120위</span> / <span style='color:#ff1744'>RSI과열92</span> / <span style='color:#ff1744'>볼밴상단96%</span> / <span style='color:#ff1744'>양봉후음봉</span></div>
-<div>📈 이동평균: MA5 <span style='color:#00e676'>1,869,400▲</span> / MA20 <span style='color:#00e676'>1,434,950▲</span> / MA60 <span style='color:#00e676'>1,112,283▲</span> / MA120 <span style='color:#00e676'>892,600▲</span></div>
-<div>📊 볼린저: 하단857,027 / 중간1,434,950 / 상단2,012,873 (<span style='color:#ff1744'>96%</span>)</div>
-<div>📉 MACD: <span style='color:#00e676'>MACD 231632</span> / 시그널 171287 / <span style='color:#aaa'>유지</span></div>
-<div>🎯 매수가이드: <span style='color:#aaa'>매수권 857,027~1,434,950</span> / 매도권 2,012,873+ / <span style='color:#ff1744'>손절선 MA20-3% 1,391,902</span></div>
+<div>📈 이동평균: MA5 <span style='color:#00e676'>1,869,000▲</span> / MA20 <span style='color:#00e676'>1,434,850▲</span> / MA60 <span style='color:#00e676'>1,112,250▲</span> / MA120 <span style='color:#00e676'>892,583▲</span></div>
+<div>📊 볼린저: 하단857,296 / 중간1,434,850 / 상단2,012,404 (<span style='color:#ff1744'>96%</span>)</div>
+<div>📉 MACD: <span style='color:#00e676'>MACD 231472</span> / 시그널 171255 / <span style='color:#aaa'>유지</span></div>
+<div>🎯 매수가이드: <span style='color:#aaa'>매수권 857,296~1,434,850</span> / 매도권 2,012,404+ / <span style='color:#ff1744'>손절선 MA20-3% 1,391,804</span></div>
 <div>⏳ 타이밍: <span style='color:#00e5ff'>RSI반등 패턴 약4일 (N=16)</span> / 지지선 1,286,000</div>
 <div>🔬 <span style='color:#ff9100'>최적RSI 40~44 (5일후 +11.2% 승률80% N=5)</span></div>
 <div style="color:#555">🚀 추세매수: 정배열 / MA20↑ / MA60위</div>
-<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=1.58 (보통)</span> / <span style='color:#aaa'>거래대금 0.7x (보통)</span></div>
+<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=1.58 (보통)</span> / <span style='color:#aaa'>거래대금 0.8x (보통)</span></div>
 </div>
 </td>
 </tr><tr class="row-main" style="color:#aaa;cursor:pointer" onclick="var d=document.getElementById('d_042700');d.style.display=d.style.display==='none'?'':'none'">
@@ -609,14 +648,17 @@ tr:hover td{background:#16213e}
 <div>⚡ <span style='color:#aaa'>변동성 ATR5/20=1.18 (보통)</span> / <span style='color:#aaa'>거래대금 0.3x (보통)</span></div>
 </div>
 </td>
-</tr><tr class="row-main" style="color:#00e5ff;cursor:pointer" onclick="var d=document.getElementById('d_012450');d.style.display=d.style.display==='none'?'':'none'">
+</tr><tr style="background:#0a1628">
+<td colspan="10" style="padding:6px 10px;font-size:0.8em;font-weight:bold;color:#ff9100;border-top:1px solid #253050;border-bottom:1px solid #1a2a4a">
+▣ 방산 <span style="font-weight:normal;font-size:0.9em">(+0.1%)</span>
+</td></tr><tr class="row-main" style="color:#00e5ff;cursor:pointer" onclick="var d=document.getElementById('d_012450');d.style.display=d.style.display==='none'?'':'none'">
 <td style="font-weight:bold">한화에어로스페이스</td>
 <td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
-<td>1,276,000</td>
-<td class="hide-m">1,397,000</td>
-<td style="color:#4d9de0">-0.8%</td>
+<td>1,279,000</td>
+<td class="hide-m">1,397,150</td>
+<td style="color:#4d9de0">-0.5%</td>
 <td class="hide-m">✅구간안</td>
-<td>32</td>
+<td>33</td>
 <td>30~34 ✅</td>
 <td class="pc-timing" style="display:none;text-align:left">🔵 목표가 도달 (반등 대기)</td>
 <td class="pc-signal" style="display:none;text-align:left">눌림구간</td>
@@ -628,18 +670,21 @@ tr:hover td{background:#16213e}
 <td colspan="10" style="text-align:left;padding:0;border-bottom:2px solid #253050">
 <div style="margin:4px 8px 8px 8px;padding:10px 14px;border:1px solid #253050;border-left:3px solid #00e5ff;border-radius:4px;background:#0d1b2a;line-height:1.7;font-size:0.85em;color:#999">
 <div style="color:#00e5ff;font-weight:bold;margin-bottom:4px">📊 한화에어로스페이스 (012450) — 점수 -1점 / ⚪ 방향 불명확</div>
-<div>📌 판단근거: <span style='color:#ff1744'>MA20이탈</span> / <span style='color:#ff1744'>MA60아래</span> / <span style='color:#00e676'>MA120위</span> / <span style='color:#00e676'>RSI눌림32</span> / <span style='color:#00e676'>볼밴하단8%</span> / <span style='color:#ff1744'>양봉후음봉</span></div>
-<div>📈 이동평균: MA5 <span style='color:#ff1744'>1,293,600▼</span> / MA20 <span style='color:#ff1744'>1,397,000▼</span> / MA60 <span style='color:#ff1744'>1,373,767▼</span> / MA120 <span style='color:#00e676'>1,211,108▲</span></div>
-<div>📊 볼린저: 하단1,251,754 / 중간1,397,000 / 상단1,542,246 (<span style='color:#00e676'>8%</span>)</div>
-<div>📉 MACD: <span style='color:#ff1744'>MACD -32564</span> / 시그널 -12111 / <span style='color:#aaa'>유지</span></div>
-<div>🎯 매수가이드: <span style='color:#00e676'>매수권 1,251,754~1,397,000</span> / 매도권 1,542,246+ / <span style='color:#ff1744'>손절선 MA20-3% 1,355,090</span></div>
-<div>⏳ 타이밍: <span style='color:#00e5ff'>RSI반등 패턴 약4일 (N=16)</span> / 지지선 1,451,000</div>
-<div>🔬 <span style='color:#00e676'>최적RSI 30~34 (5일후 +4.9% 승률67% N=6)</span></div>
+<div>📌 판단근거: <span style='color:#ff1744'>MA20이탈</span> / <span style='color:#ff1744'>MA60아래</span> / <span style='color:#00e676'>MA120위</span> / <span style='color:#00e676'>RSI눌림33</span> / <span style='color:#00e676'>볼밴하단9%</span> / <span style='color:#ff1744'>양봉후음봉</span></div>
+<div>📈 이동평균: MA5 <span style='color:#ff1744'>1,294,200▼</span> / MA20 <span style='color:#ff1744'>1,397,150▼</span> / MA60 <span style='color:#ff1744'>1,373,817▼</span> / MA120 <span style='color:#00e676'>1,211,133▲</span></div>
+<div>📊 볼린저: 하단1,252,399 / 중간1,397,150 / 상단1,541,901 (<span style='color:#00e676'>9%</span>)</div>
+<div>📉 MACD: <span style='color:#ff1744'>MACD -32324</span> / 시그널 -12063 / <span style='color:#aaa'>유지</span></div>
+<div>🎯 매수가이드: <span style='color:#00e676'>매수권 1,252,399~1,397,150</span> / 매도권 1,541,901+ / <span style='color:#ff1744'>손절선 MA20-3% 1,355,236</span></div>
+<div>⏳ 타이밍: <span style='color:#00e5ff'>RSI반등 패턴 약4일 (N=19)</span> / 지지선 1,451,000</div>
+<div>🔬 <span style='color:#00e676'>최적RSI 30~34 (5일후 +5.0% 승률67% N=6)</span></div>
 <div style="color:#555">🚀 추세매수: MA5터치</div>
-<div>⚡ <span style='color:#00e676'>변동성 ATR5/20=0.42 (🔥압축!)</span> / <span style='color:#aaa'>거래대금 0.2x (보통)</span></div>
+<div>⚡ <span style='color:#00e676'>변동성 ATR5/20=0.4 (🔥압축!)</span> / <span style='color:#aaa'>거래대금 0.3x (보통)</span></div>
 </div>
 </td>
-</tr><tr class="row-main" style="color:#00e676;cursor:pointer" onclick="var d=document.getElementById('d_068270');d.style.display=d.style.display==='none'?'':'none'">
+</tr><tr style="background:#0a1628">
+<td colspan="10" style="padding:6px 10px;font-size:0.8em;font-weight:bold;color:#e53935;border-top:1px solid #253050;border-bottom:1px solid #1a2a4a">
+▣ 바이오 <span style="font-weight:normal;font-size:0.9em">(+2.8%)</span>
+</td></tr><tr class="row-main" style="color:#00e676;cursor:pointer" onclick="var d=document.getElementById('d_068270');d.style.display=d.style.display==='none'?'':'none'">
 <td style="font-weight:bold">셀트리온</td>
 <td style="font-weight:bold;color:#e53935;text-align:center">매수</td>
 <td>192,200</td>
@@ -672,9 +717,9 @@ tr:hover td{background:#16213e}
 </tr><tr class="row-main" style="color:#00e5ff;cursor:pointer" onclick="var d=document.getElementById('d_207940');d.style.display=d.style.display==='none'?'':'none'">
 <td style="font-weight:bold">삼성바이오로직스</td>
 <td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
-<td>1,401,000</td>
-<td class="hide-m">1,509,400</td>
-<td style="color:#4d9de0">-0.6%</td>
+<td>1,400,000</td>
+<td class="hide-m">1,509,350</td>
+<td style="color:#4d9de0">-0.7%</td>
 <td class="hide-m">✅구간안</td>
 <td>15</td>
 <td>55~59 </td>
@@ -689,23 +734,23 @@ tr:hover td{background:#16213e}
 <div style="margin:4px 8px 8px 8px;padding:10px 14px;border:1px solid #253050;border-left:3px solid #00e5ff;border-radius:4px;background:#0d1b2a;line-height:1.7;font-size:0.85em;color:#999">
 <div style="color:#00e5ff;font-weight:bold;margin-bottom:4px">📊 삼성바이오로직스 (207940) — 점수 -8점 / 🟠 하락 추세</div>
 <div>📌 판단근거: <span style='color:#ff1744'>MA20이탈</span> / <span style='color:#ff1744'>MA60아래</span> / <span style='color:#00e676'>RSI과매도15</span> / <span style='color:#00e676'>볼밴하단8%</span> / <span style='color:#ff1744'>MACD약세</span> / <span style='color:#ff1744'>MA20하락-2.1%</span></div>
-<div>📈 이동평균: MA5 <span style='color:#ff1744'>1,436,800▼</span> / MA20 <span style='color:#ff1744'>1,509,400▼</span> / MA60 <span style='color:#ff1744'>1,580,867▼</span> / MA120 <span style='color:#ff1744'>1,666,000▼</span></div>
-<div>📊 볼린저: 하단1,380,686 / 중간1,509,400 / 상단1,638,114 (<span style='color:#00e676'>8%</span>)</div>
-<div>📉 MACD: <span style='color:#ff1744'>MACD -42129</span> / 시그널 -33883 / <span style='color:#aaa'>유지</span></div>
-<div>🎯 매수가이드: <span style='color:#00e676'>매수권 1,380,686~1,509,400</span> / 매도권 1,638,114+ / <span style='color:#ff1744'>손절선 MA20-3% 1,464,118</span></div>
+<div>📈 이동평균: MA5 <span style='color:#ff1744'>1,436,600▼</span> / MA20 <span style='color:#ff1744'>1,509,350▼</span> / MA60 <span style='color:#ff1744'>1,580,850▼</span> / MA120 <span style='color:#ff1744'>1,665,992▼</span></div>
+<div>📊 볼린저: 하단1,380,467 / 중간1,509,350 / 상단1,638,233 (<span style='color:#00e676'>8%</span>)</div>
+<div>📉 MACD: <span style='color:#ff1744'>MACD -42209</span> / 시그널 -33899 / <span style='color:#aaa'>유지</span></div>
+<div>🎯 매수가이드: <span style='color:#00e676'>매수권 1,380,467~1,509,350</span> / 매도권 1,638,233+ / <span style='color:#ff1744'>손절선 MA20-3% 1,464,070</span></div>
 <div>⏳ 타이밍: <span style='color:#00e5ff'>RSI반등 패턴 약6일 (N=5)</span> / 지지선 1,717,000</div>
 <div>🔬 <span style='color:#aaa'>최적RSI 55~59 (5일후 +3.2% 승률62% N=8)</span></div>
 <div style="color:#555"></div>
-<div>⚡ <span style='color:#ffd600'>변동성 ATR5/20=0.81 (에너지응축)</span> / <span style='color:#aaa'>거래대금 0.4x (보통)</span></div>
+<div>⚡ <span style='color:#ffd600'>변동성 ATR5/20=0.82 (에너지응축)</span> / <span style='color:#aaa'>거래대금 0.4x (보통)</span></div>
 </div>
 </td>
 </tr><tr class="row-main" style="color:#aaa;cursor:pointer" onclick="var d=document.getElementById('d_196170');d.style.display=d.style.display==='none'?'':'none'">
 <td style="font-weight:bold">알테오젠</td>
 <td style="font-weight:bold;color:#888;text-align:center">관망</td>
-<td>382,500</td>
-<td class="hide-m">363,800</td>
-<td style="color:#e53935">+8.1%</td>
-<td class="hide-m">-4.9%</td>
+<td>383,500</td>
+<td class="hide-m">363,850</td>
+<td style="color:#e53935">+8.3%</td>
+<td class="hide-m">-5.1%</td>
 <td>58</td>
 <td>35~39 </td>
 <td class="pc-timing" style="display:none;text-align:left">⏳ 과거25회 평균4일 (최소1/최대12)</td>
@@ -719,52 +764,55 @@ tr:hover td{background:#16213e}
 <div style="margin:4px 8px 8px 8px;padding:10px 14px;border:1px solid #253050;border-left:3px solid #aaa;border-radius:4px;background:#0d1b2a;line-height:1.7;font-size:0.85em;color:#999">
 <div style="color:#aaa;font-weight:bold;margin-bottom:4px">📊 알테오젠 (196170) — 점수 25점 / 🔵 반등 초기 (관찰)</div>
 <div>📌 판단근거: <span style='color:#00e676'>MA20위+MA5눌림</span> / <span style='color:#00e676'>MA60위</span> / <span style='color:#00e676'>⭐MA5상승전환</span> / <span style='color:#ff1744'>MACD약세</span></div>
-<div>📈 이동평균: MA5 <span style='color:#00e676'>348,800▲</span> / MA20 <span style='color:#00e676'>363,800▲</span> / MA60 <span style='color:#00e676'>367,842▲</span> / MA120 <span style='color:#ff1744'>413,450▼</span></div>
-<div>📊 볼린저: 하단335,242 / 중간363,800 / 상단392,358 (<span style='color:#ff1744'>83%</span>)</div>
-<div>📉 MACD: <span style='color:#ff1744'>MACD -2899</span> / 시그널 -2802 / <span style='color:#aaa'>유지</span></div>
-<div>🎯 매수가이드: <span style='color:#aaa'>매수권 335,242~363,800</span> / 매도권 392,358+ / <span style='color:#ff1744'>손절선 MA20-3% 352,886</span></div>
+<div>📈 이동평균: MA5 <span style='color:#00e676'>349,000▲</span> / MA20 <span style='color:#00e676'>363,850▲</span> / MA60 <span style='color:#00e676'>367,858▲</span> / MA120 <span style='color:#ff1744'>413,458▼</span></div>
+<div>📊 볼린저: 하단335,158 / 중간363,850 / 상단392,542 (<span style='color:#ff1744'>84%</span>)</div>
+<div>📉 MACD: <span style='color:#ff1744'>MACD -2819</span> / 시그널 -2786 / <span style='color:#aaa'>유지</span></div>
+<div>🎯 매수가이드: <span style='color:#aaa'>매수권 335,158~363,850</span> / 매도권 392,542+ / <span style='color:#ff1744'>손절선 MA20-3% 352,934</span></div>
 <div>⏳ 타이밍: <span style='color:#00e5ff'>과거25회 평균4일 (최소1/최대12)</span> / <span style='color:#00e5ff'>RSI반등 패턴 약4일 (N=19)</span> / 지지선 402,000</div>
 <div>🔬 <span style='color:#aaa'>최적RSI 35~39 (5일후 +1.6% 승률57% N=14)</span></div>
 <div style="color:#555">🚀 추세매수: 양봉 / MA60위</div>
-<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=1.82 (보통)</span> / <span style='color:#00e676'>거래대금 1.5x (활발)</span></div>
+<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=1.83 (보통)</span> / <span style='color:#00e676'>거래대금 1.7x (활발)</span></div>
 </div>
 </td>
-</tr><tr class="row-main" style="color:#00e676;cursor:pointer" onclick="var d=document.getElementById('d_035420');d.style.display=d.style.display==='none'?'':'none'">
+</tr><tr style="background:#0a1628">
+<td colspan="10" style="padding:6px 10px;font-size:0.8em;font-weight:bold;color:#e53935;border-top:1px solid #253050;border-bottom:1px solid #1a2a4a">
+▣ AI/IT <span style="font-weight:normal;font-size:0.9em">(+5.2%)</span>
+</td></tr><tr class="row-main" style="color:#00e676;cursor:pointer" onclick="var d=document.getElementById('d_035420');d.style.display=d.style.display==='none'?'':'none'">
 <td style="font-weight:bold">NAVER</td>
 <td style="font-weight:bold;color:#e53935;text-align:center">매수</td>
-<td>211,000</td>
-<td class="hide-m">212,600</td>
-<td style="color:#e53935">+4.7%</td>
+<td>211,500</td>
+<td class="hide-m">212,625</td>
+<td style="color:#e53935">+5.0%</td>
 <td class="hide-m">✅구간안</td>
-<td>47</td>
+<td>48</td>
 <td>45~49 ✅</td>
 <td class="pc-timing" style="display:none;text-align:left">🟢 목표가 도달 + 반등 신호</td>
-<td class="pc-signal" style="display:none;text-align:left">⭐RSI반등(39→37→47), ⭐음봉후양봉</td>
+<td class="pc-signal" style="display:none;text-align:left">⭐RSI반등(39→37→48), ⭐음봉후양봉</td>
 </tr>
 <tr class="row-timing" style="color:#00e676;cursor:pointer" onclick="var d=document.getElementById('d_035420');d.style.display=d.style.display==='none'?'':'none'">
-<td colspan="10" style="text-align:left;font-weight:bold">⏰ 🟢 목표가 도달 + 반등 신호 / ⭐RSI반등(39→37→47), ⭐음봉후양봉</td>
+<td colspan="10" style="text-align:left;font-weight:bold">⏰ 🟢 목표가 도달 + 반등 신호 / ⭐RSI반등(39→37→48), ⭐음봉후양봉</td>
 </tr>
 <tr id="d_035420" class="row-detail" style="display:none">
 <td colspan="10" style="text-align:left;padding:0;border-bottom:2px solid #253050">
 <div style="margin:4px 8px 8px 8px;padding:10px 14px;border:1px solid #253050;border-left:3px solid #00e676;border-radius:4px;background:#0d1b2a;line-height:1.7;font-size:0.85em;color:#999">
 <div style="color:#00e676;font-weight:bold;margin-bottom:4px">📊 NAVER (035420) — 점수 32점 / 🟢 반등 확인 (관심)</div>
-<div>📌 판단근거: <span style='color:#ff1744'>MA20이탈</span> / <span style='color:#ff1744'>MA60아래</span> / <span style='color:#00e676'>RSI적정47</span> / <span style='color:#00e676'>⭐RSI반등(39→37→47)</span> / <span style='color:#00e676'>⭐음봉후양봉</span> / <span style='color:#00e676'>⭐MA5상승전환</span></div>
-<div>📈 이동평균: MA5 <span style='color:#00e676'>208,600▲</span> / MA20 <span style='color:#ff1744'>212,600▼</span> / MA60 <span style='color:#ff1744'>218,683▼</span> / MA120 <span style='color:#ff1744'>235,017▼</span></div>
-<div>📊 볼린저: 하단203,000 / 중간212,600 / 상단222,200 (<span style='color:#aaa'>42%</span>)</div>
-<div>📉 MACD: <span style='color:#ff1744'>MACD -1607</span> / 시그널 -1250 / <span style='color:#aaa'>유지</span></div>
-<div>🎯 매수가이드: <span style='color:#00e676'>매수권 203,000~212,600</span> / 매도권 222,200+ / <span style='color:#ff1744'>손절선 MA20-3% 206,222</span></div>
-<div>⏳ 타이밍: <span style='color:#00e5ff'>RSI반등 패턴 약3일 (N=15)</span> / 지지선 253,000</div>
+<div>📌 판단근거: <span style='color:#ff1744'>MA20이탈</span> / <span style='color:#ff1744'>MA60아래</span> / <span style='color:#00e676'>RSI적정48</span> / <span style='color:#00e676'>⭐RSI반등(39→37→48)</span> / <span style='color:#00e676'>⭐음봉후양봉</span> / <span style='color:#00e676'>⭐MA5상승전환</span></div>
+<div>📈 이동평균: MA5 <span style='color:#00e676'>208,700▲</span> / MA20 <span style='color:#ff1744'>212,625▼</span> / MA60 <span style='color:#ff1744'>218,692▼</span> / MA120 <span style='color:#ff1744'>235,021▼</span></div>
+<div>📊 볼린저: 하단203,039 / 중간212,625 / 상단222,211 (<span style='color:#aaa'>44%</span>)</div>
+<div>📉 MACD: <span style='color:#ff1744'>MACD -1567</span> / 시그널 -1242 / <span style='color:#aaa'>유지</span></div>
+<div>🎯 매수가이드: <span style='color:#00e676'>매수권 203,039~212,625</span> / 매도권 222,211+ / <span style='color:#ff1744'>손절선 MA20-3% 206,246</span></div>
+<div>⏳ 타이밍: <span style='color:#00e5ff'>RSI반등 패턴 약3일 (N=17)</span> / 지지선 253,000</div>
 <div>🔬 <span style='color:#00e676'>최적RSI 45~49 (5일후 +3.5% 승률50% N=8)</span></div>
 <div style="color:#555">🚀 추세매수: MA5터치 / 양봉 / 음→양전환 / MA20↑</div>
-<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=1.55 (보통)</span> / <span style='color:#aaa'>거래대금 1.2x (보통)</span></div>
+<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=1.57 (보통)</span> / <span style='color:#aaa'>거래대금 1.2x (보통)</span></div>
 </div>
 </td>
 </tr><tr class="row-main" style="color:#00e676;cursor:pointer" onclick="var d=document.getElementById('d_035720');d.style.display=d.style.display==='none'?'':'none'">
 <td style="font-weight:bold">카카오</td>
 <td style="font-weight:bold;color:#e53935;text-align:center">매수</td>
-<td>45,200</td>
-<td class="hide-m">47,347</td>
-<td style="color:#e53935">+5.2%</td>
+<td>45,250</td>
+<td class="hide-m">47,350</td>
+<td style="color:#e53935">+5.4%</td>
 <td class="hide-m">✅구간안</td>
 <td>35</td>
 <td>35~39 ✅</td>
@@ -778,24 +826,27 @@ tr:hover td{background:#16213e}
 <td colspan="10" style="text-align:left;padding:0;border-bottom:2px solid #253050">
 <div style="margin:4px 8px 8px 8px;padding:10px 14px;border:1px solid #253050;border-left:3px solid #00e676;border-radius:4px;background:#0d1b2a;line-height:1.7;font-size:0.85em;color:#999">
 <div style="color:#00e676;font-weight:bold;margin-bottom:4px">📊 카카오 (035720) — 점수 15점 / 🔵 반등 초기 (관찰)</div>
-<div>📌 판단근거: <span style='color:#ff1744'>MA20이탈</span> / <span style='color:#ff1744'>MA60아래</span> / <span style='color:#00e676'>RSI눌림35</span> / <span style='color:#00e676'>볼밴중하24%</span> / <span style='color:#00e676'>⭐RSI반등(19→17→35)</span> / <span style='color:#00e676'>⭐음봉후양봉</span></div>
-<div>📈 이동평균: MA5 <span style='color:#00e676'>44,480▲</span> / MA20 <span style='color:#ff1744'>47,348▼</span> / MA60 <span style='color:#ff1744'>49,891▼</span> / MA120 <span style='color:#ff1744'>54,629▼</span></div>
-<div>📊 볼린저: 하단43,160 / 중간47,348 / 상단51,535 (<span style='color:#00e676'>24%</span>)</div>
-<div>📉 MACD: <span style='color:#ff1744'>MACD -1291</span> / 시그널 -986 / <span style='color:#aaa'>유지</span></div>
-<div>🎯 매수가이드: <span style='color:#00e676'>매수권 43,160~47,348</span> / 매도권 51,535+ / <span style='color:#ff1744'>손절선 MA20-3% 45,927</span></div>
+<div>📌 판단근거: <span style='color:#ff1744'>MA20이탈</span> / <span style='color:#ff1744'>MA60아래</span> / <span style='color:#00e676'>RSI눌림35</span> / <span style='color:#00e676'>볼밴중하25%</span> / <span style='color:#00e676'>⭐RSI반등(19→17→35)</span> / <span style='color:#00e676'>⭐음봉후양봉</span></div>
+<div>📈 이동평균: MA5 <span style='color:#00e676'>44,490▲</span> / MA20 <span style='color:#ff1744'>47,350▼</span> / MA60 <span style='color:#ff1744'>49,892▼</span> / MA120 <span style='color:#ff1744'>54,629▼</span></div>
+<div>📊 볼린저: 하단43,168 / 중간47,350 / 상단51,532 (<span style='color:#00e676'>25%</span>)</div>
+<div>📉 MACD: <span style='color:#ff1744'>MACD -1287</span> / 시그널 -985 / <span style='color:#aaa'>유지</span></div>
+<div>🎯 매수가이드: <span style='color:#00e676'>매수권 43,168~47,350</span> / 매도권 51,532+ / <span style='color:#ff1744'>손절선 MA20-3% 45,930</span></div>
 <div>⏳ 타이밍: <span style='color:#00e5ff'>RSI반등 패턴 약3일 (N=31)</span> / 지지선 57,400</div>
 <div>🔬 <span style='color:#00e676'>최적RSI 35~39 (5일후 +1.2% 승률63% N=19)</span></div>
 <div style="color:#555">🚀 추세매수: MA5터치 / 양봉 / 음→양전환</div>
-<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=1.54 (보통)</span> / <span style='color:#aaa'>거래대금 0.9x (보통)</span></div>
+<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=1.55 (보통)</span> / <span style='color:#aaa'>거래대금 1.0x (보통)</span></div>
 </div>
 </td>
-</tr><tr class="row-main" style="color:#aaa;cursor:pointer" onclick="var d=document.getElementById('d_005380');d.style.display=d.style.display==='none'?'':'none'">
+</tr><tr style="background:#0a1628">
+<td colspan="10" style="padding:6px 10px;font-size:0.8em;font-weight:bold;color:#aaa;border-top:1px solid #253050;border-bottom:1px solid #1a2a4a">
+▣ 자동차 <span style="font-weight:normal;font-size:0.9em">(-0.9%)</span>
+</td></tr><tr class="row-main" style="color:#aaa;cursor:pointer" onclick="var d=document.getElementById('d_005380');d.style.display=d.style.display==='none'?'':'none'">
 <td style="font-weight:bold">현대차</td>
 <td style="font-weight:bold;color:#ff9100;text-align:center">매도고려</td>
-<td>706,000</td>
-<td class="hide-m">569,350</td>
-<td style="color:#4d9de0">-0.6%</td>
-<td class="hide-m">-19.4%</td>
+<td>707,000</td>
+<td class="hide-m">569,400</td>
+<td style="color:#4d9de0">-0.4%</td>
+<td class="hide-m">-19.5%</td>
 <td>80</td>
 <td>30~34 과열</td>
 <td class="pc-timing" style="display:none;text-align:left">⏳ 과거8회 평균11일 (최소3/최대20)</td>
@@ -808,24 +859,24 @@ tr:hover td{background:#16213e}
 <td colspan="10" style="text-align:left;padding:0;border-bottom:2px solid #253050">
 <div style="margin:4px 8px 8px 8px;padding:10px 14px;border:1px solid #253050;border-left:3px solid #aaa;border-radius:4px;background:#0d1b2a;line-height:1.7;font-size:0.85em;color:#999">
 <div style="color:#aaa;font-weight:bold;margin-bottom:4px">📊 현대차 (005380) — 점수 6점 / ⚪ 방향 불명확</div>
-<div>📌 판단근거: <span style='color:#00e676'>정배열(가>5>20)</span> / <span style='color:#00e676'>MA60위</span> / <span style='color:#00e676'>MA120위</span> / <span style='color:#ff1744'>RSI과열80</span> / <span style='color:#ff1744'>볼밴돌파107%</span> / <span style='color:#ff1744'>양봉후음봉</span></div>
-<div>📈 이동평균: MA5 <span style='color:#00e676'>664,200▲</span> / MA20 <span style='color:#00e676'>569,350▲</span> / MA60 <span style='color:#00e676'>532,108▲</span> / MA120 <span style='color:#00e676'>446,379▲</span></div>
-<div>📊 볼린저: 하단450,157 / 중간569,350 / 상단688,543 (<span style='color:#ff1744'>107%</span>)</div>
-<div>📉 MACD: <span style='color:#00e676'>MACD 43743</span> / 시그널 26142 / <span style='color:#aaa'>유지</span></div>
-<div>🎯 매수가이드: <span style='color:#aaa'>매수권 450,157~569,350</span> / 매도권 688,543+ / <span style='color:#ff1744'>손절선 MA20-3% 552,270</span></div>
+<div>📌 판단근거: <span style='color:#00e676'>정배열(가>5>20)</span> / <span style='color:#00e676'>MA60위</span> / <span style='color:#00e676'>MA120위</span> / <span style='color:#ff1744'>RSI과열80</span> / <span style='color:#ff1744'>볼밴돌파108%</span> / <span style='color:#ff1744'>양봉후음봉</span></div>
+<div>📈 이동평균: MA5 <span style='color:#00e676'>664,400▲</span> / MA20 <span style='color:#00e676'>569,400▲</span> / MA60 <span style='color:#00e676'>532,125▲</span> / MA120 <span style='color:#00e676'>446,388▲</span></div>
+<div>📊 볼린저: 하단449,977 / 중간569,400 / 상단688,823 (<span style='color:#ff1744'>108%</span>)</div>
+<div>📉 MACD: <span style='color:#00e676'>MACD 43823</span> / 시그널 26158 / <span style='color:#aaa'>유지</span></div>
+<div>🎯 매수가이드: <span style='color:#aaa'>매수권 449,977~569,400</span> / 매도권 688,823+ / <span style='color:#ff1744'>손절선 MA20-3% 552,318</span></div>
 <div>⏳ 타이밍: <span style='color:#00e5ff'>과거8회 평균11일 (최소3/최대20)</span> / <span style='color:#00e5ff'>RSI반등 패턴 약2일 (N=7)</span> / 지지선 531,000</div>
 <div>🔬 <span style='color:#ff9100'>최적RSI 30~34 (5일후 +6.4% 승률50% N=6)</span></div>
 <div style="color:#555">🚀 추세매수: 정배열 / MA20↑ / MA60위</div>
-<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=1.58 (보통)</span> / <span style='color:#aaa'>거래대금 0.9x (보통)</span></div>
+<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=1.57 (보통)</span> / <span style='color:#aaa'>거래대금 0.9x (보통)</span></div>
 </div>
 </td>
 </tr><tr class="row-main" style="color:#aaa;cursor:pointer" onclick="var d=document.getElementById('d_000270');d.style.display=d.style.display==='none'?'':'none'">
 <td style="font-weight:bold">기아</td>
 <td style="font-weight:bold;color:#888;text-align:center">관망</td>
-<td>176,600</td>
-<td class="hide-m">160,225</td>
-<td style="color:#4d9de0">-1.6%</td>
-<td class="hide-m">-9.3%</td>
+<td>176,900</td>
+<td class="hide-m">160,240</td>
+<td style="color:#4d9de0">-1.4%</td>
+<td class="hide-m">-9.4%</td>
 <td>64</td>
 <td>60~64 ✅</td>
 <td class="pc-timing" style="display:none;text-align:left">⏳ 과거18회 평균8일 (최소1/최대20)</td>
@@ -839,47 +890,53 @@ tr:hover td{background:#16213e}
 <div style="margin:4px 8px 8px 8px;padding:10px 14px;border:1px solid #253050;border-left:3px solid #aaa;border-radius:4px;background:#0d1b2a;line-height:1.7;font-size:0.85em;color:#999">
 <div style="color:#aaa;font-weight:bold;margin-bottom:4px">📊 기아 (000270) — 점수 21점 / 🔵 반등 초기 (관찰)</div>
 <div>📌 판단근거: <span style='color:#00e676'>정배열(가>5>20)</span> / <span style='color:#00e676'>MA60위</span> / <span style='color:#00e676'>MA120위</span> / <span style='color:#ff1744'>볼밴돌파101%</span> / <span style='color:#ff1744'>양봉후음봉</span> / <span style='color:#aaa'>MACD양호</span></div>
-<div>📈 이동평균: MA5 <span style='color:#00e676'>172,720▲</span> / MA20 <span style='color:#00e676'>160,225▲</span> / MA60 <span style='color:#00e676'>162,550▲</span> / MA120 <span style='color:#00e676'>147,798▲</span></div>
-<div>📊 볼린저: 하단144,026 / 중간160,225 / 상단176,424 (<span style='color:#ff1744'>101%</span>)</div>
-<div>📉 MACD: <span style='color:#00e676'>MACD 4328</span> / 시그널 1617 / <span style='color:#aaa'>유지</span></div>
-<div>🎯 매수가이드: <span style='color:#aaa'>매수권 144,026~160,225</span> / 매도권 176,424+ / <span style='color:#ff1744'>손절선 MA20-3% 155,418</span></div>
+<div>📈 이동평균: MA5 <span style='color:#00e676'>172,780▲</span> / MA20 <span style='color:#00e676'>160,240▲</span> / MA60 <span style='color:#00e676'>162,555▲</span> / MA120 <span style='color:#00e676'>147,800▲</span></div>
+<div>📊 볼린저: 하단143,980 / 중간160,240 / 상단176,500 (<span style='color:#ff1744'>101%</span>)</div>
+<div>📉 MACD: <span style='color:#00e676'>MACD 4352</span> / 시그널 1622 / <span style='color:#aaa'>유지</span></div>
+<div>🎯 매수가이드: <span style='color:#aaa'>매수권 143,980~160,240</span> / 매도권 176,500+ / <span style='color:#ff1744'>손절선 MA20-3% 155,433</span></div>
 <div>⏳ 타이밍: <span style='color:#00e5ff'>과거18회 평균8일 (최소1/최대20)</span> / <span style='color:#00e5ff'>RSI반등 패턴 약6일 (N=26)</span> / 지지선 162,000</div>
 <div>🔬 <span style='color:#00e676'>최적RSI 60~64 (5일후 +4.2% 승률53% N=15)</span></div>
 <div style="color:#555">🚀 추세매수: 정배열 / MA20↑ / MA60위</div>
-<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=2.02 (보통)</span> / <span style='color:#aaa'>거래대금 0.8x (보통)</span></div>
+<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=2.01 (보통)</span> / <span style='color:#aaa'>거래대금 0.8x (보통)</span></div>
 </div>
 </td>
-</tr><tr class="row-main" style="color:#00e676;cursor:pointer" onclick="var d=document.getElementById('d_105560');d.style.display=d.style.display==='none'?'':'none'">
+</tr><tr style="background:#0a1628">
+<td colspan="10" style="padding:6px 10px;font-size:0.8em;font-weight:bold;color:#ff9100;border-top:1px solid #253050;border-bottom:1px solid #1a2a4a">
+▣ 금융 <span style="font-weight:normal;font-size:0.9em">(+0.3%)</span>
+</td></tr><tr class="row-main" style="color:#00e676;cursor:pointer" onclick="var d=document.getElementById('d_105560');d.style.display=d.style.display==='none'?'':'none'">
 <td style="font-weight:bold">KB금융</td>
 <td style="font-weight:bold;color:#e53935;text-align:center">매수</td>
-<td>153,000</td>
-<td class="hide-m">158,560</td>
-<td style="color:#e53935">+0.7%</td>
+<td>153,400</td>
+<td class="hide-m">158,580</td>
+<td style="color:#e53935">+0.9%</td>
 <td class="hide-m">✅구간안</td>
-<td>40</td>
+<td>41</td>
 <td>60~64 </td>
 <td class="pc-timing" style="display:none;text-align:left">🟢 목표가 도달 + 반등 신호</td>
-<td class="pc-signal" style="display:none;text-align:left">⭐RSI반등(34→32→40), ⭐음봉후양봉</td>
+<td class="pc-signal" style="display:none;text-align:left">⭐RSI반등(34→32→41), ⭐음봉후양봉</td>
 </tr>
 <tr class="row-timing" style="color:#00e676;cursor:pointer" onclick="var d=document.getElementById('d_105560');d.style.display=d.style.display==='none'?'':'none'">
-<td colspan="10" style="text-align:left;font-weight:bold">⏰ 🟢 목표가 도달 + 반등 신호 / ⭐RSI반등(34→32→40), ⭐음봉후양봉</td>
+<td colspan="10" style="text-align:left;font-weight:bold">⏰ 🟢 목표가 도달 + 반등 신호 / ⭐RSI반등(34→32→41), ⭐음봉후양봉</td>
 </tr>
 <tr id="d_105560" class="row-detail" style="display:none">
 <td colspan="10" style="text-align:left;padding:0;border-bottom:2px solid #253050">
 <div style="margin:4px 8px 8px 8px;padding:10px 14px;border:1px solid #253050;border-left:3px solid #00e676;border-radius:4px;background:#0d1b2a;line-height:1.7;font-size:0.85em;color:#999">
 <div style="color:#00e676;font-weight:bold;margin-bottom:4px">📊 KB금융 (105560) — 점수 30점 / 🟢 반등 확인 (관심)</div>
-<div>📌 판단근거: <span style='color:#ff1744'>MA20이탈</span> / <span style='color:#ff1744'>MA60아래</span> / <span style='color:#00e676'>MA120위</span> / <span style='color:#00e676'>RSI눌림40</span> / <span style='color:#00e676'>볼밴하단2%</span> / <span style='color:#00e676'>⭐RSI반등(34→32→40)</span></div>
-<div>📈 이동평균: MA5 <span style='color:#ff1744'>155,820▼</span> / MA20 <span style='color:#ff1744'>158,560▼</span> / MA60 <span style='color:#ff1744'>155,210▼</span> / MA120 <span style='color:#00e676'>142,704▲</span></div>
-<div>📊 볼린저: 하단152,808 / 중간158,560 / 상단164,312 (<span style='color:#00e676'>2%</span>)</div>
-<div>📉 MACD: <span style='color:#ff1744'>MACD 325</span> / 시그널 1427 / <span style='color:#aaa'>유지</span></div>
-<div>🎯 매수가이드: <span style='color:#00e676'>매수권 152,808~158,560</span> / 매도권 164,312+ / <span style='color:#ff1744'>손절선 MA20-3% 153,803</span></div>
+<div>📌 판단근거: <span style='color:#ff1744'>MA20이탈</span> / <span style='color:#ff1744'>MA60아래</span> / <span style='color:#00e676'>MA120위</span> / <span style='color:#00e676'>RSI눌림41</span> / <span style='color:#00e676'>볼밴하단4%</span> / <span style='color:#00e676'>⭐RSI반등(34→32→41)</span></div>
+<div>📈 이동평균: MA5 <span style='color:#ff1744'>155,900▼</span> / MA20 <span style='color:#ff1744'>158,580▼</span> / MA60 <span style='color:#ff1744'>155,217▼</span> / MA120 <span style='color:#00e676'>142,708▲</span></div>
+<div>📊 볼린저: 하단152,903 / 중간158,580 / 상단164,257 (<span style='color:#00e676'>4%</span>)</div>
+<div>📉 MACD: <span style='color:#ff1744'>MACD 357</span> / 시그널 1434 / <span style='color:#aaa'>유지</span></div>
+<div>🎯 매수가이드: <span style='color:#00e676'>매수권 152,903~158,580</span> / 매도권 164,257+ / <span style='color:#ff1744'>손절선 MA20-3% 153,823</span></div>
 <div>⏳ 타이밍: <span style='color:#00e5ff'>RSI반등 패턴 약4일 (N=15)</span> / 지지선 166,500</div>
 <div>🔬 <span style='color:#aaa'>최적RSI 60~64 (5일후 +2.8% 승률62% N=16)</span></div>
 <div style="color:#555">🚀 추세매수: MA5터치 / 양봉 / 음→양전환</div>
-<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=1.35 (보통)</span> / <span style='color:#aaa'>거래대금 0.4x (보통)</span></div>
+<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=1.39 (보통)</span> / <span style='color:#aaa'>거래대금 0.4x (보통)</span></div>
 </div>
 </td>
-</tr><tr class="row-main" style="color:#aaa;cursor:pointer" onclick="var d=document.getElementById('d_005490');d.style.display=d.style.display==='none'?'':'none'">
+</tr><tr style="background:#0a1628">
+<td colspan="10" style="padding:6px 10px;font-size:0.8em;font-weight:bold;color:#ff9100;border-top:1px solid #253050;border-bottom:1px solid #1a2a4a">
+▣ 소재/화학 <span style="font-weight:normal;font-size:0.9em">(+0.9%)</span>
+</td></tr><tr class="row-main" style="color:#aaa;cursor:pointer" onclick="var d=document.getElementById('d_005490');d.style.display=d.style.display==='none'?'':'none'">
 <td style="font-weight:bold">POSCO홀딩스</td>
 <td style="font-weight:bold;color:#888;text-align:center">관망</td>
 <td>485,500</td>
@@ -906,15 +963,15 @@ tr:hover td{background:#16213e}
 <div>⏳ 타이밍: <span style='color:#00e5ff'>과거24회 평균7일 (최소1/최대16)</span> / <span style='color:#00e5ff'>RSI반등 패턴 약3일 (N=20)</span> / 지지선 462,000</div>
 <div>🔬 <span style='color:#00e676'>최적RSI 65~69 (5일후 +4.6% 승률88% N=8)</span></div>
 <div style="color:#555">🚀 추세매수: 양봉 / 음→양전환 / MA20↑ / MA60위</div>
-<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=0.93 (보통)</span> / <span style='color:#aaa'>거래대금 0.4x (보통)</span></div>
+<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=0.93 (보통)</span> / <span style='color:#aaa'>거래대금 0.5x (보통)</span></div>
 </div>
 </td>
 </tr><tr class="row-main" style="color:#00e5ff;cursor:pointer" onclick="var d=document.getElementById('d_006400');d.style.display=d.style.display==='none'?'':'none'">
 <td style="font-weight:bold">삼성SDI</td>
 <td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
-<td>632,000</td>
-<td class="hide-m">632,575</td>
-<td style="color:#4d9de0">-0.3%</td>
+<td>631,000</td>
+<td class="hide-m">632,525</td>
+<td style="color:#4d9de0">-0.5%</td>
 <td class="hide-m">✅구간안</td>
 <td>44</td>
 <td>50~54 </td>
@@ -929,44 +986,44 @@ tr:hover td{background:#16213e}
 <div style="margin:4px 8px 8px 8px;padding:10px 14px;border:1px solid #253050;border-left:3px solid #00e5ff;border-radius:4px;background:#0d1b2a;line-height:1.7;font-size:0.85em;color:#999">
 <div style="color:#00e5ff;font-weight:bold;margin-bottom:4px">📊 삼성SDI (006400) — 점수 12점 / 🟡 눌림 진행중</div>
 <div>📌 판단근거: <span style='color:#ff1744'>MA20이탈</span> / <span style='color:#00e676'>MA60위</span> / <span style='color:#00e676'>MA120위</span> / <span style='color:#00e676'>RSI눌림44</span> / <span style='color:#ff1744'>양봉후음봉</span> / <span style='color:#ff1744'>MACD약세</span></div>
-<div>📈 이동평균: MA5 <span style='color:#ff1744'>651,400▼</span> / MA20 <span style='color:#ff1744'>632,575▼</span> / MA60 <span style='color:#00e676'>488,492▲</span> / MA120 <span style='color:#00e676'>401,904▲</span></div>
-<div>📊 볼린저: 하단488,006 / 중간632,575 / 상단777,144 (<span style='color:#aaa'>50%</span>)</div>
-<div>📉 MACD: <span style='color:#ff1744'>MACD 46224</span> / 시그널 57728 / <span style='color:#aaa'>유지</span></div>
-<div>🎯 매수가이드: <span style='color:#00e676'>매수권 488,006~632,575</span> / 매도권 777,144+ / <span style='color:#ff1744'>손절선 MA20-3% 613,598</span></div>
+<div>📈 이동평균: MA5 <span style='color:#ff1744'>651,200▼</span> / MA20 <span style='color:#ff1744'>632,525▼</span> / MA60 <span style='color:#00e676'>488,475▲</span> / MA120 <span style='color:#00e676'>401,896▲</span></div>
+<div>📊 볼린저: 하단487,955 / 중간632,525 / 상단777,095 (<span style='color:#aaa'>49%</span>)</div>
+<div>📉 MACD: <span style='color:#ff1744'>MACD 46144</span> / 시그널 57712 / <span style='color:#aaa'>유지</span></div>
+<div>🎯 매수가이드: <span style='color:#00e676'>매수권 487,955~632,525</span> / 매도권 777,095+ / <span style='color:#ff1744'>손절선 MA20-3% 613,549</span></div>
 <div>⏳ 타이밍: <span style='color:#00e5ff'>RSI반등 패턴 약4일 (N=19)</span> / 지지선 630,000</div>
 <div>🔬 <span style='color:#aaa'>최적RSI 50~54 (5일후 +7.2% 승률79% N=14)</span></div>
 <div style="color:#555">🚀 추세매수: MA20↑ / MA60위</div>
-<div>⚡ <span style='color:#ffd600'>변동성 ATR5/20=0.78 (에너지응축)</span> / <span style='color:#aaa'>거래대금 0.3x (보통)</span></div>
+<div>⚡ <span style='color:#ffd600'>변동성 ATR5/20=0.78 (에너지응축)</span> / <span style='color:#aaa'>거래대금 0.4x (보통)</span></div>
 </div>
 </td>
 </tr><tr class="row-main" style="color:#00e676;cursor:pointer" onclick="var d=document.getElementById('d_373220');d.style.display=d.style.display==='none'?'':'none'">
 <td style="font-weight:bold">LG에너지솔루션</td>
 <td style="font-weight:bold;color:#e53935;text-align:center">매수</td>
-<td>436,000</td>
-<td class="hide-m">457,050</td>
-<td style="color:#e53935">+1.4%</td>
+<td>437,000</td>
+<td class="hide-m">457,100</td>
+<td style="color:#e53935">+1.6%</td>
 <td class="hide-m">✅구간안</td>
-<td>34</td>
-<td>30~34 ✅</td>
+<td>35</td>
+<td>30~34 근접</td>
 <td class="pc-timing" style="display:none;text-align:left">🟢 목표가 도달 + 반등 신호</td>
-<td class="pc-signal" style="display:none;text-align:left">⭐음봉후양봉</td>
+<td class="pc-signal" style="display:none;text-align:left">⭐RSI반등(54→34→35), ⭐음봉후양봉</td>
 </tr>
 <tr class="row-timing" style="color:#00e676;cursor:pointer" onclick="var d=document.getElementById('d_373220');d.style.display=d.style.display==='none'?'':'none'">
-<td colspan="10" style="text-align:left;font-weight:bold">⏰ 🟢 목표가 도달 + 반등 신호 / ⭐음봉후양봉</td>
+<td colspan="10" style="text-align:left;font-weight:bold">⏰ 🟢 목표가 도달 + 반등 신호 / ⭐RSI반등(54→34→35), ⭐음봉후양봉</td>
 </tr>
 <tr id="d_373220" class="row-detail" style="display:none">
 <td colspan="10" style="text-align:left;padding:0;border-bottom:2px solid #253050">
 <div style="margin:4px 8px 8px 8px;padding:10px 14px;border:1px solid #253050;border-left:3px solid #00e676;border-radius:4px;background:#0d1b2a;line-height:1.7;font-size:0.85em;color:#999">
-<div style="color:#00e676;font-weight:bold;margin-bottom:4px">📊 LG에너지솔루션 (373220) — 점수 28점 / 🔵 반등 초기 (관찰)</div>
-<div>📌 판단근거: <span style='color:#ff1744'>MA20이탈</span> / <span style='color:#00e676'>MA60위</span> / <span style='color:#00e676'>MA120위</span> / <span style='color:#00e676'>RSI눌림34</span> / <span style='color:#00e676'>볼밴중하29%</span> / <span style='color:#00e676'>⭐음봉후양봉</span></div>
-<div>📈 이동평균: MA5 <span style='color:#ff1744'>450,700▼</span> / MA20 <span style='color:#ff1744'>457,050▼</span> / MA60 <span style='color:#00e676'>414,200▲</span> / MA120 <span style='color:#00e676'>409,946▲</span></div>
-<div>📊 볼린저: 하단407,682 / 중간457,050 / 상단506,418 (<span style='color:#00e676'>29%</span>)</div>
-<div>📉 MACD: <span style='color:#ff1744'>MACD 9133</span> / 시그널 15523 / <span style='color:#aaa'>유지</span></div>
-<div>🎯 매수가이드: <span style='color:#00e676'>매수권 407,682~457,050</span> / 매도권 506,418+ / <span style='color:#ff1744'>손절선 MA20-3% 443,338</span></div>
-<div>⏳ 타이밍: <span style='color:#00e5ff'>RSI반등 패턴 약4일 (N=14)</span> / 지지선 464,000</div>
-<div>🔬 <span style='color:#00e676'>최적RSI 30~34 (5일후 +4.5% 승률67% N=6)</span></div>
+<div style="color:#00e676;font-weight:bold;margin-bottom:4px">📊 LG에너지솔루션 (373220) — 점수 43점 / 🟢 반등 확인 (관심)</div>
+<div>📌 판단근거: <span style='color:#ff1744'>MA20이탈</span> / <span style='color:#00e676'>MA60위</span> / <span style='color:#00e676'>MA120위</span> / <span style='color:#00e676'>RSI눌림35</span> / <span style='color:#00e676'>볼밴중하30%</span> / <span style='color:#00e676'>⭐RSI반등(54→34→35)</span></div>
+<div>📈 이동평균: MA5 <span style='color:#ff1744'>450,900▼</span> / MA20 <span style='color:#ff1744'>457,100▼</span> / MA60 <span style='color:#00e676'>414,217▲</span> / MA120 <span style='color:#00e676'>409,954▲</span></div>
+<div>📊 볼린저: 하단407,816 / 중간457,100 / 상단506,384 (<span style='color:#00e676'>30%</span>)</div>
+<div>📉 MACD: <span style='color:#ff1744'>MACD 9212</span> / 시그널 15539 / <span style='color:#aaa'>유지</span></div>
+<div>🎯 매수가이드: <span style='color:#00e676'>매수권 407,816~457,100</span> / 매도권 506,384+ / <span style='color:#ff1744'>손절선 MA20-3% 443,387</span></div>
+<div>⏳ 타이밍: <span style='color:#00e5ff'>RSI반등 패턴 약4일 (N=18)</span> / 지지선 464,000</div>
+<div>🔬 <span style='color:#ffd600'>최적RSI 30~34 (5일후 +4.5% 승률67% N=6)</span></div>
 <div style="color:#555">🚀 추세매수: 양봉 / 음→양전환 / MA20↑ / MA60위</div>
-<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=1.0 (보통)</span> / <span style='color:#aaa'>거래대금 0.3x (보통)</span></div>
+<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=1.01 (보통)</span> / <span style='color:#aaa'>거래대금 0.3x (보통)</span></div>
 </div>
 </td>
 </tr><tr class="row-main" style="color:#00e5ff;cursor:pointer" onclick="var d=document.getElementById('d_051910');d.style.display=d.style.display==='none'?'':'none'">
@@ -996,15 +1053,18 @@ tr:hover td{background:#16213e}
 <div>⏳ 타이밍: <span style='color:#00e5ff'>RSI반등 패턴 약3일 (N=36)</span> / 지지선 379,500</div>
 <div>🔬 <span style='color:#ffd600'>최적RSI 40~44 (5일후 +4.6% 승률86% N=21)</span></div>
 <div style="color:#555">🚀 추세매수: MA20↑ / MA60위</div>
-<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=1.07 (보통)</span> / <span style='color:#aaa'>거래대금 0.3x (보통)</span></div>
+<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=1.07 (보통)</span> / <span style='color:#aaa'>거래대금 0.4x (보통)</span></div>
 </div>
 </td>
-</tr><tr class="row-main" style="color:#aaa;cursor:pointer" onclick="var d=document.getElementById('d_003550');d.style.display=d.style.display==='none'?'':'none'">
+</tr><tr style="background:#0a1628">
+<td colspan="10" style="padding:6px 10px;font-size:0.8em;font-weight:bold;color:#e53935;border-top:1px solid #253050;border-bottom:1px solid #1a2a4a">
+▣ 대형주 <span style="font-weight:normal;font-size:0.9em">(+4.3%)</span>
+</td></tr><tr class="row-main" style="color:#aaa;cursor:pointer" onclick="var d=document.getElementById('d_003550');d.style.display=d.style.display==='none'?'':'none'">
 <td style="font-weight:bold">LG</td>
 <td style="font-weight:bold;color:#e53935;text-align:center">추세매수</td>
-<td>116,400</td>
-<td class="hide-m">100,500</td>
-<td style="color:#e53935">+7.1%</td>
+<td>116,500</td>
+<td class="hide-m">100,505</td>
+<td style="color:#e53935">+7.2%</td>
 <td class="hide-m">-13.7%</td>
 <td>79</td>
 <td>60~64 과열</td>
@@ -1019,23 +1079,23 @@ tr:hover td{background:#16213e}
 <div style="margin:4px 8px 8px 8px;padding:10px 14px;border:1px solid #253050;border-left:3px solid #aaa;border-radius:4px;background:#0d1b2a;line-height:1.7;font-size:0.85em;color:#999">
 <div style="color:#aaa;font-weight:bold;margin-bottom:4px">📊 LG (003550) — 점수 24점 / 🔵 반등 초기 (관찰)</div>
 <div>📌 판단근거: <span style='color:#00e676'>정배열(가>5>20)</span> / <span style='color:#00e676'>MA60위</span> / <span style='color:#00e676'>MA120위</span> / <span style='color:#ff1744'>RSI고온79</span> / <span style='color:#ff1744'>볼밴돌파112%</span> / <span style='color:#00e676'>⭐음봉후양봉</span></div>
-<div>📈 이동평균: MA5 <span style='color:#00e676'>109,900▲</span> / MA20 <span style='color:#00e676'>100,500▲</span> / MA60 <span style='color:#00e676'>95,152▲</span> / MA120 <span style='color:#00e676'>89,882▲</span></div>
-<div>📊 볼린저: 하단87,581 / 중간100,500 / 상단113,419 (<span style='color:#ff1744'>112%</span>)</div>
-<div>📉 MACD: <span style='color:#00e676'>MACD 5076</span> / 시그널 3602 / <span style='color:#aaa'>유지</span></div>
-<div>🎯 매수가이드: <span style='color:#aaa'>매수권 87,581~100,500</span> / 매도권 113,419+ / <span style='color:#ff1744'>손절선 MA20-3% 97,485</span></div>
+<div>📈 이동평균: MA5 <span style='color:#00e676'>109,920▲</span> / MA20 <span style='color:#00e676'>100,505▲</span> / MA60 <span style='color:#00e676'>95,153▲</span> / MA120 <span style='color:#00e676'>89,882▲</span></div>
+<div>📊 볼린저: 하단87,561 / 중간100,505 / 상단113,449 (<span style='color:#ff1744'>112%</span>)</div>
+<div>📉 MACD: <span style='color:#00e676'>MACD 5084</span> / 시그널 3603 / <span style='color:#aaa'>유지</span></div>
+<div>🎯 매수가이드: <span style='color:#aaa'>매수권 87,561~100,505</span> / 매도권 113,449+ / <span style='color:#ff1744'>손절선 MA20-3% 97,490</span></div>
 <div>⏳ 타이밍: <span style='color:#00e5ff'>과거2회 평균4일 (최소2/최대6)</span> / <span style='color:#00e5ff'>RSI반등 패턴 약4일 (N=12)</span> / 지지선 95,500</div>
 <div>🔬 <span style='color:#ff9100'>최적RSI 60~64 (5일후 +2.2% 승률79% N=14)</span></div>
 <div style="color:#e53935">🚀 추세매수: 정배열 / 양봉 / 음→양전환 / MA20↑ / MA60위</div>
-<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=2.15 (보통)</span> / <span style='color:#aaa'>거래대금 0.9x (보통)</span></div>
+<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=2.16 (보통)</span> / <span style='color:#aaa'>거래대금 1.0x (보통)</span></div>
 </div>
 </td>
 </tr><tr class="row-main" style="color:#aaa;cursor:pointer" onclick="var d=document.getElementById('d_034730');d.style.display=d.style.display==='none'?'':'none'">
 <td style="font-weight:bold">SK</td>
 <td style="font-weight:bold;color:#ff9100;text-align:center">매도고려</td>
-<td>539,000</td>
-<td class="hide-m">450,725</td>
-<td style="color:#4d9de0">-2.0%</td>
-<td class="hide-m">-16.4%</td>
+<td>538,000</td>
+<td class="hide-m">450,675</td>
+<td style="color:#4d9de0">-2.2%</td>
+<td class="hide-m">-16.2%</td>
 <td>83</td>
 <td>35~39 과열</td>
 <td class="pc-timing" style="display:none;text-align:left">⏳ 과거7회 평균5일 (최소1/최대7)</td>
@@ -1049,24 +1109,27 @@ tr:hover td{background:#16213e}
 <div style="margin:4px 8px 8px 8px;padding:10px 14px;border:1px solid #253050;border-left:3px solid #aaa;border-radius:4px;background:#0d1b2a;line-height:1.7;font-size:0.85em;color:#999">
 <div style="color:#aaa;font-weight:bold;margin-bottom:4px">📊 SK (034730) — 점수 3점 / ⚪ 방향 불명확</div>
 <div>📌 판단근거: <span style='color:#00e676'>MA20위+MA5눌림</span> / <span style='color:#00e676'>MA60위</span> / <span style='color:#00e676'>MA120위</span> / <span style='color:#ff1744'>RSI과열83</span> / <span style='color:#ff1744'>양봉후음봉</span> / <span style='color:#ff1744'>MA5하락전환</span></div>
-<div>📈 이동평균: MA5 <span style='color:#ff1744'>550,200▼</span> / MA20 <span style='color:#00e676'>450,725▲</span> / MA60 <span style='color:#00e676'>382,325▲</span> / MA120 <span style='color:#00e676'>330,542▲</span></div>
-<div>📊 볼린저: 하단303,787 / 중간450,725 / 상단597,663 (<span style='color:#ff1744'>80%</span>)</div>
-<div>📉 MACD: <span style='color:#00e676'>MACD 53022</span> / 시그널 42855 / <span style='color:#aaa'>유지</span></div>
-<div>🎯 매수가이드: <span style='color:#aaa'>매수권 303,787~450,725</span> / 매도권 597,663+ / <span style='color:#ff1744'>손절선 MA20-3% 437,203</span></div>
+<div>📈 이동평균: MA5 <span style='color:#ff1744'>550,000▼</span> / MA20 <span style='color:#00e676'>450,675▲</span> / MA60 <span style='color:#00e676'>382,308▲</span> / MA120 <span style='color:#00e676'>330,533▲</span></div>
+<div>📊 볼린저: 하단303,857 / 중간450,675 / 상단597,493 (<span style='color:#ffd600'>80%</span>)</div>
+<div>📉 MACD: <span style='color:#00e676'>MACD 52942</span> / 시그널 42839 / <span style='color:#aaa'>유지</span></div>
+<div>🎯 매수가이드: <span style='color:#aaa'>매수권 303,857~450,675</span> / 매도권 597,493+ / <span style='color:#ff1744'>손절선 MA20-3% 437,155</span></div>
 <div>⏳ 타이밍: <span style='color:#00e5ff'>과거7회 평균5일 (최소1/최대7)</span> / <span style='color:#00e5ff'>RSI반등 패턴 약3일 (N=11)</span> / 지지선 368,500</div>
 <div>🔬 <span style='color:#ff9100'>최적RSI 35~39 (5일후 +7.9% 승률80% N=5)</span></div>
 <div style="color:#555">🚀 추세매수: MA20↑ / MA60위</div>
-<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=1.14 (보통)</span> / <span style='color:#aaa'>거래대금 0.4x (보통)</span></div>
+<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=1.15 (보통)</span> / <span style='color:#aaa'>거래대금 0.5x (보통)</span></div>
 </div>
 </td>
-</tr><tr class="row-main" style="color:#aaa;cursor:pointer" onclick="var d=document.getElementById('d_017670');d.style.display=d.style.display==='none'?'':'none'">
+</tr><tr style="background:#0a1628">
+<td colspan="10" style="padding:6px 10px;font-size:0.8em;font-weight:bold;color:#4d9de0;border-top:1px solid #253050;border-bottom:1px solid #1a2a4a">
+▣ 통신 <span style="font-weight:normal;font-size:0.9em">(-1.9%)</span>
+</td></tr><tr class="row-main" style="color:#aaa;cursor:pointer" onclick="var d=document.getElementById('d_017670');d.style.display=d.style.display==='none'?'':'none'">
 <td style="font-weight:bold">SK텔레콤</td>
 <td style="font-weight:bold;color:#888;text-align:center">관망</td>
-<td>103,500</td>
-<td class="hide-m">98,220</td>
-<td style="color:#4d9de0">-2.2%</td>
-<td class="hide-m">-5.1%</td>
-<td>56</td>
+<td>103,400</td>
+<td class="hide-m">98,215</td>
+<td style="color:#4d9de0">-2.3%</td>
+<td class="hide-m">-5.0%</td>
+<td>55</td>
 <td>65~69 </td>
 <td class="pc-timing" style="display:none;text-align:left">⏳ 과거14회 평균9일 (최소1/최대29)</td>
 <td class="pc-signal" style="display:none;text-align:left">추세중</td>
@@ -1077,16 +1140,16 @@ tr:hover td{background:#16213e}
 <tr id="d_017670" class="row-detail" style="display:none">
 <td colspan="10" style="text-align:left;padding:0;border-bottom:2px solid #253050">
 <div style="margin:4px 8px 8px 8px;padding:10px 14px;border:1px solid #253050;border-left:3px solid #aaa;border-radius:4px;background:#0d1b2a;line-height:1.7;font-size:0.85em;color:#999">
-<div style="color:#aaa;font-weight:bold;margin-bottom:4px">📊 SK텔레콤 (017670) — 점수 27점 / 🔵 반등 초기 (관찰)</div>
-<div>📌 판단근거: <span style='color:#00e676'>정배열(가>5>20)</span> / <span style='color:#00e676'>MA60위</span> / <span style='color:#00e676'>MA120위</span> / <span style='color:#ff1744'>볼밴상단91%</span> / <span style='color:#ff1744'>양봉후음봉</span> / <span style='color:#aaa'>MACD양호</span></div>
-<div>📈 이동평균: MA5 <span style='color:#00e676'>100,880▲</span> / MA20 <span style='color:#00e676'>98,220▲</span> / MA60 <span style='color:#00e676'>86,378▲</span> / MA120 <span style='color:#00e676'>72,263▲</span></div>
-<div>📊 볼린저: 하단91,774 / 중간98,220 / 상단104,666 (<span style='color:#ff1744'>91%</span>)</div>
-<div>📉 MACD: <span style='color:#00e676'>MACD 3827</span> / 시그널 3687 / <span style='color:#aaa'>유지</span></div>
-<div>🎯 매수가이드: <span style='color:#aaa'>매수권 91,774~98,220</span> / 매도권 104,666+ / <span style='color:#ff1744'>손절선 MA20-3% 95,273</span></div>
-<div>⏳ 타이밍: <span style='color:#00e5ff'>과거14회 평균9일 (최소1/최대29)</span> / <span style='color:#00e5ff'>RSI반등 패턴 약4일 (N=19)</span> / 지지선 95,100</div>
+<div style="color:#aaa;font-weight:bold;margin-bottom:4px">📊 SK텔레콤 (017670) — 점수 32점 / 🔵 반등 초기 (관찰)</div>
+<div>📌 판단근거: <span style='color:#00e676'>정배열(가>5>20)</span> / <span style='color:#00e676'>MA60위</span> / <span style='color:#00e676'>MA120위</span> / <span style='color:#00e676'>RSI적정55</span> / <span style='color:#ff1744'>볼밴상단90%</span> / <span style='color:#ff1744'>양봉후음봉</span></div>
+<div>📈 이동평균: MA5 <span style='color:#00e676'>100,860▲</span> / MA20 <span style='color:#00e676'>98,215▲</span> / MA60 <span style='color:#00e676'>86,377▲</span> / MA120 <span style='color:#00e676'>72,262▲</span></div>
+<div>📊 볼린저: 하단91,785 / 중간98,215 / 상단104,645 (<span style='color:#ff1744'>90%</span>)</div>
+<div>📉 MACD: <span style='color:#00e676'>MACD 3819</span> / 시그널 3686 / <span style='color:#aaa'>유지</span></div>
+<div>🎯 매수가이드: <span style='color:#aaa'>매수권 91,785~98,215</span> / 매도권 104,645+ / <span style='color:#ff1744'>손절선 MA20-3% 95,269</span></div>
+<div>⏳ 타이밍: <span style='color:#00e5ff'>과거14회 평균9일 (최소1/최대29)</span> / <span style='color:#00e5ff'>RSI반등 패턴 약4일 (N=21)</span> / 지지선 95,100</div>
 <div>🔬 <span style='color:#aaa'>최적RSI 65~69 (5일후 +6.8% 승률83% N=6)</span></div>
 <div style="color:#555">🚀 추세매수: 정배열 / MA20↑ / MA60위</div>
-<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=1.41 (보통)</span> / <span style='color:#aaa'>거래대금 0.4x (보통)</span></div>
+<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=1.42 (보통)</span> / <span style='color:#aaa'>거래대금 0.5x (보통)</span></div>
 </div>
 </td>
 </tr><tr class="row-main" style="color:#00e5ff;cursor:pointer" onclick="var d=document.getElementById('d_030200');d.style.display=d.style.display==='none'?'':'none'">
@@ -1116,46 +1179,49 @@ tr:hover td{background:#16213e}
 <div>⏳ 타이밍: <span style='color:#00e5ff'>RSI반등 패턴 약4일 (N=6)</span> / 지지선 60,500</div>
 <div>🔬 <span style='color:#aaa'>최적RSI 45~49 (5일후 +2.7% 승률83% N=12)</span></div>
 <div style="color:#555">🚀 추세매수: MA5터치</div>
-<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=1.08 (보통)</span> / <span style='color:#aaa'>거래대금 0.3x (보통)</span></div>
+<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=1.08 (보통)</span> / <span style='color:#aaa'>거래대금 0.4x (보통)</span></div>
 </div>
 </td>
-</tr><tr class="row-main" style="color:#aaa;cursor:pointer" onclick="var d=document.getElementById('d_032830');d.style.display=d.style.display==='none'?'':'none'">
+</tr><tr style="background:#0a1628">
+<td colspan="10" style="padding:6px 10px;font-size:0.8em;font-weight:bold;color:#e53935;border-top:1px solid #253050;border-bottom:1px solid #1a2a4a">
+▣ 대형주 <span style="font-weight:normal;font-size:0.9em">(+4.3%)</span>
+</td></tr><tr class="row-main" style="color:#aaa;cursor:pointer" onclick="var d=document.getElementById('d_032830');d.style.display=d.style.display==='none'?'':'none'">
 <td style="font-weight:bold">삼성생명</td>
 <td style="font-weight:bold;color:#e53935;text-align:center">추세매수</td>
-<td>318,500</td>
-<td class="hide-m">270,575</td>
-<td style="color:#e53935">+4.1%</td>
-<td class="hide-m">-15.0%</td>
+<td>320,000</td>
+<td class="hide-m">270,650</td>
+<td style="color:#e53935">+4.6%</td>
+<td class="hide-m">-15.4%</td>
 <td>83</td>
 <td>45~49 과열</td>
-<td class="pc-timing" style="display:none;text-align:left">⏳ 과거10회 평균13일 (최소2/최대24)</td>
+<td class="pc-timing" style="display:none;text-align:left">⏳ 과거7회 평균11일 (최소3/최대21)</td>
 <td class="pc-signal" style="display:none;text-align:left">과열</td>
 </tr>
 <tr class="row-timing" style="color:#aaa;cursor:pointer" onclick="var d=document.getElementById('d_032830');d.style.display=d.style.display==='none'?'':'none'">
-<td colspan="10" style="text-align:left;font-weight:bold">⏰ ⏳ 과거10회 평균13일 (최소2/최대24) / 과열</td>
+<td colspan="10" style="text-align:left;font-weight:bold">⏰ ⏳ 과거7회 평균11일 (최소3/최대21) / 과열</td>
 </tr>
 <tr id="d_032830" class="row-detail" style="display:none">
 <td colspan="10" style="text-align:left;padding:0;border-bottom:2px solid #253050">
 <div style="margin:4px 8px 8px 8px;padding:10px 14px;border:1px solid #253050;border-left:3px solid #aaa;border-radius:4px;background:#0d1b2a;line-height:1.7;font-size:0.85em;color:#999">
-<div style="color:#aaa;font-weight:bold;margin-bottom:4px">📊 삼성생명 (032830) — 점수 15점 / 🟡 눌림 진행중</div>
-<div>📌 판단근거: <span style='color:#00e676'>정배열(가>5>20)</span> / <span style='color:#00e676'>MA60위</span> / <span style='color:#00e676'>MA120위</span> / <span style='color:#ff1744'>RSI과열83</span> / <span style='color:#ff1744'>볼밴상단100%</span> / <span style='color:#aaa'>MACD양호</span></div>
-<div>📈 이동평균: MA5 <span style='color:#00e676'>303,700▲</span> / MA20 <span style='color:#00e676'>270,575▲</span> / MA60 <span style='color:#00e676'>238,367▲</span> / MA120 <span style='color:#00e676'>201,776▲</span></div>
-<div>📊 볼린저: 하단222,451 / 중간270,575 / 상단318,699 (<span style='color:#ff1744'>100%</span>)</div>
-<div>📉 MACD: <span style='color:#00e676'>MACD 19867</span> / 시그널 15342 / <span style='color:#aaa'>유지</span></div>
-<div>🎯 매수가이드: <span style='color:#aaa'>매수권 222,451~270,575</span> / 매도권 318,699+ / <span style='color:#ff1744'>손절선 MA20-3% 262,458</span></div>
-<div>⏳ 타이밍: <span style='color:#00e5ff'>과거10회 평균13일 (최소2/최대24)</span> / <span style='color:#00e5ff'>RSI반등 패턴 약4일 (N=3)</span> / 지지선 295,000</div>
+<div style="color:#aaa;font-weight:bold;margin-bottom:4px">📊 삼성생명 (032830) — 점수 9점 / 🟡 눌림 진행중</div>
+<div>📌 판단근거: <span style='color:#00e676'>정배열(가>5>20)</span> / <span style='color:#00e676'>MA60위</span> / <span style='color:#00e676'>MA120위</span> / <span style='color:#ff1744'>RSI과열83</span> / <span style='color:#ff1744'>볼밴돌파101%</span> / <span style='color:#aaa'>MACD양호</span></div>
+<div>📈 이동평균: MA5 <span style='color:#00e676'>304,000▲</span> / MA20 <span style='color:#00e676'>270,650▲</span> / MA60 <span style='color:#00e676'>238,392▲</span> / MA120 <span style='color:#00e676'>201,788▲</span></div>
+<div>📊 볼린저: 하단222,224 / 중간270,650 / 상단319,076 (<span style='color:#ff1744'>101%</span>)</div>
+<div>📉 MACD: <span style='color:#00e676'>MACD 19987</span> / 시그널 15366 / <span style='color:#aaa'>유지</span></div>
+<div>🎯 매수가이드: <span style='color:#aaa'>매수권 222,224~270,650</span> / 매도권 319,076+ / <span style='color:#ff1744'>손절선 MA20-3% 262,530</span></div>
+<div>⏳ 타이밍: <span style='color:#00e5ff'>과거7회 평균11일 (최소3/최대21)</span> / <span style='color:#00e5ff'>RSI반등 패턴 약4일 (N=3)</span> / 지지선 295,000</div>
 <div>🔬 <span style='color:#ff9100'>최적RSI 45~49 (5일후 +4.0% 승률75% N=12)</span></div>
 <div style="color:#e53935">🚀 추세매수: 정배열 / 양봉 / MA20↑ / MA60위</div>
-<div>⚡ <span style='color:#ffd600'>변동성 ATR5/20=0.84 (에너지응축)</span> / <span style='color:#aaa'>거래대금 0.6x (보통)</span></div>
+<div>⚡ <span style='color:#ffd600'>변동성 ATR5/20=0.88 (에너지응축)</span> / <span style='color:#aaa'>거래대금 0.7x (보통)</span></div>
 </div>
 </td>
 </tr><tr class="row-main" style="color:#aaa;cursor:pointer" onclick="var d=document.getElementById('d_009150');d.style.display=d.style.display==='none'?'':'none'">
 <td style="font-weight:bold">삼성전기</td>
 <td style="font-weight:bold;color:#ff9100;text-align:center">매도고려</td>
-<td>1,040,000</td>
-<td class="hide-m">831,900</td>
-<td style="color:#e53935">+1.1%</td>
-<td class="hide-m">-20.0%</td>
+<td>1,038,000</td>
+<td class="hide-m">831,800</td>
+<td style="color:#e53935">+0.9%</td>
+<td class="hide-m">-19.9%</td>
 <td>80</td>
 <td>30~34 과열</td>
 <td class="pc-timing" style="display:none;text-align:left">⏳ 과거2회 평균20일 (최소20/최대21)</td>
@@ -1168,15 +1234,15 @@ tr:hover td{background:#16213e}
 <td colspan="10" style="text-align:left;padding:0;border-bottom:2px solid #253050">
 <div style="margin:4px 8px 8px 8px;padding:10px 14px;border:1px solid #253050;border-left:3px solid #aaa;border-radius:4px;background:#0d1b2a;line-height:1.7;font-size:0.85em;color:#999">
 <div style="color:#aaa;font-weight:bold;margin-bottom:4px">📊 삼성전기 (009150) — 점수 7점 / ⚪ 방향 불명확</div>
-<div>📌 판단근거: <span style='color:#00e676'>정배열(가>5>20)</span> / <span style='color:#00e676'>MA60위</span> / <span style='color:#00e676'>MA120위</span> / <span style='color:#ff1744'>RSI과열80</span> / <span style='color:#ff1744'>볼밴상단95%</span> / <span style='color:#ff1744'>RSI하락전환</span></div>
-<div>📈 이동평균: MA5 <span style='color:#00e676'>968,200▲</span> / MA20 <span style='color:#00e676'>831,900▲</span> / MA60 <span style='color:#00e676'>568,658▲</span> / MA120 <span style='color:#00e676'>417,575▲</span></div>
-<div>📊 볼린저: 하단598,481 / 중간831,900 / 상단1,065,319 (<span style='color:#ff1744'>95%</span>)</div>
-<div>📉 MACD: <span style='color:#00e676'>MACD 118453</span> / 시그널 108295 / <span style='color:#aaa'>유지</span></div>
-<div>🎯 매수가이드: <span style='color:#aaa'>매수권 598,481~831,900</span> / 매도권 1,065,319+ / <span style='color:#ff1744'>손절선 MA20-3% 806,943</span></div>
+<div>📌 판단근거: <span style='color:#00e676'>정배열(가>5>20)</span> / <span style='color:#00e676'>MA60위</span> / <span style='color:#00e676'>MA120위</span> / <span style='color:#ff1744'>RSI과열80</span> / <span style='color:#ff1744'>볼밴상단94%</span> / <span style='color:#ff1744'>RSI하락전환</span></div>
+<div>📈 이동평균: MA5 <span style='color:#00e676'>967,800▲</span> / MA20 <span style='color:#00e676'>831,800▲</span> / MA60 <span style='color:#00e676'>568,625▲</span> / MA120 <span style='color:#00e676'>417,558▲</span></div>
+<div>📊 볼린저: 하단598,736 / 중간831,800 / 상단1,064,864 (<span style='color:#ff1744'>94%</span>)</div>
+<div>📉 MACD: <span style='color:#00e676'>MACD 118293</span> / 시그널 108263 / <span style='color:#aaa'>유지</span></div>
+<div>🎯 매수가이드: <span style='color:#aaa'>매수권 598,736~831,800</span> / 매도권 1,064,864+ / <span style='color:#ff1744'>손절선 MA20-3% 806,846</span></div>
 <div>⏳ 타이밍: <span style='color:#00e5ff'>과거2회 평균20일 (최소20/최대21)</span> / <span style='color:#00e5ff'>RSI반등 패턴 약6일 (N=13)</span> / 지지선 900,000</div>
 <div>🔬 <span style='color:#ff9100'>최적RSI 30~34 (5일후 +14.3% 승률100% N=4)</span></div>
 <div style="color:#555">🚀 추세매수: 정배열 / 양봉 / MA20↑ / MA60위</div>
-<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=1.04 (보통)</span> / <span style='color:#aaa'>거래대금 0.5x (보통)</span></div>
+<div>⚡ <span style='color:#aaa'>변동성 ATR5/20=1.03 (보통)</span> / <span style='color:#aaa'>거래대금 0.5x (보통)</span></div>
 </div>
 </td>
 </tr>
