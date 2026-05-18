@@ -18,10 +18,10 @@ h1{font-size:1.05em;color:#e94560}
 table{width:100%;border-collapse:collapse;font-size:0.85em;margin:0}
 th{background:#0f3460;padding:6px 6px;text-align:center;position:sticky;z-index:10;font-size:0.85em;cursor:pointer;user-select:none}
 th:hover{background:#1a4a8a}
-.row-main td{padding:6px;text-align:center;font-size:0.85em}
+.row-main td{padding:6px;text-align:center;font-size:0.85em;white-space:nowrap}
 .row-main td:first-child{text-align:left}
 .row-timing td{padding:2px 6px 6px 6px;border-bottom:1px solid #253050;font-size:0.82em}
-.row-detail td{padding:0;background:transparent}
+.row-detail td{padding:0;background:transparent;white-space:normal}
 tr:hover td{background:#16213e}
 .row-main{cursor:pointer}
 #q:focus{outline:none;border-color:#e94560}
@@ -45,10 +45,10 @@ tr:hover td{background:#16213e}
 }
 th{background:#0f3460;padding:6px;text-align:center;position:sticky;z-index:10;font-size:0.85em;cursor:pointer;user-select:none}
 th:hover{background:#1a4a8a}
-.row-main td{padding:5px 6px;text-align:center;font-size:0.85em}
+.row-main td{padding:5px 6px;text-align:center;font-size:0.85em;white-space:nowrap}
 .row-main td:first-child{text-align:left}
 .row-timing td{padding:2px 6px 5px 6px;border-bottom:1px solid #253050;font-size:0.82em}
-.row-detail td{padding:0;background:transparent}
+.row-detail td{padding:0;background:transparent;white-space:normal}
 tr:hover td{background:#16213e}
 .row-main{cursor:pointer}
 .sec-tag{transition:background 0.2s}
@@ -117,7 +117,7 @@ tr:hover td{background:#16213e}
 </style>
 </head><body>
 <div class="top-fixed" id="top-fixed">
-<div style="background:#0a1230;padding:3px 10px;font-size:0.75em;color:#888;border-bottom:1px solid #1a2a4a;text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis"><span style='color:#e53935'>KOSPI 7,516 +0.31%</span>  <span style='color:#4d9de0'>KOSDAQ 1,111 -1.66%</span> 17:20:29</div>
+<div style="background:#0a1230;padding:3px 10px;font-size:0.75em;color:#888;border-bottom:1px solid #1a2a4a;text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis"><span style='color:#e53935'>KOSPI 7,516 +0.31%</span>  <span style='color:#4d9de0'>KOSDAQ 1,111 -1.66%</span> 17:23:11</div>
 <div class="hdr">
 <h1>📊 장투 매매타점</h1>
 <div style="display:flex;align-items:center;gap:5px">
@@ -142,7 +142,7 @@ tr:hover td{background:#16213e}
 <tbody id="tbody">
 <tr class="row-main" data-sec="반도체" data-act="관망" style="color:#aaa;cursor:pointer" onclick="toggleDetail('005930',event)">
 <td style="font-weight:bold">삼성전자</td>
-<td style="font-weight:bold;color:#888;text-align:center">관망</td>
+<td style="font-weight:bold;color:#888;text-align:center;white-space:nowrap">관망</td>
 <td>281,000</td>
 <td class="hide-m">246,925</td>
 <td style="color:#e53935">종가 +3.9%</td>
@@ -194,7 +194,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="반도체" data-act="관망" style="color:#aaa;cursor:pointer" onclick="toggleDetail('005935',event)">
 <td style="font-weight:bold">삼성전자우</td>
-<td style="font-weight:bold;color:#888;text-align:center">관망</td>
+<td style="font-weight:bold;color:#888;text-align:center;white-space:nowrap">관망</td>
 <td>185,100</td>
 <td class="hide-m">170,135</td>
 <td style="color:#e53935">종가 +3.2%</td>
@@ -246,7 +246,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="반도체" data-act="매도고려" style="color:#aaa;cursor:pointer" onclick="toggleDetail('000660',event)">
 <td style="font-weight:bold">SK하이닉스</td>
-<td style="font-weight:bold;color:#ff9100;text-align:center">매도고려</td>
+<td style="font-weight:bold;color:#ff9100;text-align:center;white-space:nowrap">매도고려</td>
 <td>1,840,000</td>
 <td class="hide-m">1,503,350</td>
 <td style="color:#e53935">종가 +1.1%</td>
@@ -298,7 +298,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="반도체" data-act="매수대기" style="color:#00e5ff;cursor:pointer" onclick="toggleDetail('042700',event)">
 <td style="font-weight:bold">한미반도체</td>
-<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
+<td style="font-weight:bold;color:#00e5ff;text-align:center;white-space:nowrap">매수대기</td>
 <td>317,000</td>
 <td class="hide-m">352,300</td>
 <td style="color:#4d9de0">종가 -14.1%</td>
@@ -350,7 +350,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="반도체" data-act="관망" style="color:#ffd600;cursor:pointer" onclick="toggleDetail('403870',event)">
 <td style="font-weight:bold">HPSP</td>
-<td style="font-weight:bold;color:#888;text-align:center">관망</td>
+<td style="font-weight:bold;color:#888;text-align:center;white-space:nowrap">관망</td>
 <td>52,200</td>
 <td class="hide-m">52,085</td>
 <td style="color:#e53935">종가 +5.5%</td>
@@ -402,7 +402,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="반도체" data-act="매수대기" style="color:#00e5ff;cursor:pointer" onclick="toggleDetail('058470',event)">
 <td style="font-weight:bold">리노공업</td>
-<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
+<td style="font-weight:bold;color:#00e5ff;text-align:center;white-space:nowrap">매수대기</td>
 <td>101,000</td>
 <td class="hide-m">114,360</td>
 <td style="color:#aaa">종가 +0.0%</td>
@@ -454,7 +454,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="반도체" data-act="추세매수" style="color:#aaa;cursor:pointer" onclick="toggleDetail('036930',event)">
 <td style="font-weight:bold">주성엔지니어링</td>
-<td style="font-weight:bold;color:#e53935;text-align:center">추세매수</td>
+<td style="font-weight:bold;color:#e53935;text-align:center;white-space:nowrap">추세매수</td>
 <td>182,200</td>
 <td class="hide-m">132,805</td>
 <td style="color:#e53935">종가 +30.0%</td>
@@ -506,7 +506,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="반도체" data-act="매수대기" style="color:#00e5ff;cursor:pointer" onclick="toggleDetail('357780',event)">
 <td style="font-weight:bold">솔브레인</td>
-<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
+<td style="font-weight:bold;color:#00e5ff;text-align:center;white-space:nowrap">매수대기</td>
 <td>408,000</td>
 <td class="hide-m">456,575</td>
 <td style="color:#4d9de0">종가 -0.5%</td>
@@ -558,7 +558,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="반도체" data-act="매수" style="color:#00e676;cursor:pointer" onclick="toggleDetail('240810',event)">
 <td style="font-weight:bold">원익IPS</td>
-<td style="font-weight:bold;color:#e53935;text-align:center">매수</td>
+<td style="font-weight:bold;color:#e53935;text-align:center;white-space:nowrap">매수</td>
 <td>116,100</td>
 <td class="hide-m">123,485</td>
 <td style="color:#e53935">종가 +1.2%</td>
@@ -610,7 +610,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="반도체" data-act="매수대기" style="color:#00e5ff;cursor:pointer" onclick="toggleDetail('322310',event)">
 <td style="font-weight:bold">오션브릿지</td>
-<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
+<td style="font-weight:bold;color:#00e5ff;text-align:center;white-space:nowrap">매수대기</td>
 <td>27,850</td>
 <td class="hide-m">34,625</td>
 <td style="color:#aaa">종가 +0.0%</td>
@@ -662,7 +662,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="반도체" data-act="매수" style="color:#00e676;cursor:pointer" onclick="toggleDetail('140860',event)">
 <td style="font-weight:bold">파크시스템스</td>
-<td style="font-weight:bold;color:#e53935;text-align:center">매수</td>
+<td style="font-weight:bold;color:#e53935;text-align:center;white-space:nowrap">매수</td>
 <td>271,500</td>
 <td class="hide-m">289,025</td>
 <td style="color:#e53935">종가 +2.6%</td>
@@ -714,7 +714,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="반도체" data-act="매수대기" style="color:#00e5ff;cursor:pointer" onclick="toggleDetail('178920',event)">
 <td style="font-weight:bold">PI첨단소재</td>
-<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
+<td style="font-weight:bold;color:#00e5ff;text-align:center;white-space:nowrap">매수대기</td>
 <td>27,100</td>
 <td class="hide-m">27,685</td>
 <td style="color:#4d9de0">종가 -2.9%</td>
@@ -766,7 +766,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="반도체ETF" data-act="관망" style="color:#aaa;cursor:pointer" onclick="toggleDetail('091160',event)">
 <td style="font-weight:bold">KODEX 반도체</td>
-<td style="font-weight:bold;color:#888;text-align:center">관망</td>
+<td style="font-weight:bold;color:#888;text-align:center;white-space:nowrap">관망</td>
 <td>146,250</td>
 <td class="hide-m">132,734</td>
 <td style="color:#e53935">종가 +0.2%</td>
@@ -818,7 +818,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="반도체ETF" data-act="매수대기" style="color:#00e5ff;cursor:pointer" onclick="toggleDetail('266360',event)">
 <td style="font-weight:bold">KODEX 반도체장비</td>
-<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
+<td style="font-weight:bold;color:#00e5ff;text-align:center;white-space:nowrap">매수대기</td>
 <td>11,350</td>
 <td class="hide-m">11,958</td>
 <td style="color:#4d9de0">종가 -1.6%</td>
@@ -870,7 +870,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="시장ETF" data-act="관망" style="color:#aaa;cursor:pointer" onclick="toggleDetail('069500',event)">
 <td style="font-weight:bold">KODEX 200</td>
-<td style="font-weight:bold;color:#888;text-align:center">관망</td>
+<td style="font-weight:bold;color:#888;text-align:center;white-space:nowrap">관망</td>
 <td>117,840</td>
 <td class="hide-m">107,723</td>
 <td style="color:#e53935">종가 +0.6%</td>
@@ -922,7 +922,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="시장ETF" data-act="매수대기" style="color:#00e5ff;cursor:pointer" onclick="toggleDetail('229200',event)">
 <td style="font-weight:bold">KODEX 코스닥150</td>
-<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
+<td style="font-weight:bold;color:#00e5ff;text-align:center;white-space:nowrap">매수대기</td>
 <td>18,490</td>
 <td class="hide-m">19,877</td>
 <td style="color:#4d9de0">종가 -2.6%</td>
@@ -974,7 +974,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="시장ETF" data-act="매수대기" style="color:#00e5ff;cursor:pointer" onclick="toggleDetail('305720',event)">
 <td style="font-weight:bold">KODEX 2차전지산업</td>
-<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
+<td style="font-weight:bold;color:#00e5ff;text-align:center;white-space:nowrap">매수대기</td>
 <td>19,270</td>
 <td class="hide-m">21,011</td>
 <td style="color:#4d9de0">종가 -1.3%</td>
@@ -1026,7 +1026,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="방산" data-act="매수" style="color:#00e676;cursor:pointer" onclick="toggleDetail('012450',event)">
 <td style="font-weight:bold">한화에어로스페이스</td>
-<td style="font-weight:bold;color:#e53935;text-align:center">매수</td>
+<td style="font-weight:bold;color:#e53935;text-align:center;white-space:nowrap">매수</td>
 <td>1,227,000</td>
 <td class="hide-m">1,369,250</td>
 <td style="color:#e53935">종가 +0.9%</td>
@@ -1078,7 +1078,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="방산" data-act="매수" style="color:#00e676;cursor:pointer" onclick="toggleDetail('272210',event)">
 <td style="font-weight:bold">한화시스템</td>
-<td style="font-weight:bold;color:#e53935;text-align:center">매수</td>
+<td style="font-weight:bold;color:#e53935;text-align:center;white-space:nowrap">매수</td>
 <td>106,100</td>
 <td class="hide-m">120,290</td>
 <td style="color:#e53935">종가 +1.7%</td>
@@ -1130,7 +1130,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="방산" data-act="매수대기" style="color:#00e5ff;cursor:pointer" onclick="toggleDetail('042660',event)">
 <td style="font-weight:bold">한화오션</td>
-<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
+<td style="font-weight:bold;color:#00e5ff;text-align:center;white-space:nowrap">매수대기</td>
 <td>115,800</td>
 <td class="hide-m">128,655</td>
 <td style="color:#4d9de0">종가 -1.9%</td>
@@ -1182,7 +1182,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="방산" data-act="매수" style="color:#00e676;cursor:pointer" onclick="toggleDetail('047810',event)">
 <td style="font-weight:bold">한국항공우주</td>
-<td style="font-weight:bold;color:#e53935;text-align:center">매수</td>
+<td style="font-weight:bold;color:#e53935;text-align:center;white-space:nowrap">매수</td>
 <td>161,700</td>
 <td class="hide-m">173,075</td>
 <td style="color:#e53935">종가 +0.4%</td>
@@ -1234,7 +1234,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="방산" data-act="매수대기" style="color:#00e5ff;cursor:pointer" onclick="toggleDetail('064350',event)">
 <td style="font-weight:bold">현대로템</td>
-<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
+<td style="font-weight:bold;color:#00e5ff;text-align:center;white-space:nowrap">매수대기</td>
 <td>201,000</td>
 <td class="hide-m">231,175</td>
 <td style="color:#4d9de0">종가 -0.2%</td>
@@ -1286,7 +1286,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="바이오" data-act="매수대기" style="color:#00e5ff;cursor:pointer" onclick="toggleDetail('068270',event)">
 <td style="font-weight:bold">셀트리온</td>
-<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
+<td style="font-weight:bold;color:#00e5ff;text-align:center;white-space:nowrap">매수대기</td>
 <td>183,200</td>
 <td class="hide-m">199,305</td>
 <td style="color:#4d9de0">종가 -3.0%</td>
@@ -1338,7 +1338,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="바이오" data-act="매수대기" style="color:#00e5ff;cursor:pointer" onclick="toggleDetail('207940',event)">
 <td style="font-weight:bold">삼성바이오로직스</td>
-<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
+<td style="font-weight:bold;color:#00e5ff;text-align:center;white-space:nowrap">매수대기</td>
 <td>1,386,000</td>
 <td class="hide-m">1,491,150</td>
 <td style="color:#4d9de0">종가 -2.3%</td>
@@ -1390,7 +1390,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="바이오" data-act="매수대기" style="color:#00e5ff;cursor:pointer" onclick="toggleDetail('196170',event)">
 <td style="font-weight:bold">알테오젠</td>
-<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
+<td style="font-weight:bold;color:#00e5ff;text-align:center;white-space:nowrap">매수대기</td>
 <td>357,500</td>
 <td class="hide-m">363,125</td>
 <td style="color:#4d9de0">종가 -3.1%</td>
@@ -1442,7 +1442,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="AI_IT" data-act="매수대기" style="color:#00e5ff;cursor:pointer" onclick="toggleDetail('035420',event)">
 <td style="font-weight:bold">NAVER</td>
-<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
+<td style="font-weight:bold;color:#00e5ff;text-align:center;white-space:nowrap">매수대기</td>
 <td>200,000</td>
 <td class="hide-m">211,400</td>
 <td style="color:#4d9de0">종가 -1.7%</td>
@@ -1494,7 +1494,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="AI_IT" data-act="매수대기" style="color:#00e5ff;cursor:pointer" onclick="toggleDetail('035720',event)">
 <td style="font-weight:bold">카카오</td>
-<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
+<td style="font-weight:bold;color:#00e5ff;text-align:center;white-space:nowrap">매수대기</td>
 <td>42,450</td>
 <td class="hide-m">46,697</td>
 <td style="color:#4d9de0">종가 -3.5%</td>
@@ -1546,7 +1546,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="AI_IT" data-act="매수대기" style="color:#00e5ff;cursor:pointer" onclick="toggleDetail('251270',event)">
 <td style="font-weight:bold">넷마블</td>
-<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
+<td style="font-weight:bold;color:#00e5ff;text-align:center;white-space:nowrap">매수대기</td>
 <td>42,350</td>
 <td class="hide-m">47,537</td>
 <td style="color:#4d9de0">종가 -2.0%</td>
@@ -1598,7 +1598,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="자동차" data-act="매도고려" style="color:#aaa;cursor:pointer" onclick="toggleDetail('005380',event)">
 <td style="font-weight:bold">현대차</td>
-<td style="font-weight:bold;color:#ff9100;text-align:center">매도고려</td>
+<td style="font-weight:bold;color:#ff9100;text-align:center;white-space:nowrap">매도고려</td>
 <td>663,000</td>
 <td class="hide-m">585,700</td>
 <td style="color:#4d9de0">종가 -5.3%</td>
@@ -1650,7 +1650,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="자동차" data-act="관망" style="color:#ffd600;cursor:pointer" onclick="toggleDetail('000270',event)">
 <td style="font-weight:bold">기아</td>
-<td style="font-weight:bold;color:#888;text-align:center">관망</td>
+<td style="font-weight:bold;color:#888;text-align:center;white-space:nowrap">관망</td>
 <td>162,500</td>
 <td class="hide-m">161,355</td>
 <td style="color:#4d9de0">종가 -3.3%</td>
@@ -1702,7 +1702,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="자동차" data-act="관망" style="color:#aaa;cursor:pointer" onclick="toggleDetail('012330',event)">
 <td style="font-weight:bold">현대모비스</td>
-<td style="font-weight:bold;color:#888;text-align:center">관망</td>
+<td style="font-weight:bold;color:#888;text-align:center;white-space:nowrap">관망</td>
 <td>571,000</td>
 <td class="hide-m">488,675</td>
 <td style="color:#4d9de0">종가 -9.2%</td>
@@ -1754,7 +1754,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="금융" data-act="매수대기" style="color:#00e5ff;cursor:pointer" onclick="toggleDetail('055550',event)">
 <td style="font-weight:bold">신한지주</td>
-<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
+<td style="font-weight:bold;color:#00e5ff;text-align:center;white-space:nowrap">매수대기</td>
 <td>93,100</td>
 <td class="hide-m">98,185</td>
 <td style="color:#4d9de0">종가 -2.1%</td>
@@ -1806,7 +1806,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="금융" data-act="매수대기" style="color:#00e5ff;cursor:pointer" onclick="toggleDetail('105560',event)">
 <td style="font-weight:bold">KB금융</td>
-<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
+<td style="font-weight:bold;color:#00e5ff;text-align:center;white-space:nowrap">매수대기</td>
 <td>153,000</td>
 <td class="hide-m">158,115</td>
 <td style="color:#4d9de0">종가 -1.7%</td>
@@ -1858,7 +1858,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="금융" data-act="매수대기" style="color:#00e5ff;cursor:pointer" onclick="toggleDetail('086790',event)">
 <td style="font-weight:bold">하나금융지주</td>
-<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
+<td style="font-weight:bold;color:#00e5ff;text-align:center;white-space:nowrap">매수대기</td>
 <td>114,200</td>
 <td class="hide-m">123,900</td>
 <td style="color:#4d9de0">종가 -4.0%</td>
@@ -1910,7 +1910,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="소재_화학" data-act="매수대기" style="color:#00e5ff;cursor:pointer" onclick="toggleDetail('051910',event)">
 <td style="font-weight:bold">LG화학</td>
-<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
+<td style="font-weight:bold;color:#00e5ff;text-align:center;white-space:nowrap">매수대기</td>
 <td>373,000</td>
 <td class="hide-m">395,700</td>
 <td style="color:#4d9de0">종가 -0.3%</td>
@@ -1962,7 +1962,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="소재_화학" data-act="매수대기" style="color:#00e5ff;cursor:pointer" onclick="toggleDetail('006400',event)">
 <td style="font-weight:bold">삼성SDI</td>
-<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
+<td style="font-weight:bold;color:#00e5ff;text-align:center;white-space:nowrap">매수대기</td>
 <td>613,000</td>
 <td class="hide-m">646,650</td>
 <td style="color:#4d9de0">종가 -0.2%</td>
@@ -2014,7 +2014,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="소재_화학" data-act="매수대기" style="color:#00e5ff;cursor:pointer" onclick="toggleDetail('373220',event)">
 <td style="font-weight:bold">LG에너지솔루션</td>
-<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
+<td style="font-weight:bold;color:#00e5ff;text-align:center;white-space:nowrap">매수대기</td>
 <td>408,000</td>
 <td class="hide-m">457,400</td>
 <td style="color:#4d9de0">종가 -2.2%</td>
@@ -2066,7 +2066,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="소재_화학" data-act="관망" style="color:#ffd600;cursor:pointer" onclick="toggleDetail('005490',event)">
 <td style="font-weight:bold">POSCO홀딩스</td>
-<td style="font-weight:bold;color:#888;text-align:center">관망</td>
+<td style="font-weight:bold;color:#888;text-align:center;white-space:nowrap">관망</td>
 <td>463,000</td>
 <td class="hide-m">460,475</td>
 <td style="color:#4d9de0">종가 -1.0%</td>
@@ -2118,7 +2118,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="소재_화학" data-act="매수대기" style="color:#00e5ff;cursor:pointer" onclick="toggleDetail('047050',event)">
 <td style="font-weight:bold">포스코인터내셔널</td>
-<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
+<td style="font-weight:bold;color:#00e5ff;text-align:center;white-space:nowrap">매수대기</td>
 <td>71,300</td>
 <td class="hide-m">78,920</td>
 <td style="color:#4d9de0">종가 -0.8%</td>
@@ -2170,7 +2170,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="통신" data-act="관망" style="color:#ffd600;cursor:pointer" onclick="toggleDetail('017670',event)">
 <td style="font-weight:bold">SK텔레콤</td>
-<td style="font-weight:bold;color:#888;text-align:center">관망</td>
+<td style="font-weight:bold;color:#888;text-align:center;white-space:nowrap">관망</td>
 <td>100,500</td>
 <td class="hide-m">98,570</td>
 <td style="color:#4d9de0">종가 -0.8%</td>
@@ -2222,7 +2222,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="통신" data-act="매수대기" style="color:#00e5ff;cursor:pointer" onclick="toggleDetail('030200',event)">
 <td style="font-weight:bold">KT</td>
-<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
+<td style="font-weight:bold;color:#00e5ff;text-align:center;white-space:nowrap">매수대기</td>
 <td>57,000</td>
 <td class="hide-m">60,575</td>
 <td style="color:#4d9de0">종가 -2.9%</td>
@@ -2274,7 +2274,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="대형주" data-act="관망" style="color:#aaa;cursor:pointer" onclick="toggleDetail('003550',event)">
 <td style="font-weight:bold">LG</td>
-<td style="font-weight:bold;color:#888;text-align:center">관망</td>
+<td style="font-weight:bold;color:#888;text-align:center;white-space:nowrap">관망</td>
 <td>115,400</td>
 <td class="hide-m">103,245</td>
 <td style="color:#4d9de0">종가 -8.4%</td>
@@ -2326,7 +2326,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="대형주" data-act="매도고려" style="color:#aaa;cursor:pointer" onclick="toggleDetail('066570',event)">
 <td style="font-weight:bold">LG전자</td>
-<td style="font-weight:bold;color:#ff9100;text-align:center">매도고려</td>
+<td style="font-weight:bold;color:#ff9100;text-align:center;white-space:nowrap">매도고려</td>
 <td>217,000</td>
 <td class="hide-m">156,030</td>
 <td style="color:#4d9de0">종가 -9.8%</td>
@@ -2378,7 +2378,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="대형주" data-act="관망" style="color:#aaa;cursor:pointer" onclick="toggleDetail('034730',event)">
 <td style="font-weight:bold">SK</td>
-<td style="font-weight:bold;color:#888;text-align:center">관망</td>
+<td style="font-weight:bold;color:#888;text-align:center;white-space:nowrap">관망</td>
 <td>530,000</td>
 <td class="hide-m">465,450</td>
 <td style="color:#e53935">종가 +5.4%</td>
@@ -2430,7 +2430,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="대형주" data-act="추세매수" style="color:#aaa;cursor:pointer" onclick="toggleDetail('032830',event)">
 <td style="font-weight:bold">삼성생명</td>
-<td style="font-weight:bold;color:#e53935;text-align:center">추세매수</td>
+<td style="font-weight:bold;color:#e53935;text-align:center;white-space:nowrap">추세매수</td>
 <td>313,500</td>
 <td class="hide-m">276,525</td>
 <td style="color:#e53935">종가 +1.1%</td>
@@ -2482,7 +2482,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="대형주" data-act="추세매수" style="color:#aaa;cursor:pointer" onclick="toggleDetail('009150',event)">
 <td style="font-weight:bold">삼성전기</td>
-<td style="font-weight:bold;color:#e53935;text-align:center">추세매수</td>
+<td style="font-weight:bold;color:#e53935;text-align:center;white-space:nowrap">추세매수</td>
 <td>1,031,000</td>
 <td class="hide-m">870,500</td>
 <td style="color:#e53935">종가 +2.1%</td>
@@ -2534,7 +2534,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="소재_화학" data-act="매수대기" style="color:#00e5ff;cursor:pointer" onclick="toggleDetail('247540',event)">
 <td style="font-weight:bold">에코프로비엠</td>
-<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
+<td style="font-weight:bold;color:#00e5ff;text-align:center;white-space:nowrap">매수대기</td>
 <td>190,400</td>
 <td class="hide-m">212,050</td>
 <td style="color:#4d9de0">종가 -0.1%</td>
@@ -2586,7 +2586,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="소재_화학" data-act="매수" style="color:#00e676;cursor:pointer" onclick="toggleDetail('010950',event)">
 <td style="font-weight:bold">S-Oil</td>
-<td style="font-weight:bold;color:#e53935;text-align:center">매수</td>
+<td style="font-weight:bold;color:#e53935;text-align:center;white-space:nowrap">매수</td>
 <td>111,500</td>
 <td class="hide-m">118,440</td>
 <td style="color:#4d9de0">종가 -0.5%</td>
@@ -2638,7 +2638,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="금융" data-act="매수대기" style="color:#00e5ff;cursor:pointer" onclick="toggleDetail('316140',event)">
 <td style="font-weight:bold">우리금융지주</td>
-<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
+<td style="font-weight:bold;color:#00e5ff;text-align:center;white-space:nowrap">매수대기</td>
 <td>30,650</td>
 <td class="hide-m">33,335</td>
 <td style="color:#4d9de0">종가 -1.9%</td>
@@ -2690,7 +2690,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="금융" data-act="매도고려" style="color:#aaa;cursor:pointer" onclick="toggleDetail('000810',event)">
 <td style="font-weight:bold">삼성화재</td>
-<td style="font-weight:bold;color:#ff9100;text-align:center">매도고려</td>
+<td style="font-weight:bold;color:#ff9100;text-align:center;white-space:nowrap">매도고려</td>
 <td>554,000</td>
 <td class="hide-m">488,500</td>
 <td style="color:#aaa">종가 +0.0%</td>
@@ -2742,7 +2742,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="자동차" data-act="매수대기" style="color:#00e5ff;cursor:pointer" onclick="toggleDetail('086280',event)">
 <td style="font-weight:bold">현대글로비스</td>
-<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
+<td style="font-weight:bold;color:#00e5ff;text-align:center;white-space:nowrap">매수대기</td>
 <td>230,000</td>
 <td class="hide-m">238,350</td>
 <td style="color:#4d9de0">종가 -5.0%</td>
@@ -2794,7 +2794,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="AI_IT" data-act="관망" style="color:#ffd600;cursor:pointer" onclick="toggleDetail('259960',event)">
 <td style="font-weight:bold">크래프톤</td>
-<td style="font-weight:bold;color:#888;text-align:center">관망</td>
+<td style="font-weight:bold;color:#888;text-align:center;white-space:nowrap">관망</td>
 <td>282,000</td>
 <td class="hide-m">275,075</td>
 <td style="color:#e53935">종가 +1.1%</td>
@@ -2846,7 +2846,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="소재_화학" data-act="매수" style="color:#00e676;cursor:pointer" onclick="toggleDetail('010130',event)">
 <td style="font-weight:bold">고려아연</td>
-<td style="font-weight:bold;color:#e53935;text-align:center">매수</td>
+<td style="font-weight:bold;color:#e53935;text-align:center;white-space:nowrap">매수</td>
 <td>1,420,000</td>
 <td class="hide-m">1,593,650</td>
 <td style="color:#4d9de0">종가 -0.4%</td>
@@ -2898,7 +2898,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="방산" data-act="매수" style="color:#00e676;cursor:pointer" onclick="toggleDetail('034020',event)">
 <td style="font-weight:bold">두산에너빌리티</td>
-<td style="font-weight:bold;color:#e53935;text-align:center">매수</td>
+<td style="font-weight:bold;color:#e53935;text-align:center;white-space:nowrap">매수</td>
 <td>112,100</td>
 <td class="hide-m">122,380</td>
 <td style="color:#e53935">종가 +1.2%</td>
@@ -2950,7 +2950,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="AI_IT" data-act="매도고려" style="color:#aaa;cursor:pointer" onclick="toggleDetail('402340',event)">
 <td style="font-weight:bold">SK스퀘어</td>
-<td style="font-weight:bold;color:#ff9100;text-align:center">매도고려</td>
+<td style="font-weight:bold;color:#ff9100;text-align:center;white-space:nowrap">매도고려</td>
 <td>1,093,000</td>
 <td class="hide-m">934,350</td>
 <td style="color:#4d9de0">종가 -0.5%</td>
@@ -3002,7 +3002,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="대형주" data-act="매수대기" style="color:#00e5ff;cursor:pointer" onclick="toggleDetail('267250',event)">
 <td style="font-weight:bold">HD현대중공업</td>
-<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
+<td style="font-weight:bold;color:#00e5ff;text-align:center;white-space:nowrap">매수대기</td>
 <td>269,000</td>
 <td class="hide-m">282,200</td>
 <td style="color:#4d9de0">종가 -0.2%</td>
@@ -3054,7 +3054,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="대형주" data-act="매수대기" style="color:#00e5ff;cursor:pointer" onclick="toggleDetail('329180',event)">
 <td style="font-weight:bold">현대중공업</td>
-<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
+<td style="font-weight:bold;color:#00e5ff;text-align:center;white-space:nowrap">매수대기</td>
 <td>615,000</td>
 <td class="hide-m">650,600</td>
 <td style="color:#4d9de0">종가 -3.9%</td>
@@ -3106,7 +3106,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="소재_화학" data-act="매수대기" style="color:#00e5ff;cursor:pointer" onclick="toggleDetail('086520',event)">
 <td style="font-weight:bold">에코프로</td>
-<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
+<td style="font-weight:bold;color:#00e5ff;text-align:center;white-space:nowrap">매수대기</td>
 <td>126,800</td>
 <td class="hide-m">151,635</td>
 <td style="color:#4d9de0">종가 -1.9%</td>
@@ -3158,7 +3158,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="바이오" data-act="매수대기" style="color:#00e5ff;cursor:pointer" onclick="toggleDetail('028300',event)">
 <td style="font-weight:bold">HLB</td>
-<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
+<td style="font-weight:bold;color:#00e5ff;text-align:center;white-space:nowrap">매수대기</td>
 <td>50,300</td>
 <td class="hide-m">58,995</td>
 <td style="color:#4d9de0">종가 -3.1%</td>
@@ -3210,7 +3210,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="AI_IT" data-act="매수대기" style="color:#00e5ff;cursor:pointer" onclick="toggleDetail('141080',event)">
 <td style="font-weight:bold">레인보우로보틱스</td>
-<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
+<td style="font-weight:bold;color:#00e5ff;text-align:center;white-space:nowrap">매수대기</td>
 <td>162,000</td>
 <td class="hide-m">191,575</td>
 <td style="color:#4d9de0">종가 -15.4%</td>
@@ -3262,7 +3262,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="바이오" data-act="매수대기" style="color:#00e5ff;cursor:pointer" onclick="toggleDetail('214150',event)">
 <td style="font-weight:bold">클래시스</td>
-<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
+<td style="font-weight:bold;color:#00e5ff;text-align:center;white-space:nowrap">매수대기</td>
 <td>48,100</td>
 <td class="hide-m">55,705</td>
 <td style="color:#4d9de0">종가 -4.8%</td>
@@ -3314,7 +3314,7 @@ tr:hover td{background:#16213e}
 </td>
 </tr><tr class="row-main" data-sec="바이오" data-act="매수대기" style="color:#00e5ff;cursor:pointer" onclick="toggleDetail('326030',event)">
 <td style="font-weight:bold">SK바이오팜</td>
-<td style="font-weight:bold;color:#00e5ff;text-align:center">매수대기</td>
+<td style="font-weight:bold;color:#00e5ff;text-align:center;white-space:nowrap">매수대기</td>
 <td>95,500</td>
 <td class="hide-m">100,885</td>
 <td style="color:#4d9de0">종가 -1.1%</td>
