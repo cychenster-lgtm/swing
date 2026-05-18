@@ -13,8 +13,9 @@ h1{font-size:1.05em;color:#e94560}
 .time{color:#666;font-size:0.72em}
 .btn{background:#111;color:#e0e0e0;border:none;padding:4px 10px;border-radius:4px;font-size:0.78em;cursor:pointer}
 .btn:active{background:#1a237e}
-.legend{font-size:0.7em;color:#666;padding:1px 10px 3px 10px}
-.legend span{margin-right:7px}
+.legend{font-size:0.7em;color:#666;padding:1px 10px 3px 10px;text-align:right}
+.legend span{margin-left:7px}
+.legend .time{float:left;margin-left:0}
 table{width:100%;border-collapse:collapse;font-size:0.85em;margin:0}
 th{background:#0f3460;padding:6px 6px;text-align:center;position:sticky;z-index:10;font-size:0.85em;cursor:pointer;user-select:none}
 th:hover{background:#1a4a8a}
@@ -127,12 +128,12 @@ tr:hover td{background:#16213e}
 </div>
 </div>
 <div class="legend">
-<span class="leg-tag" data-act="매수" onclick="toggleAct('매수')" style="color:#00e676;cursor:pointer;padding:1px 5px;border-radius:8px;border:1px solid transparent">🟢반등확인</span>
-<span class="leg-tag" data-act="매수대기" onclick="toggleAct('매수대기')" style="color:#00e5ff;cursor:pointer;padding:1px 5px;border-radius:8px;border:1px solid transparent">🔵반등초기</span>
-<span class="leg-tag" data-act="관망" onclick="toggleAct('관망')" style="color:#ffd600;cursor:pointer;padding:1px 5px;border-radius:8px;border:1px solid transparent">🟡눌림중</span>
-<span class="leg-tag" data-act="매도" onclick="toggleAct('매도')" style="color:#ff9100;cursor:pointer;padding:1px 5px;border-radius:8px;border:1px solid transparent">🟠과열/하락</span>
-<span class="leg-tag" data-act="위험" onclick="toggleAct('위험')" style="color:#ff1744;cursor:pointer;padding:1px 5px;border-radius:8px;border:1px solid transparent">🔴위험</span>
-<span class="time" style="float:right">⏸ 장외 갱신: 2026-05-18 16:37:43</span>
+<span class="time">⏸ 장외 갱신: 2026-05-18 16:46:35</span>
+<span class="leg-tag" data-act="매수" onclick="toggleAct('매수')" style="color:#00e676;cursor:pointer;padding:1px 5px;border-radius:2px;border:1px solid transparent">🟢반등확인</span>
+<span class="leg-tag" data-act="매수대기" onclick="toggleAct('매수대기')" style="color:#00e5ff;cursor:pointer;padding:1px 5px;border-radius:2px;border:1px solid transparent">🔵반등초기</span>
+<span class="leg-tag" data-act="관망" onclick="toggleAct('관망')" style="color:#ffd600;cursor:pointer;padding:1px 5px;border-radius:2px;border:1px solid transparent">🟡눌림중</span>
+<span class="leg-tag" data-act="매도" onclick="toggleAct('매도')" style="color:#ff9100;cursor:pointer;padding:1px 5px;border-radius:2px;border:1px solid transparent">🟠과열/하락</span>
+<span class="leg-tag" data-act="위험" onclick="toggleAct('위험')" style="color:#ff1744;cursor:pointer;padding:1px 5px;border-radius:2px;border:1px solid transparent">🔴위험</span>
 </div>
 <div id='sec-bar' style='background:#0a1628;padding:5px 10px;font-size:0.78em;border-bottom:1px solid #253050;overflow-x:auto;white-space:nowrap'>📊 <span class='sec-tag' data-sid='반도체' onclick="toggleSec('반도체')" style='margin:0 6px;color:#e53935;cursor:pointer;padding:2px 6px;border-radius:2px;border:1px solid #253050'>반도체 <b>+2.6%</b> <small style='color:#666'>8↑3↓</small></span><span class='sec-tag' data-sid='방산' onclick="toggleSec('방산')" style='margin:0 6px;color:#ff9100;cursor:pointer;padding:2px 6px;border-radius:2px;border:1px solid #253050'>방산 <b>+0.2%</b> <small style='color:#666'>3↑2↓</small></span><span class='sec-tag' data-sid='바이오' onclick="toggleSec('바이오')" style='margin:0 6px;color:#4d9de0;cursor:pointer;padding:2px 6px;border-radius:2px;border:1px solid #253050'>바이오 <b>-2.8%</b> <small style='color:#666'>0↑3↓</small></span><span class='sec-tag' data-sid='자동차' onclick="toggleSec('자동차')" style='margin:0 6px;color:#4d9de0;cursor:pointer;padding:2px 6px;border-radius:2px;border:1px solid #253050'>자동차 <b>-5.9%</b> <small style='color:#666'>0↑3↓</small></span><span class='sec-tag' data-sid='2차전지' onclick="toggleSec('2차전지')" style='margin:0 6px;color:#aaa;cursor:pointer;padding:2px 6px;border-radius:2px;border:1px solid #253050'>2차전지 <b>-1.0%</b> <small style='color:#666'>0↑4↓</small></span><span class='sec-tag' data-sid='금융' onclick="toggleSec('금융')" style='margin:0 6px;color:#4d9de0;cursor:pointer;padding:2px 6px;border-radius:2px;border:1px solid #253050'>금융 <b>-2.6%</b> <small style='color:#666'>0↑3↓</small></span><span class='sec-tag' data-sid='AI_IT' onclick="toggleSec('AI_IT')" style='margin:0 6px;color:#4d9de0;cursor:pointer;padding:2px 6px;border-radius:2px;border:1px solid #253050'>AI/IT <b>-2.6%</b> <small style='color:#666'>0↑2↓</small></span></div>
 </div>
@@ -186,7 +187,7 @@ tr:hover td{background:#16213e}
 </div>
 <aside class="det-side">
 <div class="det-side-title">📰 최신 뉴스</div>
-<ul class="news-list"><li style="color:#bbb;border-left-color:#253050">코스피, 7180선까지 밀렸다…삼성전자·SK하이닉스 동반 약세</li><li style="color:#bbb;border-left-color:#253050">[개장시황] '8천피' 찍고 급락했던 코스피...하락 출발</li><li style="color:#00e676;border-left-color:#00e67688">흔들리는 대내외 리스크에…반도체주 일제히 하락</li><li style="color:#bbb;border-left-color:#253050">[단독] 코스피200 ETF, 하반기 홍콩 데뷔…외인 자금 유입 기대</li></ul>
+<ul class="news-list"><li style="color:#00e676;border-left-color:#00e67688">코스피 올랐지만, 코스닥 '급락'...일부 반도체주는 '껑충'</li><li style="color:#bbb;border-left-color:#253050">코스피, '매도 사이드카' 딛고 7500선 회복</li><li style="color:#bbb;border-left-color:#253050">"코스피 1만 포인트, 이익이 만든다"…증권가 '新황금기' 선언</li><li style="color:#bbb;border-left-color:#253050">코스피, 장 초반 7100선까지 하락·사이드카 발동 딛고 7516.04 마감</li></ul>
 </aside>
 </div>
 <div class="det-hist"><div class="det-hist-title">📅 7일 등락</div><div class="det-card-row"><span style='color:#4d9de0'>05-08 -1.1%</span> / <span style='color:#e53935'>05-11 +6.3%</span> / <span style='color:#4d9de0'>05-12 -2.3%</span> / <span style='color:#e53935'>05-13 +1.8%</span> / <span style='color:#e53935'>05-14 +4.2%</span> / <span style='color:#4d9de0'>05-15 -8.6%</span> / <span style='color:#e53935'>05-18 +3.9%</span></div></div>
@@ -238,7 +239,7 @@ tr:hover td{background:#16213e}
 </div>
 <aside class="det-side">
 <div class="det-side-title">📰 최신 뉴스</div>
-<ul class="news-list"><li style="color:#bbb;border-left-color:#253050">[개장시황] '8천피' 찍고 급락했던 코스피...하락 출발</li><li style="color:#00e676;border-left-color:#00e67688">코스피 흔들리자 증권주 급락...반도체서 빠진 돈 로봇주로</li><li style="color:#bbb;border-left-color:#253050">엔비디아·중동전쟁·삼성 파업까지…8천 찍고 급락한 증시, 변동성 시...</li><li style="color:#bbb;border-left-color:#253050">‘팔천피 반납’ 코스피…삼성·SK가 그룹株 시총 증가분 99.6% [투자360]</li></ul>
+<ul class="news-list"><li style="color:#bbb;border-left-color:#253050">코스피, 장 초반 7100선까지 하락·사이드카 발동 딛고 7516.04 마감</li><li style="color:#00e676;border-left-color:#00e67688">코스피 반등 마감…반도체 투톱 강세</li><li style="color:#bbb;border-left-color:#253050">삼전 턱밑까지 온 하이닉스... 시총 82%까지 추격</li><li style="color:#bbb;border-left-color:#253050">[거래소 기관] 삼성전자 SK하이닉스 SK스퀘어 삼성전기 담고 현대차 LG전...</li></ul>
 </aside>
 </div>
 <div class="det-hist"><div class="det-hist-title">📅 7일 등락</div><div class="det-card-row"><span style='color:#4d9de0'>05-08 -1.5%</span> / <span style='color:#e53935'>05-11 +6.7%</span> / <span style='color:#4d9de0'>05-12 -4.1%</span> / <span style='color:#e53935'>05-13 +1.1%</span> / <span style='color:#e53935'>05-14 +2.4%</span> / <span style='color:#4d9de0'>05-15 -7.4%</span> / <span style='color:#e53935'>05-18 +3.2%</span></div></div>
@@ -290,7 +291,7 @@ tr:hover td{background:#16213e}
 </div>
 <aside class="det-side">
 <div class="det-side-title">📰 최신 뉴스</div>
-<ul class="news-list"><li style="color:#bbb;border-left-color:#253050">[금융가 사람들] 미래에셋證 '1등 PB', 이지혜 대치WM 팀장</li><li style="color:#bbb;border-left-color:#253050">코스피, 7180선까지 밀렸다…삼성전자·SK하이닉스 동반 약세</li><li style="color:#bbb;border-left-color:#253050">[특징주] 삼성전자, 2%대 하락하며 약세 지속…하닉도 4%↓</li><li style="color:#bbb;border-left-color:#253050">[개장시황] '8천피' 찍고 급락했던 코스피...하락 출발</li></ul>
+<ul class="news-list"><li style="color:#bbb;border-left-color:#253050">코스피, '매도 사이드카' 딛고 7500선 회복</li><li style="color:#bbb;border-left-color:#253050">"코스피 1만 포인트, 이익이 만든다"…증권가 '新황금기' 선언</li><li style="color:#bbb;border-left-color:#253050">금리 공포 버텨낸 코스피…전세계 증시 중 유일하게 상승</li><li style="color:#bbb;border-left-color:#253050">'너무 큰 떡?'…황제주 쏟아지는데 손 못 대는 개미들</li></ul>
 </aside>
 </div>
 <div class="det-hist"><div class="det-hist-title">📅 7일 등락</div><div class="det-card-row"><span style='color:#e53935'>05-08 +1.9%</span> / <span style='color:#e53935'>05-11 +11.5%</span> / <span style='color:#4d9de0'>05-12 -2.4%</span> / <span style='color:#e53935'>05-13 +7.7%</span> / <span style='color:#4d9de0'>05-14 -0.3%</span> / <span style='color:#4d9de0'>05-15 -7.7%</span> / <span style='color:#e53935'>05-18 +1.2%</span></div></div>
@@ -342,7 +343,7 @@ tr:hover td{background:#16213e}
 </div>
 <aside class="det-side">
 <div class="det-side-title">📰 최신 뉴스</div>
-<ul class="news-list"><li style="color:#00e676;border-left-color:#00e67688">[급락주] 한미반도체, -10.43% 하락</li><li style="color:#00e676;border-left-color:#00e67688">파두·한미반도체·네패스아크 출렁…외인 흔들기에 반도체 중소형주 널...</li><li style="color:#00e676;border-left-color:#00e67688">삼성전자·SK하이닉스 반등에도 한미반도체 급락…외인 흔들기에 춤추는...</li><li style="color:#00e676;border-left-color:#00e67688">HBM 기대에 올랐던 한미반도체, 실적 부진에 급락...장 초반 낙폭 20% 육...</li></ul>
+<ul class="news-list"><li style="color:#bbb;border-left-color:#253050">[거래소 기관] 삼성전자 SK하이닉스 SK스퀘어 삼성전기 담고 현대차 LG전...</li><li style="color:#bbb;border-left-color:#253050">[거래소 외국인] 삼성전자 팔고 삼성SDI 담았다… 증시 수급 대이동 신...</li><li style="color:#00e676;border-left-color:#00e67688">한미반도체, 1Q 쇼크 잊으라…목표가 대폭 상향 "주문 공백 끝나"</li><li style="color:#bbb;border-left-color:#253050">[서울데이터랩]마감 직후 인기 검색 종목 20選</li></ul>
 </aside>
 </div>
 <div class="det-hist"><div class="det-hist-title">📅 7일 등락</div><div class="det-card-row"><span style='color:#4d9de0'>05-08 -0.8%</span> / <span style='color:#e53935'>05-11 +2.6%</span> / <span style='color:#4d9de0'>05-12 -5.6%</span> / <span style='color:#e53935'>05-13 +6.1%</span> / <span style='color:#e53935'>05-14 +2.2%</span> / <span style='color:#4d9de0'>05-15 -9.9%</span> / <span style='color:#4d9de0'>05-18 -14.1%</span></div></div>
@@ -394,7 +395,7 @@ tr:hover td{background:#16213e}
 </div>
 <aside class="det-side">
 <div class="det-side-title">📰 최신 뉴스</div>
-<ul class="news-list"><li style="color:#00e676;border-left-color:#00e67688">반도체 다음은 로봇?...코스닥 추락에도, 일부 로봇주 '활짝'</li><li style="color:#bbb;border-left-color:#253050">[리스트] MVP 상위 20선...LG씨엔에스, 에스엠 등 - 15일</li><li style="color:#bbb;border-left-color:#253050">[코스닥 기관] 알테오젠·파마리서치 담고 폴레드 펩트론 고영 던졌다</li><li style="color:#bbb;border-left-color:#253050">HPSP 주가, 5월 14일 장중 53,500원 3.25% 하락</li></ul>
+<ul class="news-list"><li style="color:#00e676;border-left-color:#00e67688">코스피 올랐지만, 코스닥 '급락'...일부 반도체주는 '껑충'</li><li style="color:#bbb;border-left-color:#253050">[코스닥 외국인] 주성엔지니어링 파두 에이비엘바이오 알지노믹스 HPSP ...</li><li style="color:#00e676;border-left-color:#00e67688">한미반도체, 영업이익 88% 폭락 '어닝 쇼크'...3분기 연속 역성장</li><li style="color:#bbb;border-left-color:#253050">李 대통령 경고·법원 제동에… ‘패닉셀’ 뒤집고 삼성전자 반등</li></ul>
 </aside>
 </div>
 <div class="det-hist"><div class="det-hist-title">📅 7일 등락</div><div class="det-card-row"><span style='color:#4d9de0'>05-08 -1.5%</span> / <span style='color:#e53935'>05-11 +2.8%</span> / <span style='color:#4d9de0'>05-12 -7.4%</span> / <span style='color:#e53935'>05-13 +7.8%</span> / <span style='color:#4d9de0'>05-14 -1.1%</span> / <span style='color:#4d9de0'>05-15 -9.5%</span> / <span style='color:#e53935'>05-18 +5.5%</span></div></div>
@@ -446,7 +447,7 @@ tr:hover td{background:#16213e}
 </div>
 <aside class="det-side">
 <div class="det-side-title">📰 최신 뉴스</div>
-<ul class="news-list"><li style="color:#bbb;border-left-color:#253050">[개장시황] '8천피' 찍고 급락했던 코스피...하락 출발</li><li style="color:#bbb;border-left-color:#253050">[투자자 순매수 TOP5] 외인 7거래일 연속 순매도 속 전력·로봇·조선 순...</li><li style="color:#00e676;border-left-color:#00e67688">[어제장 오늘장] 코스피 8000 재도전…엔비디아 실적발표, 변수 될까?</li><li style="color:#bbb;border-left-color:#253050">리노공업, 10만원선까지 밀렸다…미국 증시 기술주 흐름 속 월요일 반등...</li></ul>
+<ul class="news-list"><li style="color:#bbb;border-left-color:#253050">[마감시황] 코스피, 개인·기관 '사자'에 강보합…7500선 회복</li><li style="color:#bbb;border-left-color:#253050">코스피, 장초반 4% 급락 딛고 7500선 상승 마감</li><li style="color:#bbb;border-left-color:#253050">하루새 7% 오르내린 코스피 강보합 '노조리스크' 해소…삼성전자 4%↑</li><li style="color:#bbb;border-left-color:#253050">[마감시황] 코스닥 1,111.09 마감…외국인 순매수에도 이틀째 하락</li></ul>
 </aside>
 </div>
 <div class="det-hist"><div class="det-hist-title">📅 7일 등락</div><div class="det-card-row"><span style='color:#4d9de0'>05-08 -0.8%</span> / <span style='color:#e53935'>05-11 +2.8%</span> / <span style='color:#4d9de0'>05-12 -6.4%</span> / <span style='color:#e53935'>05-13 +3.6%</span> / <span style='color:#e53935'>05-14 +1.7%</span> / <span style='color:#4d9de0'>05-15 -11.6%</span> / <span style='color:#aaa'>05-18 +0.0%</span></div></div>
@@ -550,7 +551,7 @@ tr:hover td{background:#16213e}
 </div>
 <aside class="det-side">
 <div class="det-side-title">📰 최신 뉴스</div>
-<ul class="news-list"><li style="color:#bbb;border-left-color:#253050">급등 기술주 배신주의보… 11년간 5곳 중 1곳 상폐·거래정지</li><li style="color:#bbb;border-left-color:#253050">기술력 있는 기업이랬는데…급등 종목 5개 중 1개 상폐·정지</li><li style="color:#bbb;border-left-color:#253050">뉴인텍, 태양광·전기차 훈풍에 '방긋'… 증착필름 수직계열화 경쟁력 ...</li><li style="color:#00e676;border-left-color:#00e67688">코미코, 100% 무상증자 발표… 반도체 세정 강자의 자신감</li></ul>
+<ul class="news-list"><li style="color:#bbb;border-left-color:#253050">포장재부터 첨단 배터리 부품까지… 테이팩스, 거침없는 질주 시작되나</li><li style="color:#00e676;border-left-color:#00e67688">글로벌 반도체 공정 러시…주성엔지니어링, 대규모 수주 모멘텀 부각</li><li style="color:#bbb;border-left-color:#253050">급등 기술주 배신주의보… 11년간 5곳 중 1곳 상폐·거래정지</li><li style="color:#bbb;border-left-color:#253050">기술력 있는 기업이랬는데…급등 종목 5개 중 1개 상폐·정지</li></ul>
 </aside>
 </div>
 <div class="det-hist"><div class="det-hist-title">📅 7일 등락</div><div class="det-card-row"><span style='color:#4d9de0'>05-08 -3.2%</span> / <span style='color:#e53935'>05-11 +1.2%</span> / <span style='color:#4d9de0'>05-12 -8.6%</span> / <span style='color:#e53935'>05-13 +11.6%</span> / <span style='color:#e53935'>05-14 +1.2%</span> / <span style='color:#4d9de0'>05-15 -14.8%</span> / <span style='color:#4d9de0'>05-18 -0.5%</span></div></div>
@@ -602,7 +603,7 @@ tr:hover td{background:#16213e}
 </div>
 <aside class="det-side">
 <div class="det-side-title">📰 최신 뉴스</div>
-<ul class="news-list"><li style="color:#bbb;border-left-color:#253050">원익IPS 주가, 5월 15일 114,700원 9.97% 하락 마감</li><li style="color:#bbb;border-left-color:#253050">韓금융시장 '검은 금요일'…원·달러 1500원 넘고 코스피 7400대로 고꾸라...</li><li style="color:#00e676;border-left-color:#00e67688">반도체 다음은 로봇?...코스닥 추락에도, 일부 로봇주 '활짝'</li><li style="color:#bbb;border-left-color:#253050">꿈의 '팔천피' 찍고 와르르…외인 6.3조 투매에 7400선 '털썩'</li></ul>
+<ul class="news-list"><li style="color:#00e676;border-left-color:#00e67688">코스피 올랐지만, 코스닥 '급락'...일부 반도체주는 '껑충'</li><li style="color:#00e676;border-left-color:#00e67688">[코스닥 기관] 반도체·우주항공 집중 매수…바이오는 차익실현</li><li style="color:#00e676;border-left-color:#00e67688">글로벌 반도체 공정 러시…주성엔지니어링, 대규모 수주 모멘텀 부각</li><li style="color:#bbb;border-left-color:#253050">원익IPS 주가, 5월 15일 114,700원 9.97% 하락 마감</li></ul>
 </aside>
 </div>
 <div class="det-hist"><div class="det-hist-title">📅 7일 등락</div><div class="det-card-row"><span style='color:#aaa'>05-08 +0.0%</span> / <span style='color:#e53935'>05-11 +6.5%</span> / <span style='color:#4d9de0'>05-12 -11.7%</span> / <span style='color:#e53935'>05-13 +5.0%</span> / <span style='color:#4d9de0'>05-14 -2.9%</span> / <span style='color:#4d9de0'>05-15 -10.0%</span> / <span style='color:#e53935'>05-18 +1.2%</span></div></div>
@@ -1278,7 +1279,7 @@ tr:hover td{background:#16213e}
 </div>
 <aside class="det-side">
 <div class="det-side-title">📰 최신 뉴스</div>
-<ul class="news-list"><li style="color:#00e676;border-left-color:#00e67688">[더벨]'로봇에 진심’ 정의선 회장, 피지컬 AI 전략은</li><li style="color:#00e676;border-left-color:#00e67688">코스피 8000 터치 후 조정 국면…반도체 다음 ‘실적 우량주’ 순환매 ...</li><li style="color:#bbb;border-left-color:#253050">[더페어 돋보기] 하반기 증시 책임질 '4대 주도 섹터'는?</li><li style="color:#bbb;border-left-color:#253050">KB증권, 5월 셋째주 삼성전기 등 34종목 매수 추천</li></ul>
+<ul class="news-list"><li style="color:#bbb;border-left-color:#253050">독보적 SOC 기술력… AP위성, 글로벌 통신 공룡들이 먼저 찾는다</li><li style="color:#bbb;border-left-color:#253050">현대로템 주가, 5월 18일 장중 198,700원 1.39% 하락</li><li style="color:#bbb;border-left-color:#253050">77만원도 넘겼던 현대차, 이틀만에 65만원대로…6%대 약세</li><li style="color:#bbb;border-left-color:#253050">켄코아에어로스페이스, 항공기 구조물 사업 확대에 매수세 유입 뚜렷</li></ul>
 </aside>
 </div>
 <div class="det-hist"><div class="det-hist-title">📅 7일 등락</div><div class="det-card-row"><span style='color:#4d9de0'>05-08 -5.1%</span> / <span style='color:#4d9de0'>05-11 -1.6%</span> / <span style='color:#4d9de0'>05-12 -2.1%</span> / <span style='color:#aaa'>05-13 +0.0%</span> / <span style='color:#4d9de0'>05-14 -1.2%</span> / <span style='color:#4d9de0'>05-15 -5.2%</span> / <span style='color:#4d9de0'>05-18 -0.2%</span></div></div>
@@ -1434,7 +1435,7 @@ tr:hover td{background:#16213e}
 </div>
 <aside class="det-side">
 <div class="det-side-title">📰 최신 뉴스</div>
-<ul class="news-list"><li style="color:#bbb;border-left-color:#253050">주요국 금리 상승 우려에 코스닥 제약·바이오 폭락</li><li style="color:#bbb;border-left-color:#253050">삼천당제약·한미약품 급락…바이오주 투심 흔들리나</li><li style="color:#bbb;border-left-color:#253050">HLB·알테오젠·펩트론 흔들렸지만 코스피는 양전…바이오 신약주 변동...</li><li style="color:#bbb;border-left-color:#253050">코스닥 바이오주 '장중 급락'...믿을 건 美 ASCO?</li></ul>
+<ul class="news-list"><li style="color:#00e676;border-left-color:#00e67688">코스피 올랐지만, 코스닥 '급락'...일부 반도체주는 '껑충'</li><li style="color:#00e676;border-left-color:#00e67688">코스피 반등 마감…반도체 투톱 강세</li><li style="color:#bbb;border-left-color:#253050">'대마불사' 삼전닉스...정부 파업 메시지에 '급반전'</li><li style="color:#bbb;border-left-color:#253050">매도 사이드카 딛고 ‘삼전·닉스’ 반등…코스피 7500선 마감[마켓시그...</li></ul>
 </aside>
 </div>
 <div class="det-hist"><div class="det-hist-title">📅 7일 등락</div><div class="det-card-row"><span style='color:#4d9de0'>05-08 -4.5%</span> / <span style='color:#4d9de0'>05-11 -4.6%</span> / <span style='color:#e53935'>05-12 +5.2%</span> / <span style='color:#e53935'>05-13 +3.5%</span> / <span style='color:#e53935'>05-14 +8.8%</span> / <span style='color:#4d9de0'>05-15 -4.2%</span> / <span style='color:#4d9de0'>05-18 -3.1%</span></div></div>
@@ -1642,7 +1643,7 @@ tr:hover td{background:#16213e}
 </div>
 <aside class="det-side">
 <div class="det-side-title">📰 최신 뉴스</div>
-<ul class="news-list"><li style="color:#bbb;border-left-color:#253050">코스피, 7180선까지 밀렸다…삼성전자·SK하이닉스 동반 약세</li><li style="color:#bbb;border-left-color:#253050">[개장시황] '8천피' 찍고 급락했던 코스피...하락 출발</li><li style="color:#bbb;border-left-color:#253050">다올투자증권 "에코프로비엠, 유럽 전기차 수혜주…목표가 유지"</li><li style="color:#00e676;border-left-color:#00e67688">엠케이전자, AI 메모리 수요 확대 수혜 기대…목표가↑-현대차</li></ul>
+<ul class="news-list"><li style="color:#bbb;border-left-color:#253050">코스피, '매도 사이드카' 딛고 7500선 회복</li><li style="color:#bbb;border-left-color:#253050">"코스피 1만 포인트, 이익이 만든다"…증권가 '新황금기' 선언</li><li style="color:#bbb;border-left-color:#253050">코스피, 장 초반 7100선까지 하락·사이드카 발동 딛고 7516.04 마감</li><li style="color:#00e676;border-left-color:#00e67688">코스피 반등 마감…반도체 투톱 강세</li></ul>
 </aside>
 </div>
 <div class="det-hist"><div class="det-hist-title">📅 7일 등락</div><div class="det-card-row"><span style='color:#e53935'>05-08 +7.2%</span> / <span style='color:#e53935'>05-11 +5.4%</span> / <span style='color:#aaa'>05-12 +0.0%</span> / <span style='color:#e53935'>05-13 +9.9%</span> / <span style='color:#e53935'>05-14 +0.3%</span> / <span style='color:#4d9de0'>05-15 -1.7%</span> / <span style='color:#4d9de0'>05-18 -5.3%</span></div></div>
@@ -1694,7 +1695,7 @@ tr:hover td{background:#16213e}
 </div>
 <aside class="det-side">
 <div class="det-side-title">📰 최신 뉴스</div>
-<ul class="news-list"><li style="color:#bbb;border-left-color:#253050">[개장시황] '8천피' 찍고 급락했던 코스피...하락 출발</li><li style="color:#bbb;border-left-color:#253050">다올투자증권 "에코프로비엠, 유럽 전기차 수혜주…목표가 유지"</li><li style="color:#00e676;border-left-color:#00e67688">[마켓 프리뷰] 코스피 반등 시도하나…美 금리·엔비디아 실적이 변수</li><li style="color:#bbb;border-left-color:#253050">에스엘, 북미 램프 사업 호조·로보틱스 기대감 확대…목표가↑-NH</li></ul>
+<ul class="news-list"><li style="color:#bbb;border-left-color:#253050">외국인 4조원 또 던졌지만…삼성전자 3% 반등에 코스피 낙폭 회복</li><li style="color:#bbb;border-left-color:#253050">"파업하면 후회할 것" 현기차 직원들까지 나섰다…삼성 노조 향한 불편...</li><li style="color:#bbb;border-left-color:#253050">하루새 7% 오르내린 코스피 강보합 '노조리스크' 해소…삼성전자 4%↑</li><li style="color:#bbb;border-left-color:#253050">[더벨][배당 ETF 돋보기] 현대차·기아 등 고배당주 투자…위클리 콜옵...</li></ul>
 </aside>
 </div>
 <div class="det-hist"><div class="det-hist-title">📅 7일 등락</div><div class="det-card-row"><span style='color:#e53935'>05-08 +4.4%</span> / <span style='color:#e53935'>05-11 +6.2%</span> / <span style='color:#4d9de0'>05-12 -3.7%</span> / <span style='color:#e53935'>05-13 +6.7%</span> / <span style='color:#4d9de0'>05-14 -0.8%</span> / <span style='color:#4d9de0'>05-15 -5.7%</span> / <span style='color:#4d9de0'>05-18 -3.3%</span></div></div>
@@ -1746,7 +1747,7 @@ tr:hover td{background:#16213e}
 </div>
 <aside class="det-side">
 <div class="det-side-title">📰 최신 뉴스</div>
-<ul class="news-list"><li style="color:#bbb;border-left-color:#253050">코스피, 7180선까지 밀렸다…삼성전자·SK하이닉스 동반 약세</li><li style="color:#bbb;border-left-color:#253050">[투자자 순매수 TOP5] 외인 7거래일 연속 순매도 속 전력·로봇·조선 순...</li><li style="color:#00e676;border-left-color:#00e67688">[더벨]'로봇에 진심’ 정의선 회장, 피지컬 AI 전략은</li><li style="color:#00e676;border-left-color:#00e67688">코스피 8000 터치 후 조정 국면…반도체 다음 ‘실적 우량주’ 순환매 ...</li></ul>
+<ul class="news-list"><li style="color:#bbb;border-left-color:#253050">외국인 4조원 또 던졌지만…삼성전자 3% 반등에 코스피 낙폭 회복</li><li style="color:#bbb;border-left-color:#253050">[거래소 기관] 삼성전자 SK하이닉스 SK스퀘어 삼성전기 담고 현대차 LG전...</li><li style="color:#bbb;border-left-color:#253050">[거래소 외국인] 삼성전자 팔고 삼성SDI 담았다… 증시 수급 대이동 신...</li><li style="color:#bbb;border-left-color:#253050">"너무 올랐나"…현대차, 매도 폭탄에 5%대 급락…그룹주 동반 약세[특징...</li></ul>
 </aside>
 </div>
 <div class="det-hist"><div class="det-hist-title">📅 7일 등락</div><div class="det-card-row"><span style='color:#e53935'>05-08 +15.3%</span> / <span style='color:#e53935'>05-11 +8.6%</span> / <span style='color:#4d9de0'>05-12 -0.9%</span> / <span style='color:#e53935'>05-13 +18.4%</span> / <span style='color:#e53935'>05-14 +0.2%</span> / <span style='color:#4d9de0'>05-15 -3.2%</span> / <span style='color:#4d9de0'>05-18 -9.2%</span></div></div>
@@ -1954,7 +1955,7 @@ tr:hover td{background:#16213e}
 </div>
 <aside class="det-side">
 <div class="det-side-title">📰 최신 뉴스</div>
-<ul class="news-list"><li style="color:#bbb;border-left-color:#253050">24년 전 시트콤 속 '하이닉스 460원'…"지금까지 들고 있었다면?"</li><li style="color:#bbb;border-left-color:#253050">"그때 나에게 말해 주고 싶다"…24년 전 시트콤 속 하이닉스 주가는 '46...</li><li style="color:#00e676;border-left-color:#00e67688">[DCM] 반도체 호황 덕에 크레딧 미소짓는 SK 계열사</li><li style="color:#bbb;border-left-color:#253050">24년 전 시트콤 속 하이닉스 '460원'…"그때 살걸" 재조명</li></ul>
+<ul class="news-list"><li style="color:#bbb;border-left-color:#253050">포장재부터 첨단 배터리 부품까지… 테이팩스, 거침없는 질주 시작되나</li><li style="color:#bbb;border-left-color:#253050">하닉이 460원? 24년전 시트콤에 비친 주식창 ‘충격’</li><li style="color:#ff5252;border-left-color:#ff525288">"망하는 줄 알고 다 던졌는데 3900배 폭등"…상장폐지 걱정하던 공포의...</li><li style="color:#bbb;border-left-color:#253050">23년前 시트콤에 ‘하이닉스 460원’…“그때 100주 샀으면 2억원”</li></ul>
 </aside>
 </div>
 <div class="det-hist"><div class="det-hist-title">📅 7일 등락</div><div class="det-card-row"><span style='color:#e53935'>05-08 +1.1%</span> / <span style='color:#4d9de0'>05-11 -1.4%</span> / <span style='color:#4d9de0'>05-12 -8.3%</span> / <span style='color:#4d9de0'>05-13 -0.3%</span> / <span style='color:#e53935'>05-14 +1.3%</span> / <span style='color:#4d9de0'>05-15 -4.7%</span> / <span style='color:#4d9de0'>05-18 -0.3%</span></div></div>
@@ -2006,7 +2007,7 @@ tr:hover td{background:#16213e}
 </div>
 <aside class="det-side">
 <div class="det-side-title">📰 최신 뉴스</div>
-<ul class="news-list"><li style="color:#00e676;border-left-color:#00e67688">[서울데이터랩]반도체 강세에 삼성전자 3%대 상승…자동차·2차전지주는...</li><li style="color:#bbb;border-left-color:#253050">메가터치, 배터리 테스트 수요 폭증… 개장 직후 '불기둥' 뿜었다</li><li style="color:#bbb;border-left-color:#253050">불장에 흔해진 '황제주', 주당 200만원 육박 '명품주'도 눈길</li><li style="color:#00e676;border-left-color:#00e67688">[인사이트] '군살 빼고 AI 장착'…SK, 3년차 리밸런싱이 증명한 '선택과...</li></ul>
+<ul class="news-list"><li style="color:#00e676;border-left-color:#00e67688">비츠로셀, 미국·대만 기업과 AI 데이터센터 협력 추진</li><li style="color:#bbb;border-left-color:#253050">[거래소 외국인] 삼성전자 팔고 삼성SDI 담았다… 증시 수급 대이동 신...</li><li style="color:#bbb;border-left-color:#253050">[서울데이터랩]마감 직후 인기 검색 종목 20選</li><li style="color:#bbb;border-left-color:#253050">대주전자재료, '차세대 실리콘 음극재' 독점 체제 굳힌다</li></ul>
 </aside>
 </div>
 <div class="det-hist"><div class="det-hist-title">📅 7일 등락</div><div class="det-card-row"><span style='color:#4d9de0'>05-08 -2.3%</span> / <span style='color:#e53935'>05-11 +0.9%</span> / <span style='color:#4d9de0'>05-12 -8.0%</span> / <span style='color:#e53935'>05-13 +0.8%</span> / <span style='color:#e53935'>05-14 +0.3%</span> / <span style='color:#4d9de0'>05-15 -3.5%</span> / <span style='color:#4d9de0'>05-18 -0.2%</span></div></div>
@@ -2058,7 +2059,7 @@ tr:hover td{background:#16213e}
 </div>
 <aside class="det-side">
 <div class="det-side-title">📰 최신 뉴스</div>
-<ul class="news-list"><li style="color:#bbb;border-left-color:#253050">[개장시황] '8천피' 찍고 급락했던 코스피...하락 출발</li><li style="color:#00e676;border-left-color:#00e67688">[마켓 프리뷰] 코스피 반등 시도하나…美 금리·엔비디아 실적이 변수</li><li style="color:#bbb;border-left-color:#253050">[애프터마켓 리뷰] 두산로보틱스 급등 및 신고가 경신…로봇주 초강세</li><li style="color:#bbb;border-left-color:#253050">2차전지, 다시 볕 드나…“정책 모멘텀에 비중확대”</li></ul>
+<ul class="news-list"><li style="color:#bbb;border-left-color:#253050">코스피, 장 초반 7100선까지 하락·사이드카 발동 딛고 7516.04 마감</li><li style="color:#00e676;border-left-color:#00e67688">코스피 반등 마감…반도체 투톱 강세</li><li style="color:#00e676;border-left-color:#00e67688">비츠로셀, 미국·대만 기업과 AI 데이터센터 협력 추진</li><li style="color:#bbb;border-left-color:#253050">[거래소 기관] 삼성전자 SK하이닉스 SK스퀘어 삼성전기 담고 현대차 LG전...</li></ul>
 </aside>
 </div>
 <div class="det-hist"><div class="det-hist-title">📅 7일 등락</div><div class="det-card-row"><span style='color:#4d9de0'>05-08 -1.3%</span> / <span style='color:#4d9de0'>05-11 -1.8%</span> / <span style='color:#4d9de0'>05-12 -5.3%</span> / <span style='color:#4d9de0'>05-13 -2.9%</span> / <span style='color:#e53935'>05-14 +2.8%</span> / <span style='color:#4d9de0'>05-15 -5.7%</span> / <span style='color:#4d9de0'>05-18 -2.2%</span></div></div>
@@ -2110,7 +2111,7 @@ tr:hover td{background:#16213e}
 </div>
 <aside class="det-side">
 <div class="det-side-title">📰 최신 뉴스</div>
-<ul class="news-list"><li style="color:#00e676;border-left-color:#00e67688">외국인, 반도체 팔고 로봇주 담는다</li><li style="color:#bbb;border-left-color:#253050">POSCO홀딩스 주가, 5월 18일 장중 446,000원 4.60% 하락</li><li style="color:#bbb;border-left-color:#253050">[서울데이터랩]개장 직후 인기 검색 종목 20選</li><li style="color:#bbb;border-left-color:#253050">[투자자 순매수 TOP5] 외인 7거래일 연속 순매도 속 전력·로봇·조선 순...</li></ul>
+<ul class="news-list"><li style="color:#bbb;border-left-color:#253050">[거래소 외국인] 삼성전자 팔고 삼성SDI 담았다… 증시 수급 대이동 신...</li><li style="color:#bbb;border-left-color:#253050">POSCO홀딩스(포스코홀딩스), 46만원선 밀리며 약세…철강·이차전지 투자...</li><li style="color:#bbb;border-left-color:#253050">포장재부터 첨단 배터리 부품까지… 테이팩스, 거침없는 질주 시작되나</li><li style="color:#00e676;border-left-color:#00e67688">외국인, 반도체 팔고 로봇주 담는다</li></ul>
 </aside>
 </div>
 <div class="det-hist"><div class="det-hist-title">📅 7일 등락</div><div class="det-card-row"><span style='color:#4d9de0'>05-08 -1.9%</span> / <span style='color:#4d9de0'>05-11 -2.5%</span> / <span style='color:#4d9de0'>05-12 -6.4%</span> / <span style='color:#4d9de0'>05-13 -0.1%</span> / <span style='color:#e53935'>05-14 +1.7%</span> / <span style='color:#4d9de0'>05-15 -3.9%</span> / <span style='color:#4d9de0'>05-18 -1.0%</span></div></div>
@@ -2162,7 +2163,7 @@ tr:hover td{background:#16213e}
 </div>
 <aside class="det-side">
 <div class="det-side-title">📰 최신 뉴스</div>
-<ul class="news-list"><li style="color:#bbb;border-left-color:#253050">함영주 '블록체인' 1조 승부수 … K코인·글로벌 결제 선점 나서</li><li style="color:#bbb;border-left-color:#253050">하나금융, 두나무에 1조 원 투자…'금가분리' 변화 신호탄 되나</li><li style="color:#bbb;border-left-color:#253050">두나무 지분 인수? 코인원 협력? "지금, 무슨 일 벌어지고 있는지 알려...</li><li style="color:#bbb;border-left-color:#253050">하나금융, 두나무에 1조 베팅…주가 반등으로 이어질까</li></ul>
+<ul class="news-list"><li style="color:#00e676;border-left-color:#00e67688">[RE:기업] 두나무, 1분기 실적 반토막…하나금융 1조 베팅 왜?</li><li style="color:#bbb;border-left-color:#253050">함영주 '블록체인' 1조 승부수 … K코인·글로벌 결제 선점 나서</li><li style="color:#bbb;border-left-color:#253050">하나금융, 두나무에 1조 원 투자…'금가분리' 변화 신호탄 되나</li><li style="color:#bbb;border-left-color:#253050">두나무 지분 인수? 코인원 협력? "지금, 무슨 일 벌어지고 있는지 알려...</li></ul>
 </aside>
 </div>
 <div class="det-hist"><div class="det-hist-title">📅 7일 등락</div><div class="det-card-row"><span style='color:#4d9de0'>05-08 -3.3%</span> / <span style='color:#4d9de0'>05-11 -3.5%</span> / <span style='color:#4d9de0'>05-12 -1.7%</span> / <span style='color:#4d9de0'>05-13 -2.0%</span> / <span style='color:#e53935'>05-14 +2.9%</span> / <span style='color:#4d9de0'>05-15 -3.6%</span> / <span style='color:#4d9de0'>05-18 -0.8%</span></div></div>
@@ -2214,7 +2215,7 @@ tr:hover td{background:#16213e}
 </div>
 <aside class="det-side">
 <div class="det-side-title">📰 최신 뉴스</div>
-<ul class="news-list"><li style="color:#bbb;border-left-color:#253050">SK, ‘선제적 리밸런싱’ 성과로…그룹 체질개선·성장동력 확보</li><li style="color:#bbb;border-left-color:#253050">NH證 “SK, 자산 매각·포트폴리오 통합으로 재무구조 개선 중…목표가...</li><li style="color:#00e676;border-left-color:#00e67688">최창원, SK 체질 바꿨다… 리밸런싱 효과 실적으로 확인</li><li style="color:#00e676;border-left-color:#00e67688">SK, 리밸런싱 3년 성과 본격화…재무 개선 넘어 AI 체질전환 속도</li></ul>
+<ul class="news-list"><li style="color:#bbb;border-left-color:#253050">'너무 큰 떡?'…황제주 쏟아지는데 손 못 대는 개미들</li><li style="color:#bbb;border-left-color:#253050">SK 리밸런싱, 숫자로 드러났다···차입 줄고 이익 뛰었다</li><li style="color:#00e676;border-left-color:#00e67688">SK, '선제 리밸런싱' 통했다…자산 효율화 넘어 'AI 시대 성장 재편'</li><li style="color:#00e676;border-left-color:#00e67688">SK 주가 7%대 강세...1분기 실적 놓고 "AI 리밸런싱 효과"</li></ul>
 </aside>
 </div>
 <div class="det-hist"><div class="det-hist-title">📅 7일 등락</div><div class="det-card-row"><span style='color:#e53935'>05-08 +0.3%</span> / <span style='color:#e53935'>05-11 +5.0%</span> / <span style='color:#e53935'>05-12 +5.3%</span> / <span style='color:#e53935'>05-13 +2.3%</span> / <span style='color:#4d9de0'>05-14 -2.9%</span> / <span style='color:#4d9de0'>05-15 -1.4%</span> / <span style='color:#4d9de0'>05-18 -0.8%</span></div></div>
@@ -2526,7 +2527,7 @@ tr:hover td{background:#16213e}
 </div>
 <aside class="det-side">
 <div class="det-side-title">📰 최신 뉴스</div>
-<ul class="news-list"><li style="color:#bbb;border-left-color:#253050">코스피, 7180선까지 밀렸다…삼성전자·SK하이닉스 동반 약세</li><li style="color:#bbb;border-left-color:#253050">[개장시황] '8천피' 찍고 급락했던 코스피...하락 출발</li><li style="color:#bbb;border-left-color:#253050">[투자자 순매수 TOP5] 외인 7거래일 연속 순매도 속 전력·로봇·조선 순...</li><li style="color:#00e676;border-left-color:#00e67688">[어제장 오늘장] 코스피 8000 재도전…엔비디아 실적발표, 변수 될까?</li></ul>
+<ul class="news-list"><li style="color:#bbb;border-left-color:#253050">코스피, 장 초반 7100선까지 하락·사이드카 발동 딛고 7516.04 마감</li><li style="color:#bbb;border-left-color:#253050">'너무 큰 떡?'…황제주 쏟아지는데 손 못 대는 개미들</li><li style="color:#00e676;border-left-color:#00e67688">코스피 반등 마감…반도체 투톱 강세</li><li style="color:#bbb;border-left-color:#253050">외국인 4조원 또 던졌지만…삼성전자 3% 반등에 코스피 낙폭 회복</li></ul>
 </aside>
 </div>
 <div class="det-hist"><div class="det-hist-title">📅 7일 등락</div><div class="det-card-row"><span style='color:#4d9de0'>05-08 -0.3%</span> / <span style='color:#4d9de0'>05-11 -1.5%</span> / <span style='color:#e53935'>05-12 +6.4%</span> / <span style='color:#e53935'>05-13 +7.4%</span> / <span style='color:#4d9de0'>05-14 -0.5%</span> / <span style='color:#4d9de0'>05-15 -1.4%</span> / <span style='color:#e53935'>05-18 +2.1%</span></div></div>
@@ -2578,7 +2579,7 @@ tr:hover td{background:#16213e}
 </div>
 <aside class="det-side">
 <div class="det-side-title">📰 최신 뉴스</div>
-<ul class="news-list"><li style="color:#bbb;border-left-color:#253050">[개장시황] '8천피' 찍고 급락했던 코스피...하락 출발</li><li style="color:#bbb;border-left-color:#253050">다올투자증권 "에코프로비엠, 유럽 전기차 수혜주…목표가 유지"</li><li style="color:#bbb;border-left-color:#253050">[애프터마켓 리뷰] 두산로보틱스 급등 및 신고가 경신…로봇주 초강세</li><li style="color:#bbb;border-left-color:#253050">2차전지, 다시 볕 드나…“정책 모멘텀에 비중확대”</li></ul>
+<ul class="news-list"><li style="color:#00e676;border-left-color:#00e67688">코스피 올랐지만, 코스닥 '급락'...일부 반도체주는 '껑충'</li><li style="color:#00e676;border-left-color:#00e67688">코스피 반등 마감…반도체 투톱 강세</li><li style="color:#bbb;border-left-color:#253050">[마감시황] 코스피, 개인·기관 '사자'에 강보합…7500선 회복</li><li style="color:#bbb;border-left-color:#253050">코스피, 장초반 4% 급락 딛고 7500선 상승 마감</li></ul>
 </aside>
 </div>
 <div class="det-hist"><div class="det-hist-title">📅 7일 등락</div><div class="det-card-row"><span style='color:#e53935'>05-08 +0.8%</span> / <span style='color:#4d9de0'>05-11 -6.5%</span> / <span style='color:#4d9de0'>05-12 -7.4%</span> / <span style='color:#4d9de0'>05-13 -4.1%</span> / <span style='color:#e53935'>05-14 +6.0%</span> / <span style='color:#4d9de0'>05-15 -8.9%</span> / <span style='color:#4d9de0'>05-18 -0.1%</span></div></div>
@@ -2786,7 +2787,7 @@ tr:hover td{background:#16213e}
 </div>
 <aside class="det-side">
 <div class="det-side-title">📰 최신 뉴스</div>
-<ul class="news-list"><li style="color:#00e676;border-left-color:#00e67688">[더벨]'로봇에 진심’ 정의선 회장, 피지컬 AI 전략은</li><li style="color:#00e676;border-left-color:#00e67688">코스피 8000 터치 후 조정 국면…반도체 다음 ‘실적 우량주’ 순환매 ...</li><li style="color:#bbb;border-left-color:#253050">KB증권, 5월 셋째주 삼성전기 등 34종목 매수 추천</li><li style="color:#bbb;border-left-color:#253050">현대글로비스, 공매도 거래 금지 연장→투자자 유의 필요</li></ul>
+<ul class="news-list"><li style="color:#bbb;border-left-color:#253050">77만원도 넘겼던 현대차, 이틀만에 65만원대로…6%대 약세</li><li style="color:#bbb;border-left-color:#253050">현대차그룹주, 장중 동반 약세…"단기 차익 실현"</li><li style="color:#00e676;border-left-color:#00e67688">[더벨]'로봇에 진심’ 정의선 회장, 피지컬 AI 전략은</li><li style="color:#00e676;border-left-color:#00e67688">코스피 8000 터치 후 조정 국면…반도체 다음 ‘실적 우량주’ 순환매 ...</li></ul>
 </aside>
 </div>
 <div class="det-hist"><div class="det-hist-title">📅 7일 등락</div><div class="det-card-row"><span style='color:#e53935'>05-08 +8.9%</span> / <span style='color:#aaa'>05-11 +0.0%</span> / <span style='color:#e53935'>05-12 +5.8%</span> / <span style='color:#e53935'>05-13 +7.0%</span> / <span style='color:#4d9de0'>05-14 -7.4%</span> / <span style='color:#4d9de0'>05-15 -8.0%</span> / <span style='color:#4d9de0'>05-18 -5.0%</span></div></div>
@@ -2838,7 +2839,7 @@ tr:hover td{background:#16213e}
 </div>
 <aside class="det-side">
 <div class="det-side-title">📰 최신 뉴스</div>
-<ul class="news-list"><li style="color:#00e676;border-left-color:#00e67688">"실적 대박인데 왜 안 올라"…삼전닉스에 가려진 '이 종목' [한경우의 케...</li><li style="color:#00e676;border-left-color:#00e67688">쏘카, 자율주행 기대 속 흑자 행진…주가는 출렁</li><li style="color:#bbb;border-left-color:#253050">액면가 5000원 기준 '환산주가' 판도 바뀌었다…SK스퀘어 1위 독주 속 네...</li><li style="color:#00e676;border-left-color:#00e67688">코스피, 조정 딛고 '1만피' 기대감...AI·로봇 타고 "더 간다"</li></ul>
+<ul class="news-list"><li style="color:#bbb;border-left-color:#253050">크래프톤 '서브노티카2'…제2의 '배그' 되나</li><li style="color:#00e676;border-left-color:#00e67688">외국인, 반도체 팔고 로봇주 담는다</li><li style="color:#00e676;border-left-color:#00e67688">"실적 대박인데 왜 안 올라"…삼전닉스에 가려진 '이 종목' [한경우의 케...</li><li style="color:#00e676;border-left-color:#00e67688">쏘카, 자율주행 기대 속 흑자 행진…주가는 출렁</li></ul>
 </aside>
 </div>
 <div class="det-hist"><div class="det-hist-title">📅 7일 등락</div><div class="det-card-row"><span style='color:#e53935'>05-08 +1.1%</span> / <span style='color:#e53935'>05-11 +4.2%</span> / <span style='color:#4d9de0'>05-12 -2.5%</span> / <span style='color:#e53935'>05-13 +1.3%</span> / <span style='color:#e53935'>05-14 +4.4%</span> / <span style='color:#4d9de0'>05-15 -4.9%</span> / <span style='color:#e53935'>05-18 +1.1%</span></div></div>
@@ -2890,7 +2891,7 @@ tr:hover td{background:#16213e}
 </div>
 <aside class="det-side">
 <div class="det-side-title">📰 최신 뉴스</div>
-<ul class="news-list"><li style="color:#bbb;border-left-color:#253050">코스피 8000 시대, '황제주 11개' 역대 최다…차기 주인공은?</li><li style="color:#00e676;border-left-color:#00e67688">"실적 대박인데 왜 안 올라"…삼전닉스에 가려진 '이 종목' [한경우의 케...</li><li style="color:#bbb;border-left-color:#253050">황제주 11개 시대…증권가 “다음은 LIG·현대차” [코주부]</li><li style="color:#bbb;border-left-color:#253050">사상 최고 랠리에 황제주 11개 역대 최다…효성중공업 374만원 독주</li></ul>
+<ul class="news-list"><li style="color:#bbb;border-left-color:#253050">'너무 큰 떡?'…황제주 쏟아지는데 손 못 대는 개미들</li><li style="color:#00e676;border-left-color:#00e67688">K-배터리 핵심 부품의 힘… 알멕, 글로벌 계약 확대로 주가 랠리</li><li style="color:#bbb;border-left-color:#253050">포장재부터 첨단 배터리 부품까지… 테이팩스, 거침없는 질주 시작되나</li><li style="color:#bbb;border-left-color:#253050">불장에 흔해진 '황제주', 주당 200만원 육박 '명품주'도 눈길</li></ul>
 </aside>
 </div>
 <div class="det-hist"><div class="det-hist-title">📅 7일 등락</div><div class="det-card-row"><span style='color:#4d9de0'>05-08 -0.1%</span> / <span style='color:#4d9de0'>05-11 -2.0%</span> / <span style='color:#4d9de0'>05-12 -1.0%</span> / <span style='color:#4d9de0'>05-13 -0.7%</span> / <span style='color:#e53935'>05-14 +0.7%</span> / <span style='color:#4d9de0'>05-15 -5.6%</span> / <span style='color:#4d9de0'>05-18 -0.4%</span></div></div>
@@ -3046,7 +3047,7 @@ tr:hover td{background:#16213e}
 </div>
 <aside class="det-side">
 <div class="det-side-title">📰 최신 뉴스</div>
-<ul class="news-list"><li style="color:#bbb;border-left-color:#253050">스마트팩토리 투자 확대 수혜…TPC로보틱스, 중장기 성장 동력 확보</li><li style="color:#bbb;border-left-color:#253050">코스피, 7180선까지 밀렸다…삼성전자·SK하이닉스 동반 약세</li><li style="color:#bbb;border-left-color:#253050">[개장시황] '8천피' 찍고 급락했던 코스피...하락 출발</li><li style="color:#bbb;border-left-color:#253050">“호재 뿐인데 주가 하락, 오래 안 간다”...반등은 수순이라는 조선업...</li></ul>
+<ul class="news-list"><li style="color:#bbb;border-left-color:#253050">코스피, 장 초반 7100선까지 하락·사이드카 발동 딛고 7516.04 마감</li><li style="color:#bbb;border-left-color:#253050">'너무 큰 떡?'…황제주 쏟아지는데 손 못 대는 개미들</li><li style="color:#00e676;border-left-color:#00e67688">코스피 반등 마감…반도체 투톱 강세</li><li style="color:#bbb;border-left-color:#253050">외국인 4조원 또 던졌지만…삼성전자 3% 반등에 코스피 낙폭 회복</li></ul>
 </aside>
 </div>
 <div class="det-hist"><div class="det-hist-title">📅 7일 등락</div><div class="det-card-row"><span style='color:#4d9de0'>05-08 -0.3%</span> / <span style='color:#e53935'>05-11 +1.6%</span> / <span style='color:#4d9de0'>05-12 -2.2%</span> / <span style='color:#e53935'>05-13 +4.0%</span> / <span style='color:#4d9de0'>05-14 -6.5%</span> / <span style='color:#4d9de0'>05-15 -3.4%</span> / <span style='color:#4d9de0'>05-18 -0.2%</span></div></div>
@@ -3098,7 +3099,7 @@ tr:hover td{background:#16213e}
 </div>
 <aside class="det-side">
 <div class="det-side-title">📰 최신 뉴스</div>
-<ul class="news-list"><li style="color:#bbb;border-left-color:#253050">[개장시황] '8천피' 찍고 급락했던 코스피...하락 출발</li><li style="color:#bbb;border-left-color:#253050">“호재 뿐인데 주가 하락, 오래 안 간다”...반등은 수순이라는 조선업...</li><li style="color:#00e676;border-left-color:#00e67688">TKMS, 현금흐름 악화 우려…60조 캐나다 잠수함 수주전 걸림돌 전망</li><li style="color:#00e676;border-left-color:#00e67688">[마켓 프리뷰] 코스피 반등 시도하나…美 금리·엔비디아 실적이 변수</li></ul>
+<ul class="news-list"><li style="color:#bbb;border-left-color:#253050">코스피, 장 초반 7100선까지 하락·사이드카 발동 딛고 7516.04 마감</li><li style="color:#00e676;border-left-color:#00e67688">코스피 반등 마감…반도체 투톱 강세</li><li style="color:#bbb;border-left-color:#253050">외국인 4조원 또 던졌지만…삼성전자 3% 반등에 코스피 낙폭 회복</li><li style="color:#bbb;border-left-color:#253050">매도 사이드카 딛고 ‘삼전·닉스’ 반등…코스피 7500선 마감[마켓시그...</li></ul>
 </aside>
 </div>
 <div class="det-hist"><div class="det-hist-title">📅 7일 등락</div><div class="det-card-row"><span style='color:#4d9de0'>05-08 -5.1%</span> / <span style='color:#e53935'>05-11 +4.1%</span> / <span style='color:#e53935'>05-12 +3.2%</span> / <span style='color:#e53935'>05-13 +3.7%</span> / <span style='color:#4d9de0'>05-14 -8.5%</span> / <span style='color:#4d9de0'>05-15 -4.6%</span> / <span style='color:#4d9de0'>05-18 -3.9%</span></div></div>
@@ -3150,7 +3151,7 @@ tr:hover td{background:#16213e}
 </div>
 <aside class="det-side">
 <div class="det-side-title">📰 최신 뉴스</div>
-<ul class="news-list"><li style="color:#bbb;border-left-color:#253050">[개장시황] '8천피' 찍고 급락했던 코스피...하락 출발</li><li style="color:#bbb;border-left-color:#253050">다올투자증권 "에코프로비엠, 유럽 전기차 수혜주…목표가 유지"</li><li style="color:#00e676;border-left-color:#00e67688">[어제장 오늘장] 코스피 8000 재도전…엔비디아 실적발표, 변수 될까?</li><li style="color:#bbb;border-left-color:#253050">[애프터마켓 리뷰] 두산로보틱스 급등 및 신고가 경신…로봇주 초강세</li></ul>
+<ul class="news-list"><li style="color:#00e676;border-left-color:#00e67688">코스피 올랐지만, 코스닥 '급락'...일부 반도체주는 '껑충'</li><li style="color:#00e676;border-left-color:#00e67688">코스피 반등 마감…반도체 투톱 강세</li><li style="color:#bbb;border-left-color:#253050">[마감시황] 코스피, 개인·기관 '사자'에 강보합…7500선 회복</li><li style="color:#bbb;border-left-color:#253050">[코스닥 외국인] 주성엔지니어링 파두 에이비엘바이오 알지노믹스 HPSP ...</li></ul>
 </aside>
 </div>
 <div class="det-hist"><div class="det-hist-title">📅 7일 등락</div><div class="det-card-row"><span style='color:#4d9de0'>05-08 -2.9%</span> / <span style='color:#4d9de0'>05-11 -5.5%</span> / <span style='color:#4d9de0'>05-12 -4.6%</span> / <span style='color:#4d9de0'>05-13 -3.4%</span> / <span style='color:#e53935'>05-14 +5.4%</span> / <span style='color:#4d9de0'>05-15 -9.2%</span> / <span style='color:#4d9de0'>05-18 -1.9%</span></div></div>
